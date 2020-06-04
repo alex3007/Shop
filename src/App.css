@@ -1,10 +1,14 @@
-.mainContainer{
-/* margin-top: 115px;*/
+.App {
+background-color: #f2f2f2
 }
 
-.header{
- /*position: fixed;
-  z-index: 20;
-  width: 100%;
-  top: 0;*/
+.mainContainer {
+    /* margin-top: 115px;*/
+}
+
+.header {
+    /*position: fixed;
+     z-index: 20;
+     width: 100%;
+     top: 0;*/
 }

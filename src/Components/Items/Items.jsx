@@ -3,15 +3,15 @@ import cls from './Items.module.css';
 import {Route} from 'react-router-dom';
 import Item from './Item/Item';
 import Description from './Description/Description';
-import CarouselItem from '../Carousel/Carousel';
+import CarouselItem from '../Carousel/CarouselItem';
 import SidebarContainer from './Sidebar/SidebarContainer';
 
 
 const Items = (props) => {
     return (
 
-        <div>
-            <CarouselItem/>
+        <div className={cls.container}>
+            <CarouselItem />
             <div className={cls.flexContainer}>
                 <div className={cls.sidebar}>
                     <SidebarContainer/>

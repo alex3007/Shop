@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import {Route} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import ItemsContainer from './Components/Items/ItemsContainer';
-
+import Home from './Components/Pages/Home/Home';
+import Delivery from "./Components/Pages/Delivery/Delivery";
 
 
 function App(props) {
@@ -15,7 +15,8 @@ function App(props) {
                 <Header/>
             </div>
             <div className="mainContainer">
-                <Route path="" component={ItemsContainer}/>
+                    <Route exact path="" component={Home}/>
+                    <Route path="/delivery" component={Delivery}/>
             </div>
             <Footer/>
         </div>

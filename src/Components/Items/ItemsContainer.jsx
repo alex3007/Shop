@@ -46,7 +46,7 @@ let mapDispatchToProps = (dispatch) => {
     }
 };
 
-let WithRouterItems = withRouter(Items)
+let WithRouterItems = withRouter(Items);
 
 const ItemsContainer = connect(mapStateToProps, mapDispatchToProps)(WithRouterItems);
 

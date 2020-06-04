@@ -1,0 +1,15 @@
+.topImage{
+    display: none;
+}
+
+@media  (max-width: 762px)  {
+
+    .carousel{
+        display: none;
+    }
+    .topImage{
+        display: block;
+        width: 100%;
+    }
+
+}
