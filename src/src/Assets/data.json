@@ -1,0 +1,32 @@
+{
+  "controllers": [
+    {
+      "id": 1,
+      "path": "/con1",
+      "name": "C1"
+    },
+    {
+      "id": 2,
+      "path": "/con2",
+      "name": "C2"
+    }
+  ],
+  "sencors": [
+    {
+      "id": 1,
+      "path": "/con1",
+      "name": "C1"
+    }
+  ],
+  "interfaces": [
+    {
+      "id": 1,
+      "path": "/con1",
+      "name": "C1"
+    }
+  ],
+  "cables": [
+  ],
+  "modules": [
+  ]
+}
