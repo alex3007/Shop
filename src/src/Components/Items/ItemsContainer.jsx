@@ -4,36 +4,19 @@ import {newSoulPathAC} from "../../Redux/items-reducer";
 import {withRouter} from 'react-router-dom';
 
 let mapStateToProps = (state) => {
+    let sortedProducts = state.items.data.default;
+    let allProducts = sortedProducts.map(e=>(e.items));
+    let n = allProducts.length;
+    let unSortedProducts = [];
 
-        let currentSoul;
-        let path = state.sidebar.currentPath;
-        let soulPath = state.items.currentSoulPath;
-
-         switch (path) {
-            case '/controllers':
-                currentSoul = state.items.data.default.controllers;
-                break;
-            case '/sencors':
-                currentSoul = state.items.data.default.sencors;
-                break;
-            case '/interfaces':
-                currentSoul = state.items.data.default.interfaces;
-                break;
-             case '/cables':
-                 currentSoul = state.items.data.default.cables;
-                 break;
-             case '/modules':
-                 currentSoul = state.items.data.default.modules;
-                 break;
-
-             default: currentSoul = state.items.data.default.controllers ;
-        }
-        return {
-            soul: currentSoul,
-            soulPath: soulPath,
-            path: path
-        }
-    };
+    for (let i = 0; i <= n-1; i++){
+        unSortedProducts = unSortedProducts.concat(allProducts[i]);
+    }
+    return {
+        unSortedProducts: unSortedProducts,
+        sortedProducts: sortedProducts,
+    }
+};
 
 
 let mapDispatchToProps = (dispatch) => {

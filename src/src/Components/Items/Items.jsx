@@ -3,29 +3,35 @@ import cls from './Items.module.css';
 import {Switch, Route} from 'react-router-dom';
 import Item from './Item/Item';
 import Description from './Description/Description';
-import CarouselItem from '../Carousel/CarouselItem';
-import SidebarContainer from './Sidebar/SidebarContainer';
-
+import Sidebar from "./Sidebar/Sidebar";
+import CarouselItem from "./Carousel/CarouselItem";
 const Items = (props) => {
-    debugger
+
+    let productTypes = props.sortedProducts.map(e => (
+                <Route path={e.path} render=
+                    {() => <Item sortedProducts={e.items}   />}/>
+
+                /*<Route path={props.soulPath} render=
+                    {() => <Description history={props.history} soul={props.soul}
+                                        soulPath={props.soulPath}/>
+                    }/>*/
+            ));
     return (
+
         <div className={cls.container}>
             <CarouselItem/>
             <div className={cls.flexContainer}>
-                <div className={cls.sidebar}>
-                    <SidebarContainer/>
-                </div>
+                <Sidebar products={props.sortedProducts} className={cls.sidebar}/>
                 <div className={cls.items}>
-                        <Route exact path={props.path} render=
-                            {() => <Item path={props.path} soul={props.soul} newSoulPath={props.newSoulPath}/>}/>
-
-                        <Route path={props.soulPath === "/"? props.soulPath:props.path+props.soulPath} render=
-                            {() => <Description history={props.history} soul={props.soul}
-                                                soulPath={props.soulPath}/>
-                            }/>
+                    <Switch>
+                        {productTypes}
+                        <Route path={'/'} render=
+                            {() => <Item sortedProducts={props.unSortedProducts}   />}/>
+                    </Switch>
                 </div>
             </div>
         </div>
+
     )
 };
 

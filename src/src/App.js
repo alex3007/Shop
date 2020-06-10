@@ -3,12 +3,11 @@ import './App.css';
 import {Switch, Route} from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import Home from './Components/Pages/Home/Home';
+import Catalog from './Components/Pages/Catalog/Catalog';
 import Delivery from "./Components/Pages/Delivery/Delivery";
 
 
 function App(props) {
-
     return (
         <div className="App">
             <div className={"header"}>
@@ -17,7 +16,7 @@ function App(props) {
             <div className="mainContainer">
                 <Switch>
                     <Route path="/delivery" component={Delivery}/>
-                    <Route path="/" component={Home}/>
+                    <Route path="/" component={Catalog}/>
                 </Switch>
             </div>
             <Footer/>

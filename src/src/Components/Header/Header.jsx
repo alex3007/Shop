@@ -13,7 +13,7 @@ const Header = (props) => {
             <Container fluid>
                 <Row>
                     <Col className={cls.brandArea} >
-                        <a href={"/"} className={cls.navBrand} >Automatic</a>
+                        <NavLink className={cls.navBrand} to={"/"} >Automatic</NavLink>
                     </Col>
                     <Col className={cls.infoArea}  xs={9}>
                         <div className={cls.infoBlock}>
@@ -32,7 +32,7 @@ const Header = (props) => {
                 <Navbar.Toggle className={cls.toggler} aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="nav mr-auto navArea">
-                        <a href={"/"} className={cls.navLink}>Каталог</a>
+                        <NavLink className={cls.navLink}to={"/"}>Каталог</NavLink>
                         <NavLink className={cls.navLink} to={"/delivery"}>Оплата и доставка</NavLink>
                         <NavLink className={cls.navLink} to={"/actions"}>Акции</NavLink>
                         <NavLink className={cls.navLink} to={"/news"}>Новости</NavLink>

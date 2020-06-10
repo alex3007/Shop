@@ -4,14 +4,11 @@ import {NavLink} from "react-router-dom";
 
 const Sidebar = (props) => {
 
-    const move = () =>{
-       return console.log('hello')
+    const move = () => {
+        return console.log('hello')
     };
-    let sidebarElements = props.trees
-        .map(e => (<NavLink onClick={(p) => {
-            props.newPath(e.path)
-        }}
-                            className={cls.link} to={e.path}
+    let sidebarElements = props.products
+        .map(e => (<NavLink className={cls.link} to={e.path}
                             activeClassName={cls.active}>
             {e.name}
         </NavLink>));
@@ -21,7 +18,7 @@ const Sidebar = (props) => {
                 {sidebarElements}
             </div>
             <div className={cls.onMoving}>
-                <p onClick={ move()} className={cls.onMovingLabel}>X</p>
+                <p onClick={move()} className={cls.onMovingLabel}>X</p>
             </div>
         </div>
     )

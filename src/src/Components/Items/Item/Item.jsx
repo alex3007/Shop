@@ -3,13 +3,11 @@ import cls from './Item.module.css';
 import {NavLink} from "react-router-dom";
 import photo from '../../../Assets/images/photo.jpg'
 
-
 const Item = (props) => {
-    let itemsElements = props.soul
+    let itemsElements = props.sortedProducts
         .map(e => (
             <NavLink onClick={(p) => {
-                props.newSoulPath(e.path)
-            }} className={cls.navLink} to={props.path==='/'? e.path:props.path+e.path}>
+            }} className={cls.navLink} to={e.path}>
                 <div className={cls.item}>
                     <p className={cls.itemNew}>Новинка</p>
                     <div className={cls.imageContainer}>
@@ -23,7 +21,6 @@ const Item = (props) => {
                 </div>
             </NavLink>
         ));
-
     return (
 
         <div className={cls.flexItemsContainer}>
