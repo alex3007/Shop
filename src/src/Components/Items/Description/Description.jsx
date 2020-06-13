@@ -3,9 +3,10 @@ import cls from './Description.module.css';
 
 
 const Description = (props) => {
-
     return (
         <div>
+            {props.name}
+            {props.description}
         </div>
 
     )

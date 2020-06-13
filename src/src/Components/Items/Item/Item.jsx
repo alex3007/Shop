@@ -21,7 +21,7 @@ const Item = (props) => {
                 </div>
             </NavLink>
         ));
-    return (
+      return (
 
         <div className={cls.flexItemsContainer}>
             {itemsElements}
