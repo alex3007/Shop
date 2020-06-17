@@ -1,0 +1,11 @@
+.friendItem img {
+
+       width: 60px;
+    border-radius: 35px;
+
+   }
+.friendItem{
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px;
+}

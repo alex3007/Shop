@@ -1,0 +1,43 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+
+}
+
+.dialogsItems {
+
+    padding: 5px;
+    color: #2a588b;
+
+}
+
+.dialogsItems .active {
+    color: #2a588b;
+}
+
+.dialog {
+
+    color: #2a588b;
+}
+
+.messages {
+    padding: 5px;
+
+}
+
+.message {
+    color: #2a588b;
+}
+
+
+.textArea, .buttonAddPost{
+    height: 20px;
+    margin: 10px 0;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h3{
+    color: #2a588b;
+}

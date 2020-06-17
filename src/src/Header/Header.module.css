@@ -1,0 +1,50 @@
+
+.header_logo {
+    animation: header_logo-spin infinite 5s linear;
+    max-width: 50px;
+    pointer-events: none;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+@keyframes header_logo-spin {
+    0%,100% {
+        opacity: 0.3;
+    }
+    10%,80% {
+        opacity: 1;
+    }
+
+}
+
+
+.header {
+    grid-area: h;
+
+    background-color: #edeef0;
+
+}
+
+.header_title{
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 17px;
+    margin-left: 10px;
+    color: #2a588b;
+    font-family: "Lucida Calligraphy";
+
+}
+
+.loginBlock {
+    float: right;
+    margin-top: 17px;
+    margin-right: 30px;
+
+}
+.loginBlock a {
+    color: #2a588b;
+}
+

@@ -1,27 +1,37 @@
 import React from 'react';
 import './App.css';
-import {Switch, Route} from 'react-router-dom';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
-import Catalog from './Components/Pages/Catalog/Catalog';
-import Delivery from "./Components/Pages/Delivery/Delivery";
+import Navbar from './Navbar/Navbar';
+import {Route} from "react-router-dom";
+import DialogsContainer from "./Dialogs/DialogsContainer";
+import UsersContainer from "./Users/UsersContainer";
+import ProfileContainer from "./Profile/ProfileContainer";
+import HeaderContainer from "./Header/HeaderContainer";
+import LoginPage from "./Login/Login";
+import intro from './Assets/images/intro.png';
 
-
-function App(props) {
+const App = () => {
     return (
-        <div className="App">
-            <div className={"header"}>
-                <Header/>
+        <div className='app-page'>
+            <HeaderContainer />
+            <Navbar />
+            <div className='app-page_content'>
+                <Route path='/dialogs'
+                       render={ () => <DialogsContainer /> }/>
+
+                <Route path='/profile/:userId?'
+                       render={ () => <ProfileContainer /> }/>
+
+                <Route path='/users'
+                       render={ () => <UsersContainer /> }/>
+
+                <Route path='/login'
+                       render={ () => <LoginPage /> }/>
+
+                <img className="app-page_intro" src={intro} alt='intro'/>
             </div>
-            <div className="mainContainer">
-                <Switch>
-                    <Route path="/delivery" component={Delivery}/>
-                    <Route path="/" component={Catalog}/>
-                </Switch>
-            </div>
-            <Footer/>
+            <footer className="footer" />
         </div>
-    );
-}
+    )
+};
 
 export default App;
