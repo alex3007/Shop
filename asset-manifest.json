@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React/Shop/static/css/main.fc89ac48.chunk.css",
+    "main.js": "/React/Shop/static/js/main.332a48f1.chunk.js",
+    "main.js.map": "/React/Shop/static/js/main.332a48f1.chunk.js.map",
+    "runtime~main.js": "/React/Shop/static/js/runtime~main.190cda4a.js",
+    "runtime~main.js.map": "/React/Shop/static/js/runtime~main.190cda4a.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/React/Shop/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.47744cb8.chunk.js": "/React/Shop/static/js/2.47744cb8.chunk.js",
+    "static/js/2.47744cb8.chunk.js.map": "/React/Shop/static/js/2.47744cb8.chunk.js.map",
+    "index.html": "/React/Shop/index.html",
+    "precache-manifest.b0799a7b18da540ab7e7440d2512d335.js": "/React/Shop/precache-manifest.b0799a7b18da540ab7e7440d2512d335.js",
+    "service-worker.js": "/React/Shop/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/React/Shop/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.fc89ac48.chunk.css.map": "/React/Shop/static/css/main.fc89ac48.chunk.css.map",
+    "static/media/Gabriela-Regular.ttf": "/React/Shop/static/media/Gabriela-Regular.b4856923.ttf",
+    "static/media/photo.jpg": "/React/Shop/static/media/photo.19d887c9.jpg",
+    "static/media/preloader.svg": "/React/Shop/static/media/preloader.6c3daf60.svg",
+    "static/media/slide1.jpg": "/React/Shop/static/media/slide1.2795fe85.jpg",
+    "static/media/slide2.jpg": "/React/Shop/static/media/slide2.aee8cae8.jpg"
+  }
+}

@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Контроллеры",
+    "path": "/controllers",
+    "items": [
+      {
+        "id": 1,
+        "path": "/controller1",
+        "name": "Name1",
+        "cost": "65",
+        "photo": "http/",
+        "features": "Особенности1",
+        "description": "Какой-то текст1"
+      },
+      {
+        "id": 2,
+        "path": "/controller2",
+        "name": "Name2",
+        "cost": "65",
+        "photo": "http/",
+        "features": "Особенности2",
+        "description": "Какой-то текст2"
+      },
+      {
+        "id": 3,
+        "path": "/controller3",
+        "name": "Name3",
+        "cost": "65",
+        "photo": "http/",
+        "features": "Особенности3",
+        "description": "Какой-то текст3"
+      }
+    ]
+  },
+  {
+    "name": "Датчики",
+    "path": "/sencors",
+    "items": [
+      {
+        "id": 1,
+        "path": "/sencor1",
+        "name": "Name1",
+        "cost": "25",
+        "photo": "http/",
+        "features": "Особенности1",
+        "description": "Какой-то текст1"
+      },
+      {
+        "id": 2,
+        "path": "/sencor2",
+        "name": "Name2",
+        "cost": "25",
+        "photo": "http/",
+        "features": "Особенности2",
+        "description": "Какой-то текст2"
+      }
+    ]
+  },
+  {
+    "name": "Разъемы",
+    "path": "/interfaces",
+    "items": [
+      {
+        "id": 1,
+        "path": "/interface1",
+        "name": "Name1",
+        "cost": "15",
+        "photo": "http/",
+        "features": "Особенности1",
+        "description": "Какой-то текст1"
+      }
+    ]
+  },
+  {
+    "name": "Кабели",
+    "path": "/cables",
+    "items": [
+      {
+        "id": 1,
+        "path": "/cable1",
+        "name": "C1",
+        "cost": "65",
+        "photo": "http/",
+        "features": "Качаственно и доступно",
+        "description": "Какой-то текст"
+      }
+    ]
+  },
+  {
+    "name": "Модули",
+    "path": "/modules",
+    "items": [
+      {
+        "id": 1,
+        "path": "/module1",
+        "name": "module1",
+        "cost": "35",
+        "photo": "http/",
+        "features": "Качаственно и доступно",
+        "description": "Какой-то текст"
+      },
+      {
+        "id": 2,
+        "path": "/module2",
+        "name": "module2",
+        "cost": "35",
+        "photo": "http/",
+        "features": "Качаственно и доступно",
+        "description": "Какой-то текст"
+      }
+    ]
+  }
+]
