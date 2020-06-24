@@ -1,11 +1,11 @@
 
 let initialState = {
     products: [],
-    currentSoulPath: '/'
+    isFetching: true
 };
 
-export const newSoulPathAC = (path) => ({type: 'NEW_SOUL_PATH', newSoulPath: path});
 export const setProducts = (products) => ({type: 'SET_PRODUCTS', products});
+export const toggleIsFetching = (isFetching) => ({type: 'TOGGLE_IS_FETCHING', isFetching });
 
 const itemsReducer = (state = initialState, action) => {
 
@@ -14,6 +14,9 @@ const itemsReducer = (state = initialState, action) => {
             return {...state, currentSoulPath: action.newSoulPath};
         case 'SET_PRODUCTS':
             return {...state, products: action.products};
+        case 'TOGGLE_IS_FETCHING': {
+            return { ...state, isFetching: action.isFetching}
+        }
         default:
             return state
     }

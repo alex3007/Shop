@@ -1,19 +1,24 @@
-import * as data from '../Assets/data';
 
-let initialState = {data, currentSoulPath:'/'
+let initialState = {
+    products: [],
+    isFetching: true
 };
 
-export const newSoulPathAC = (path) => ({type: 'NEW_SOUL_PATH', newSoulPath: path});
-
+export const setProducts = (products) => ({type: 'SET_PRODUCTS', products});
+export const toggleIsFetching = (isFetching) => ({type: 'TOGGLE_IS_FETCHING', isFetching });
 
 const itemsReducer = (state = initialState, action) => {
 
-    if (action.type === 'NEW_SOUL_PATH') {
-        return {
-            ...state, currentSoulPath: action.newSoulPath
+    switch (action.type) {
+        case 'NEW_SOUL_PATH':
+            return {...state, currentSoulPath: action.newSoulPath};
+        case 'SET_PRODUCTS':
+            return {...state, products: action.products};
+        case 'TOGGLE_IS_FETCHING': {
+            return { ...state, isFetching: action.isFetching}
         }
-    } else {
-        return {...state}
+        default:
+            return state
     }
 };
 

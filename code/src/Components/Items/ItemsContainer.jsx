@@ -1,18 +1,24 @@
 import React from 'react';
 import Items from './Items';
 import {connect} from "react-redux";
-import {newSoulPathAC} from "../../Redux/items-reducer";
+import {toggleIsFetching} from "../../Redux/items-reducer";
 import * as axios from "axios";
 import {setProducts} from "../../Redux/items-reducer";
 import {compose} from "redux";
+import data from './../../Assets/data';
+
 
 class ItemsContainer extends React.Component {
     componentDidMount() {
-        axios.get(`http://alex300785.ws2.cloudpark.tech/React/Social/data.json`)
+       /* axios.get(`https://alex3007.github.io/Portfolio/data.json`)
             .then(response => {
                 this.props.setProducts(response.data);
-            });
+                this.props.toggleIsFetching(false)
+            });*/
+        this.props.setProducts(data);
+        this.props.toggleIsFetching(false)
     }
+
     render() {
         let products = this.props.products;
         let sortedProducts = products.map(e => (e.items));
@@ -21,31 +27,19 @@ class ItemsContainer extends React.Component {
         for (let i = 0; i <= n - 1; i++) {
             unSortedProducts = unSortedProducts.concat(sortedProducts[i]);
         }
-        return <Items products = {products}
-                      unSortedProducts = {unSortedProducts} />
+        return <Items products={products}
+                      unSortedProducts={unSortedProducts}
+                      isFetching={this.props.isFetching}/>
     }
 }
 
 let mapStateToProps = (state) => {
 
     return {
-        products: state.items.products
+        products: state.items.products,
+        isFetching: state.items.isFetching
     }
 };
 
-/*
-let mapDispatchToProps = (dispatch) => {
-
-    return {
-        newSoulPath: (path) => {
-
-            dispatch(newSoulPathAC(path));
-        },
-        setProducts: (data) => {
-
-            dispatch(setProductsAC(data));
-        },
-    }
-};*/
-export default compose( connect(mapStateToProps, {setProducts}))(ItemsContainer);
+export default compose(connect(mapStateToProps, {setProducts, toggleIsFetching}))(ItemsContainer);
 

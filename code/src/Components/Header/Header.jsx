@@ -13,7 +13,7 @@ const Header = (props) => {
             <Container fluid>
                 <Row>
                     <Col className={cls.brandArea} >
-                        <NavLink className={cls.navBrand} to={"/"} >Automatic</NavLink>
+                        <NavLink className={cls.navBrand} to={"/"} >Pneumatics</NavLink>
                     </Col>
                     <Col className={cls.infoArea}  xs={9}>
                         <div className={cls.infoBlock}>
@@ -23,7 +23,7 @@ const Header = (props) => {
                         <div className={cls.infoBlock}>
                             <p className={cls.headerTitle}>+375-33-333-22-11</p>
                             <p className={cls.headerTitle}>+375-44-333-22-11</p>
-                            <p className={cls.headerTitle}>automatic@mail.ru</p>
+                            <p className={cls.headerTitle}>pneumatics@info.by</p>
                         </div>
                     </Col>
                 </Row>

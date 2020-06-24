@@ -16,8 +16,8 @@ const CarouselItem = (props) => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Интернет-магазин автоматики</h3>
-                        <p>Добро пожаловать</p>
+                        <h3>Качественная пневматика</h3>
+                        <p>Сервисное обслуживание</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -28,8 +28,8 @@ const CarouselItem = (props) => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Интернет-магазин автоматики</h3>
-                        <p>Добро пожаловать</p>
+                        <h3>Качественная пневматика</h3>
+                        <p>Товары из Европы, СНГ и Китая</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

@@ -1,52 +1,37 @@
 import React from 'react';
 import cls from './Items.module.css';
-import {Switch, Route} from 'react-router-dom';
-import Item from './Item/Item';
-import Description from './Description/Description';
+import {withRouter, Route} from 'react-router-dom';
+import ItemContainer from './Item/ItemContainer';
+import DescriptionContainer from './Description/DescriptionContainer';
 import Sidebar from "./Sidebar/Sidebar";
 import CarouselItem from "./Carousel/CarouselItem";
+import Preloader from "../../common/Preloader/Preloader";
 
-export default class Items extends React.Component {
-    render() {
+const Items = (props) => {
 
-        let productTypes = this.props.sortedProducts.map(e => {
+    let WithRouterItemContainer = withRouter(ItemContainer);
+    let WithRouterDescriptionContainer = withRouter(DescriptionContainer);
+    return (
 
-            let sortedProductsDescription = e.items.map(p => (
-                <Route path={p.path} render=
-                    {() => <Description history={this.props.history} name={p.name}
-                                        description={p.description}/>}/>
-            ));
-
-            return (
-                <div>
-                    {sortedProductsDescription}
-                    <Route exact path={'/:params'} render=
-                        {() => {
-                            if( this.props.match.params === e.path ){
-                            return (
-                                <Item sortedProducts={e.items} path={e.path}/>
-                            )} else{return (<p>не найдено</p>)}
-                        }}/>
-
-                </div>
-            )
-        });
-
-        return (
-
-            <div className={cls.container}>
-                <CarouselItem/>
-                <div className={cls.flexContainer}>
-                    <Sidebar products={this.props.sortedProducts} className={cls.sidebar}/>
-                    <div className={cls.items}>
-                        {productTypes}
-                        <Route exact path={'/'} render=
-                            {() => <Item sortedProducts={this.props.unSortedProducts}/>}/>
-                    </div>
+        <div className={cls.container}>
+            <CarouselItem/>
+            <div className={cls.flexContainer}>
+                <Sidebar products={props.products} className={cls.sidebar}/>
+                { props.isFetching ? <Preloader /> : null }
+                <div className={cls.items}>
+                    <Route exact path='/:products?'
+                           render={() =>
+                               <WithRouterItemContainer
+                                   products={props.products}
+                                   unSortedProducts={props.unSortedProducts}/>}/>
+                    <Route path='/:products/:description'
+                           render={() =>
+                               <WithRouterDescriptionContainer
+                                   unSortedProducts={props.unSortedProducts}/>}/>
                 </div>
             </div>
-
-        )
-    }
+        </div>
+    )
 };
 
+export default Items;

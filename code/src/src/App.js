@@ -1,37 +1,36 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Navbar/Navbar';
-import {Route} from "react-router-dom";
-import DialogsContainer from "./Dialogs/DialogsContainer";
-import UsersContainer from "./Users/UsersContainer";
-import ProfileContainer from "./Profile/ProfileContainer";
-import HeaderContainer from "./Header/HeaderContainer";
-import LoginPage from "./Login/Login";
-import intro from './Assets/images/intro.png';
+import {withRouter,Switch, Route} from 'react-router-dom';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import Catalog from './Components/Pages/Catalog/Catalog';
+import Delivery from "./Components/Pages/Delivery/Delivery";
+import AboutUs from "./Components/Pages/AboutUs/AboutUs";
+import Contacts from "./Components/Pages/Contacts/Contacts";
+import News from "./Components/Pages/News/News";
+import Actions from "./Components/Pages/Actions/Actions";
+import ItemsContainer from "./Components/Items/ItemsContainer";
 
-const App = () => {
+
+function App(props) {
     return (
-        <div className='app-page'>
-            <HeaderContainer />
-            <Navbar />
-            <div className='app-page_content'>
-                <Route path='/dialogs'
-                       render={ () => <DialogsContainer /> }/>
-
-                <Route path='/profile/:userId?'
-                       render={ () => <ProfileContainer /> }/>
-
-                <Route path='/users'
-                       render={ () => <UsersContainer /> }/>
-
-                <Route path='/login'
-                       render={ () => <LoginPage /> }/>
-
-                <img className="app-page_intro" src={intro} alt='intro'/>
+        <div className="App">
+            <div className={"header"}>
+                <Header/>
             </div>
-            <footer className="footer" />
+            <div className="mainContainer">
+                <Switch>
+                    <Route path="/contacts" component={Contacts}/>
+                    <Route path="/about_us" component={AboutUs}/>
+                    <Route path="/news" component={News}/>
+                    <Route path="/actions" component={Actions}/>
+                    <Route path="/delivery" component={Delivery}/>
+                    <Route path="/" component={Catalog}/>
+                </Switch>
+            </div>
+            <Footer/>
         </div>
-    )
-};
+    );
+}
 
 export default App;

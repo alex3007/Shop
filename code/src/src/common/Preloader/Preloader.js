@@ -1,9 +1,9 @@
 import React from 'react';
-import preloader from "../../Assets/images/preloader.svg";
+import preloader from "../../Assets/preloaders/oval.svg";
 
 let Preloader = (props) => {
-    return <div  style={ { backgroundColor: 'white' } }>
-        <img src={preloader} />
+    return <div  style={ {display: 'flex', height:'200px',width:'100%'} }>
+        <img style={ {margin: 'auto'} } src={preloader} />
     </div>
 };
 
