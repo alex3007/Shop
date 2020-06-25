@@ -2,6 +2,10 @@
     display: none;
 }
 
+.carousel h3{
+    color: #ffffff;
+}
+
 @media  (max-width: 762px)  {
 
     .carousel{

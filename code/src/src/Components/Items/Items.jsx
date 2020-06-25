@@ -1,11 +1,13 @@
 import React from 'react';
 import cls from './Items.module.css';
-import {withRouter, Route} from 'react-router-dom';
+import {withRouter, Switch, Route} from 'react-router-dom';
 import ItemContainer from './Item/ItemContainer';
 import DescriptionContainer from './Description/DescriptionContainer';
 import Sidebar from "./Sidebar/Sidebar";
 import CarouselItem from "./Carousel/CarouselItem";
 import Preloader from "../../common/Preloader/Preloader";
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const Items = (props) => {
 
@@ -14,10 +16,14 @@ const Items = (props) => {
     return (
 
         <div className={cls.container}>
-            <CarouselItem/>
+            <Fade delay={200}>
+                <CarouselItem/>
+            </Fade>
             <div className={cls.flexContainer}>
-                <Sidebar products={props.products} className={cls.sidebar}/>
-                { props.isFetching ? <Preloader /> : null }
+                <Slide left>
+                    <Sidebar products={props.products} className={cls.sidebar}/>
+                </Slide>
+                {props.isFetching ? <Preloader/> : null}
                 <div className={cls.items}>
                     <Route exact path='/:products?'
                            render={() =>

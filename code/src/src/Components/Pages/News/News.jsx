@@ -1,17 +1,54 @@
 import React from 'react';
+import cls from './News.module.css'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 const News = () => {
 
     return (
-        <div>
-            <p>
-                <b>Новости компании</b><br/><br/>
-                Ближайшие мероприятия:<br/><br/>
-                - Выставка товаров в г. Москва 01.01.2021<br/>
-                - Выставка товаров в г. Минске 05.05.2021<br/>
-
-            </p>
+        <div className={cls.cardsContainer}>
+            <Card className={cls.card} >
+                <Card.Header>Новости компании</Card.Header>
+                <Card.Body>
+                    <Card.Title>Выставка товаров в Минске</Card.Title>
+                    <Card.Text>
+                        Приглашаем на нашу ежегодную выставку товаров.
+                    </Card.Text>
+                    <Button variant="primary" className={cls.btnColor}>Подробнее</Button>
+                </Card.Body>
+            </Card>
+            <Card className={cls.card}>
+                <Card.Header>Новости компании</Card.Header>
+                <Card.Body>
+                    <Card.Title>Выставка товаров в Москве</Card.Title>
+                    <Card.Text>
+                        Приглашаем на нашу ежегодную выставку товаров.
+                    </Card.Text>
+                    <Button variant="primary" className={cls.btnColor}>Подробнее</Button>
+                </Card.Body>
+            </Card>
+            <Card className={cls.card}>
+                <Card.Header>Новости компании</Card.Header>
+                <Card.Body>
+                    <Card.Title>Выставка товаров в Киеве</Card.Title>
+                    <Card.Text>
+                        Приглашаем на нашу ежегодную выставку товаров.
+                    </Card.Text>
+                    <Button variant="primary" className={cls.btnColor}>Подробнее</Button>
+                </Card.Body>
+            </Card>
+            <Card className={cls.card}>
+                <Card.Header>Новости компании</Card.Header>
+                <Card.Body>
+                    <Card.Title>Выставка товаров в Казахстане</Card.Title>
+                    <Card.Text>
+                        Приглашаем на нашу ежегодную выставку товаров.
+                    </Card.Text>
+                    <Button variant="primary" className={cls.btnColor}>Подробнее</Button>
+                </Card.Body>
+            </Card>
         </div>
+
     );
 }
 

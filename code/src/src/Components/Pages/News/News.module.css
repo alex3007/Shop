@@ -1,0 +1,19 @@
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    max-width: 520px;
+    margin: 10px;
+}
+
+.btnColor{
+    background-color:#e2be00!important;
+    border:#c5a100 1px solid!important ;
+}
+.btnColor:hover{
+    background-color: #c5a100 !important;
+}

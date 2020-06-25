@@ -1,3 +1,4 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @font-face {
   font-family: 'Gabriela';
   src: local('Gabriela'), url(Assets/fonts/Gabriela-Regular.ttf) format('truetype');
@@ -17,3 +18,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+li {
+  color: #e2be00;
+}
+span {
+  color: #171d23;
+}
+
+i{
+  color: #c9a300;
+  padding-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #92660b;
+}
+

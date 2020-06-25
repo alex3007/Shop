@@ -1,0 +1,33 @@
+.colomnStyle{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.infoArea,.infoContent{
+    width: 320px;
+    border: #cecece solid;
+    box-shadow: 0 0 7px #cecece;
+}
+.infoArea{
+    background-color: #ededed;
+    border-width: 1px 1px 1px 1px;
+}
+.infoContent{
+    width: 320px;
+    background-color: #ffffff;
+    border-width: 1px 1px 1px 0;
+    padding-top: 50px;
+}
+
+@media  (max-width: 768px)  {
+
+    .infoContent{
+        border-width: 0 1px 1px 1px;
+        padding: 45px 10px;
+    }
+    .colomnStyle{
+        padding: 0!important;
+    }
+}
