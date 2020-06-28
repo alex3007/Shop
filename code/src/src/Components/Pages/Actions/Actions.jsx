@@ -1,17 +1,17 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import cls from './Actions.module.css'
+import MiniSidebar from "../../MiniSidebar/MiniSidebar";
+import Zoom from 'react-reveal/Zoom';
 
 const Actions = () => {
 
     return (
-        <section>
-            <Container>
-                <Row>
-                    <Col className={cls.colomnStyle} >
-                        <div className={cls.infoArea}>
+        <section className={cls.flexContainer}>
+            <MiniSidebar/>
+            <div className={cls.infoContainer}>
+                <Zoom bottom>
+                    <div className={cls.infoArea}>
+                        <div className={cls.infoTitle}>
                             <h3><i className="iStyle fa fa-2x fa-gift"/><br/>Система скидок при разовом заказе:
                             </h3>
                         </div>
@@ -25,11 +25,9 @@ const Actions = () => {
                         </span></li>
                             </ul>
                         </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className={cls.colomnStyle} >
-                        <div className={cls.infoArea}>
+                    </div>
+                    <div className={cls.infoArea}>
+                        <div className={cls.infoTitle}>
                             <h3><i className="iStyle fa fa-2x fa-percent"/><br/>Накопительная скидка на общую сумму
                                 покупок:</h3>
                         </div>
@@ -43,11 +41,9 @@ const Actions = () => {
                         </span></li>
                             </ul>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
-
-            <p> Скидки не суммируются - побеждает максимальная.</p>
+                    </div>
+                </Zoom>
+            </div>
         </section>
     )
 };

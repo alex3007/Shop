@@ -27,7 +27,7 @@ span {
 }
 
 i{
-  color: #c9a300;
+  color: #ffffff;
   padding-bottom: 20px;
 }
 
@@ -35,6 +35,7 @@ h3 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #92660b;
+  color: #ffffff;
+  font-size: 25px!important;
 }
 

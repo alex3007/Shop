@@ -1,15 +1,14 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import cls from './Delivery.module.css'
+import MiniSidebar from "../../MiniSidebar/MiniSidebar";
+import Flip from 'react-reveal/Flip';
 
 const Delivery = () => {
-
     return (
-        <Container>
-            <Row>
-                <Col className={cls.colomnStyle}>
+        <div className={cls.flexContainer}>
+            <MiniSidebar/>
+            <div className={cls.infoContainer}>
+                <Flip right>
                     <div className={cls.infoArea}>
                         <h3><i className="iStyle fa fa-2x fa-shopping-bag"/><br/>Как оформить заказ:</h3>
                         <ul className={cls.list}>
@@ -45,10 +44,9 @@ const Delivery = () => {
                         </span></li>
                         </ul>
                     </div>
-                </Col>
-            </Row>
-        </Container>
-
+                </Flip>
+            </div>
+        </div>
 
     )
 };

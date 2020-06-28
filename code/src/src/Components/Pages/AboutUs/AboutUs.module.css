@@ -1,11 +1,16 @@
-.infoArea{
+.infoArea {
     border: #cecece 1px solid;
     max-width: 600px;
     margin: 10px;
     box-shadow: 0 0 7px #cecece;
-
 }
-.infoArea ul{
+
+.titleArea {
+    background: linear-gradient(rgba(79, 97, 119, 0), rgb(82, 113, 128), rgb(82, 113, 128), rgb(82, 113, 128)) !important;
+    margin: 0!important;
+}
+
+.infoArea ul {
     margin: 0;
     background-color: #ffffff;
     border: #cecece solid;
@@ -13,7 +18,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.colomnStyle{
+
+.colomnStyle {
     margin: 20px;
     display: flex;
     flex-direction: row;
@@ -21,10 +27,11 @@
     justify-content: center;
 }
 
-.list img{
+.list img {
     width: 30px;
 }
-.list li{
+
+.list li {
     list-style-type: none;
     margin-bottom: 20px;
 }

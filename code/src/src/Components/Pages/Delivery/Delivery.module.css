@@ -3,7 +3,7 @@
     width: 320px;
     margin: 10px;
     box-shadow: 0 0 7px #cecece;
-    background-color: #ededed;
+    background: linear-gradient(rgba(79, 97, 119, 0), rgb(132, 63, 39), rgb(132, 63, 39), rgb(132, 63, 39))!important;
 
 }
 .infoArea ul{
@@ -14,11 +14,17 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.colomnStyle{
-    margin: 20px;
+.infoContainer{
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
 }
 

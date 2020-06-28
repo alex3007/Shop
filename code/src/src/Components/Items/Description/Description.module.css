@@ -1,24 +1,7 @@
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-.titleContainer{
-    max-width: 300px;
+.container{
+    display: flex;
+    flex-direction: column;
 }
-.textContainer{
-    max-width: 300px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px #004992;
-    color: #0052a1;
-    padding: 5px 5px 10px 13px;
-    margin: 0 10px 0 5px;
-    font-family: Gabriela;
-}
-
-.title{
-    margin-bottom: 20px;
-    margin-left: 15px;
-    font-family: Gabriela;
-    font-weight: bold;
-    color: rgba(0, 49, 166, 0.84);
-    display: block;
-    clear: both;
+.container img{
+    width: 200px;
 }

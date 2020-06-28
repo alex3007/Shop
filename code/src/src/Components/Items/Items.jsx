@@ -4,9 +4,7 @@ import {withRouter, Switch, Route} from 'react-router-dom';
 import ItemContainer from './Item/ItemContainer';
 import DescriptionContainer from './Description/DescriptionContainer';
 import Sidebar from "./Sidebar/Sidebar";
-import CarouselItem from "./Carousel/CarouselItem";
 import Preloader from "../../common/Preloader/Preloader";
-import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
 const Items = (props) => {
@@ -14,14 +12,9 @@ const Items = (props) => {
     let WithRouterItemContainer = withRouter(ItemContainer);
     let WithRouterDescriptionContainer = withRouter(DescriptionContainer);
     return (
-
-        <div className={cls.container}>
-            <Fade delay={200}>
-                <CarouselItem/>
-            </Fade>
             <div className={cls.flexContainer}>
                 <Slide left>
-                    <Sidebar products={props.products} className={cls.sidebar}/>
+                    <Sidebar products={props.products}/>
                 </Slide>
                 {props.isFetching ? <Preloader/> : null}
                 <div className={cls.items}>
@@ -36,7 +29,6 @@ const Items = (props) => {
                                    unSortedProducts={props.unSortedProducts}/>}/>
                 </div>
             </div>
-        </div>
     )
 };
 

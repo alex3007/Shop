@@ -4,8 +4,13 @@
     min-width: 320px;
     margin: 10px;
     box-shadow: 0 0 7px #cecece;
-
 }
+
+.titleArea {
+    background: linear-gradient(rgba(79, 97, 119, 0), rgb(82, 113, 128), rgb(82, 113, 128), rgb(82, 113, 128)) !important;
+    margin: 0!important;
+}
+
 .infoArea ul{
     margin: 0;
     background-color: #ffffff;
@@ -28,6 +33,7 @@
 }
 .list i{
     padding-left: 20px;
+    color: #e2be00;
 }
 
 .infoArea span{
