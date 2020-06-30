@@ -8,10 +8,11 @@ import Flip from 'react-reveal/Flip';
 const Contacts = () => {
 
     return (
-        <Flip left>
-            <Container>
-                <Row>
-                    <Col className={cls.colomnStyle}>
+
+        <Container>
+            <Row>
+                <Col className={cls.colomnStyle}>
+                    <Flip left>
                         <div className={cls.infoArea}>
                             <h3 className={cls.titleArea}>Наши контакты:</h3>
                             <ul className={cls.list}>
@@ -30,10 +31,11 @@ const Contacts = () => {
                                 </li>
                             </ul>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
-        </Flip>
+                    </Flip>
+                </Col>
+            </Row>
+        </Container>
+
     );
 }
 

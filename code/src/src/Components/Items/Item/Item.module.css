@@ -1,4 +1,24 @@
+.actions{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 10px 20px;
+    background-color: #ffffff;
+}
+.actions a{
+    margin: 10px auto;
+    text-align: center;
+    background-color: #ffffff;
 
+}
+.actions img{
+    height: 140px;
+
+}
+.action{
+    height: 130px!important;
+    box-shadow: 0 0 7px #004992;
+}
 .item {
     transition-duration: .3s;
     width: 180px;

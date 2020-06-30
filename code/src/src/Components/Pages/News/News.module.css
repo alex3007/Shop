@@ -15,9 +15,10 @@
 
 .card {
     margin: 10px;
+    text-align: center;
 }
 .cardHeader{
-    background: linear-gradient(rgba(79, 97, 119, 0), rgb(71, 140, 203), rgb(71, 140, 203), rgb(71, 140, 203))!important;
+    background: linear-gradient(rgba(79, 97, 119, 0), rgb(82, 113, 128), rgb(82, 113, 128), rgb(82, 113, 128)) !important;
     color: #ffffff;
 }
 .btnColor{

@@ -1,6 +1,7 @@
 import React from 'react';
 import cls from './MiniSidebar.module.css'
 import Slide from 'react-reveal/Slide';
+import marker from './../../Assets/images/marker.png'
 
 const MiniSidebar = (props) => {
     let title = [{name:"Быстрая доставка!"},
@@ -11,9 +12,12 @@ const MiniSidebar = (props) => {
         return alert('настройка закрытия')
     };
     let sidebarElements = title
-        .map(e => (<p className={cls.link}>
-            {e.name}
-        </p>));
+        .map(e => (
+            <span className={cls.list}>
+            <img src={marker}/>
+            <p className={cls.link}>{e.name}</p>
+            </span>
+        ));
     return (
         <Slide left>
         <div className={cls.sidebarContainer}>

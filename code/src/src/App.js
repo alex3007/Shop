@@ -10,6 +10,7 @@ import Contacts from "./Components/Pages/Contacts/Contacts";
 import News from "./Components/Pages/News/News";
 import Actions from "./Components/Pages/Actions/Actions";
 import Fade from 'react-reveal/Fade';
+import withReveal from 'react-reveal/withReveal';
 import CarouselItem from "./Components/Carousel/CarouselItem";
 
 function App(props) {
@@ -27,7 +28,7 @@ function App(props) {
                 </div>
                 <div className="mainContainer">
                     <Switch>
-                        <Route path="/contacts" component={Contacts}/>)
+                        <Route path="/contacts" component={withReveal(Contacts, <Fade in unmountOnExit />)}/>
                         <Route path="/about_us" component={AboutUs}/>
                         <Route path="/news" component={News}/>
                         <Route path="/actions" component={Actions}/>
