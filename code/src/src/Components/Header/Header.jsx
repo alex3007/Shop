@@ -32,13 +32,13 @@ const Header = (props) => {
                 <Navbar.Toggle className={cls.toggler} aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="nav mr-auto navArea">
-                        <NavLink className={cls.navLink}to={"/"}>Каталог</NavLink>
-                        <NavLink className={cls.navLink} to={"/delivery"}>Оплата и доставка</NavLink>
-                        <NavLink className={cls.navLink} to={"/actions"}>Акции</NavLink>
-                        <NavLink className={cls.navLink} to={"/news"}>Новости</NavLink>
+                        <NavLink activeClassName={cls.navActivLink} className={cls.navLink}to={"/"}>Каталог</NavLink>
+                        <NavLink activeClassName={cls.navActivLink} className={cls.navLink} to={"/delivery"}>Оплата и доставка</NavLink>
+                        <NavLink activeClassName={cls.navActivLink} className={cls.navLink} to={"/actions"}>Акции</NavLink>
+                        <NavLink activeClassName={cls.navActivLink} className={cls.navLink} to={"/news"}>Новости</NavLink>
                     </Nav>
                     <Nav className="navArea">
-                        <NavLink className={cls.navLink} to={"/about_us"}>О нас</NavLink>
+                        <NavLink activeClassName={cls.navActivLink} className={cls.navLink} to={"/about_us"}>О нас</NavLink>
                         <NavLink className={cls.navLink} to={"/contacts"}>Контакты</NavLink>
 
                     </Nav>

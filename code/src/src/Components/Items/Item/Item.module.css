@@ -1,24 +1,32 @@
-.actions{
+.actions {
     display: flex;
     flex-wrap: wrap;
     width: auto;
     margin: 10px 20px;
     background-color: #ffffff;
+    border-radius: 10px;
 }
-.actions a{
+
+.actionNav {
     margin: 10px auto;
     text-align: center;
     background-color: #ffffff;
+    padding: 5px;
 
 }
-.actions img{
-    height: 140px;
+
+.actions img {
+    max-width: 300px;
+    box-shadow: 0 0 7px #004992;
+    border-radius: 10px;
 
 }
-.action{
-    height: 130px!important;
+
+.action {
+    height: 130px !important;
     box-shadow: 0 0 7px #004992;
 }
+
 .item {
     transition-duration: .3s;
     width: 180px;
@@ -66,11 +74,11 @@
     color: #8d9ba4;
 }
 
-.navLink:hover{
+.navLink:hover {
     text-decoration: none;
 }
 
-.itemCost{
+.itemCost {
     color: #f25529;
     margin-bottom: 2px;
     font-size: 12px;
@@ -78,20 +86,20 @@
     margin-bottom: 10px;
 }
 
-.buyButton{
+.buyButton {
     background-color: #f25529;
     color: #ffffff;
-    padding:3px 10px 5px 10px;
+    padding: 3px 10px 5px 10px;
 
 }
 
-.buyButton:hover{
+.buyButton:hover {
     text-decoration: none;
     color: #ffffff;
     background-color: #bc4d29;
 }
 
-.itemNew{
+.itemNew {
     background-color: #22c083;
     color: #ffffff;
     left: 82px;

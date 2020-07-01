@@ -16,7 +16,8 @@
 
 .link {
     transition-duration: .3s;
-    border: dimgray solid 1px;
+    background-color: rgba(114, 113, 143, 0.87);
+    border: #e6b800 solid 1px;
     margin: 2px 0 ;
     box-shadow: 0 0 5px rgba(4, 41, 247, 0.36);
     border-radius: 7px;

@@ -5,3 +5,19 @@
 .container img{
     width: 200px;
 }
+
+
+.buyButton {
+    background-color: #f25529;
+    color: #ffffff;
+    padding: 3px 10px 5px 10px;
+    width: 85px;
+    margin-top: 10px;
+
+}
+
+.buyButton:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #bc4d29;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import cls from './Description.module.css';
+import {NavLink} from "react-router-dom";
 import Preloader from "../../../common/Preloader/Preloader";
 import Fade from 'react-reveal/Fade';
 import photo from './../../../Assets/images/photo.jpg'
@@ -12,6 +13,7 @@ const Description = (props) => {
                 <div className={cls.container}>
                     <h4><b>Название товара: </b>{itemDescription.name}</h4>
                     <img src={photo}/>
+                    <NavLink className={cls.buyButton} to={"/#"}>Заказать</NavLink>
                     <p><b>Особенности: </b>{itemDescription.description}</p>
                 </div>
             </Fade>

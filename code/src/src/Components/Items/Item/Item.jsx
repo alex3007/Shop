@@ -2,17 +2,16 @@ import React from 'react';
 import cls from './Item.module.css';
 import {NavLink} from "react-router-dom";
 import photo from '../../../Assets/images/photo.jpg';
-import Fade from 'react-reveal/Fade';
-import actionTree from '../../../Assets/images/act3.jpg';
-import actionFour from '../../../Assets/images/act4.jpg';
-import actionSix from '../../../Assets/images/act6.jpg';
+import Bounce from 'react-reveal/Bounce';
+import actionOne from '../../../Assets/images/act1.jpg';
+import actionTwo from '../../../Assets/images/act2.jpg';
 
 const Item = (props) => {
     let productsParams = props.productsParams;
     let items = props.products;
     let itemsElements;
     if (items !== 'loading') {
-        itemsElements = items.map(e => (<Fade bottom>
+        itemsElements = items.map(e => (<Bounce bottom>
                 <NavLink className={cls.navLink} to={productsParams ? '/' + productsParams + e.path :
                     '/all_products' + e.path}>
                     <div className={cls.item}>
@@ -24,17 +23,16 @@ const Item = (props) => {
                         <p className={cls.itemDescription}>{e.features}</p>
                         <p className={cls.itemName}>Цена:</p>
                         <p className={cls.itemCost}>{e.cost} BYN</p>
-                        <a className={cls.buyButton} href="#">Купить</a>
+                        <NavLink className={cls.buyButton} to={"/#"}>Заказать</NavLink>
                     </div>
-                </NavLink></Fade>
+                </NavLink></Bounce>
         ))
     }
     return (
         <div>
             <div className={cls.actions}>
-                <Fade delay={500}><a href="#"><img src={actionTree}/></a></Fade>
-                <Fade delay={600}><a><img className={cls.action} src={actionFour}/></a></Fade>
-                <Fade delay={700}><a href="#"><img className={cls.action} src={actionSix}/></a></Fade>
+                <NavLink className={cls.actionNav} to={"/actions"}><Bounce delay={100}><img src={actionOne}/></Bounce></NavLink>
+                <NavLink className={cls.actionNav} to={"/actions"}><Bounce delay={200}><img src={actionTwo}/></Bounce></NavLink>
             </div>
             <div className={cls.flexItemsContainer}>
                 {itemsElements}
