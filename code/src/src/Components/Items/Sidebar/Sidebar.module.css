@@ -1,15 +1,23 @@
+.sidebarContainer {
+    display: flex;
+    background-color: #343a40 !important;
+    height: 100%;
+}
+
 .sidebar {
-    width: 140px;
+    width: 110px;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding-left: 5px;
     margin-top: 10px;
+    transition: all 0.5s;
+    overflow: hidden;
 }
 
 .link {
     transition-duration: .3s;
     border: dimgray solid 1px;
-    margin: 2px 0 ;
+    margin: 2px 0;
     box-shadow: 0 0 5px rgba(4, 41, 247, 0.36);
     border-radius: 7px;
     padding-left: 5px;
@@ -19,35 +27,44 @@
     width: 90px;
 }
 
-.link:hover{
+.link:hover {
     transition-duration: .3s;
     background-color: rgba(114, 113, 143, 0.87);
     text-decoration: none;
     color: #ffffff;
 }
 
-.active{
+.active {
     background-color: rgba(121, 118, 145, 0.87);
     text-decoration: none;
     color: #ffffff;
 }
 
-.sidebarContainer{
-    display: flex;
-    background-color: #343a40;
-    height: 100%;
-    width: 140px;
-    margin-right: 20px;
-}
-
-.onMovingLabel{
-    padding: 0 8px 3px 8px;
-    border-radius: 15px;
+.onClickMoving{
     margin: 2px;
-    border: 1px solid #b1b1b1;
+    border: solid #b1b1b1;
+    border-width: 0 0 0 1px;
     color: #ffffff;
+    height: auto;
+    cursor: pointer;
+    background-color: #707070;
 }
 
-.onMovingLabel:hover{
+.onClickMoving:hover {
     background-color: #5b5b5b;
+}
+
+.onClickMoving i{
+    padding: 2px 8px 5px 8px;
+    margin: 2px;
+    border:1px solid #b1b1b1;
+    border-radius: 5px;
+    color: #ffffff;
+    height: auto;
+}
+
+.wrapperClose{
+    transition: all 0.5s;
+    overflow: hidden;
+    width: 0px;
 }

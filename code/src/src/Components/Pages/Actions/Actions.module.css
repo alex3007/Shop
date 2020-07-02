@@ -9,7 +9,7 @@
     justify-content: center;
 }
 .infoTitle,.infoContent{
-    width: 320px;
+    max-width: 320px;
     border: #cecece solid;
     box-shadow: 0 0 7px #cecece;
 }
@@ -18,10 +18,10 @@
     border-width: 1px 1px 1px 1px;
 }
 .infoContent{
-    width: 320px;
     background-color: #ffffff;
     border-width: 1px 1px 1px 0;
     padding-top: 50px;
+    padding-right: 10px;
 }
 
 .flexContainer {

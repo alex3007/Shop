@@ -1,7 +1,6 @@
 .infoArea{
     border: #cecece 1px solid;
-    max-width: 600px;
-    min-width: 320px;
+    width: 600px;
     margin: 10px;
     box-shadow: 0 0 7px #cecece;
 }
@@ -12,30 +11,36 @@
 }
 
 .infoArea ul{
-    margin: 0;
-    background-color: #ffffff;
-    border: #cecece solid;
-    border-width: 1px 0 0 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: 40px auto 0 auto;
 }
+
 .colomnStyle{
-    margin: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.listContainer{
+    background-color:#ffffff ;
+    display: flex;
+}
 .list li{
     list-style-type: none;
     margin-bottom: 20px;
 }
 .list i{
-    padding-left: 20px;
     color: #e2be00;
 }
 
 .infoArea span{
-    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.iSocial i{
+     margin-right: 20px;
+ }
+.iSocial i:hover{
+    color: #b69400;
+    cursor: pointer;
+    transition: all 0.5s;
 }

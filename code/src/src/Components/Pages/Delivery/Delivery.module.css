@@ -1,6 +1,6 @@
 .infoArea{
     border: #cecece 1px solid;
-    width: 320px;
+    max-width: 320px;
     margin: 10px;
     box-shadow: 0 0 7px #cecece;
     background: linear-gradient(rgba(79, 97, 119, 0), rgb(168, 131, 0), rgb(168, 131, 0), rgb(168, 131, 0))!important;
