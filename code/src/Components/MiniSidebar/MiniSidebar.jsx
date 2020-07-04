@@ -1,10 +1,17 @@
 import React from 'react';
-import cls from './Sidebar.module.css'
-import {NavLink} from "react-router-dom";
+import cls from './MiniSidebar.module.css'
+import Slide from 'react-reveal/Slide';
+import marker from './../../Assets/images/marker2.png'
 
-export default class Sidebar extends React.Component {
+
+export default class miniSidebar extends React.Component {
     constructor(props) {
         super(props);
+        this.state = [{name: "Скидки постоянным клиентам!"},
+            {name: "Подарки!"},
+            {name: "Различные способы оплаты!"},
+            {name: "Быстрая доставка!"},
+            {name: "Техническая поддержка!"}];
         this.wrapperRef = React.createRef();
         this.iRef = React.createRef();
     }
@@ -17,22 +24,24 @@ export default class Sidebar extends React.Component {
     }
 
     render() {
-        let sidebarElements = this.props.products
-            .map(e => (<NavLink className={cls.link} to={e.path}
-                                activeClassName={cls.active}>
-                {e.name}
-            </NavLink>));
+        let sidebarElements = this.state
+            .map(e => (
+                <span className={cls.list}>
+            <img src={marker}/>
+            <p className={cls.link}>{e.name}</p>
+            </span>
+            ));
         return (
+            <Slide left>
                 <div className={cls.sidebarContainer}>
                     <div ref={this.wrapperRef} className={cls.sidebar}>
-                        <NavLink className={cls.link} to={'/all_products'}
-                                 activeClassName={cls.active}>Все товары</NavLink>
                         {sidebarElements}
                     </div>
                     <div className={cls.onClickMoving} onClick={() => this.handleClick()}>
                         <i ref={this.iRef} className='fa fa-angle-left'/>
                     </div>
                 </div>
+            </Slide>
         );
     }
 }

@@ -1,3 +1,32 @@
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 780px;
+}
+
+.actionNav {
+    margin: 10px 30px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5px;
+
+}
+
+.actions img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #004992;
+
+}
+
+.action {
+    height: 130px !important;
+    box-shadow: 0 0 7px #004992;
+}
 
 .item {
     transition-duration: .3s;
@@ -21,6 +50,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
 }
 
 .imageContainer {
@@ -44,37 +76,59 @@
     color: #8d9ba4;
 }
 
-.navLink:hover{
+.navLink:hover {
     text-decoration: none;
 }
 
-.itemCost{
+.itemCost {
     color: #f25529;
-    margin-bottom: 2px;
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.buyButton{
+.buyButton {
     background-color: #f25529;
     color: #ffffff;
-    padding:3px 10px 5px 10px;
+    padding: 3px 10px 5px 10px;
 
 }
 
-.buyButton:hover{
+.buyButton:hover {
     text-decoration: none;
     color: #ffffff;
     background-color: #bc4d29;
 }
 
-.itemNew{
+.itemNew {
     background-color: #22c083;
     color: #ffffff;
     left: 82px;
     position: relative;
     width: 86px;
     padding: 0px 10px 2px 10px;
+
+}
+
+@media (max-width: 936px) {
+
+    .actionNav {
+        margin: 10px;
+    }
+
+    .actions img {
+        max-width: 250px;
+
+    }
+
+}
+
+
+@media (max-width: 436px) {
+
+    .actions img {
+        max-width: 190px;
+
+    }
 
 }

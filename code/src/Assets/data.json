@@ -14,12 +14,12 @@
       },
       {
         "id": 2,
-        "path": "/compressor2",
-        "name": "CompressorName2",
         "cost": "65",
         "photo": "http/",
         "features": "Надежность и качество",
-        "description": "Описание2"
+        "description": "Описание2",
+        "path": "/compressor2",
+        "name": "CompressorName2"
       },
       {
         "id": 3,

@@ -1,37 +1,17 @@
 .sidebarContainer {
     display: flex;
     background-color: #343a40 !important;
-    height: 100%;
+    height: auto;
 }
 
 .sidebar {
-    width: 110px;
+    width: 130px;
     display: flex;
     flex-direction: column;
     padding-left: 5px;
     margin-top: 10px;
     transition: all 0.5s;
     overflow: hidden;
-}
-
-.link {
-    transition-duration: .3s;
-    border: dimgray solid 1px;
-    margin: 2px 0;
-    box-shadow: 0 0 5px rgba(4, 41, 247, 0.36);
-    border-radius: 7px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    font-size: 12px;
-    color: #ffffff;
-    width: 90px;
-}
-
-.link:hover {
-    transition-duration: .3s;
-    background-color: rgba(114, 113, 143, 0.87);
-    text-decoration: none;
-    color: #ffffff;
 }
 
 .active {
@@ -66,5 +46,29 @@
 .wrapperClose{
     transition: all 0.5s;
     overflow: hidden;
-    width: 0px;
+    width: 0;
+}
+
+.link {
+    transition-duration: .3s;
+    background-color: rgba(114, 113, 143, 0.87);
+    border: dimgray solid 1px;
+    margin: 2px 0;
+    margin-right: 5px;
+    box-shadow: 0 0 10px rgba(4, 41, 247, 0.36);
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    width: 80px;
+}
+
+.list{
+    display: flex;
+}
+.list img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
 }

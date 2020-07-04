@@ -1,39 +1,54 @@
 import React from 'react';
+import cls from './Delivery.module.css'
+import MiniSidebar from "../../MiniSidebar/MiniSidebar";
+import Flip from 'react-reveal/Flip';
 
 const Delivery = () => {
-
     return (
-        <div>
-            <p>
-                <b>Как оформить заказ:</b><br/><br/>
-
-                - Вы можете выбрать любой товар на витрине сайта (регион - Минск) и оплатить его онлайн
-                <br/>
-                - Заказать по телефонам: +375 33 333-22-11, +375 44 333-22-11
-                <br/>
-                - Заказать по электронной почте: info@xxx.by
-                <br/>
-                - Написать нам в Viber, Telegram, Whatsapp, VK (тел. +375 33 333-22-11)
-                <br/><br/>
-
-                <b>Способы доставки:</b>
-                <br/><br/>
-                - Оплата картой на витрине сайта (регион - Минск)
-                <br/>
-                - Экспресс доставка курьером в течение дня по Минску
-                <br/>
-                - Самовывоз со склада в Минске
-                <br/>
-                - Наложенный платеж Белпочта (получение и оплата в отделении РУП Белпочта)
-                <br/>
-                - Наложенный платеж + доставка курьером до двери (получение и оплата курьеру)
-                <br/>
-                - Доставка транспортной компанией по РБ (DPD, АвтолайтЭкспресс, DHL)
-                <br/>
-                - Почта EMS<br/>
-            </p>
+        <div className={cls.flexContainer}>
+            <MiniSidebar/>
+            <div className={cls.infoContainer}>
+                <Flip right>
+                    <div className={cls.infoArea}>
+                        <h3><i className="iStyle fa fa-2x fa-shopping-bag"/><br/>Как оформить заказ:</h3>
+                        <ul className={cls.list}>
+                            <li><span> Вы можете выбрать любой товар на витрине сайта (регион - Минск) и
+                            заказать его онлайн
+                        </span></li>
+                            <li><span> Заказать по телефонам:<br/> +375 33 333-22-11,<br/> +375 44 333-22-11
+                        </span></li>
+                            <li><span> Заказать по электронной почте:<br/>pneumatics@info.by
+                        </span></li>
+                            <li><span> Написать нам в Viber, Telegram, Whatsapp, VK <br/>(тел. +375 33
+                            333-22-11)
+                        </span></li>
+                        </ul>
+                    </div>
+                    <div className={cls.infoArea}>
+                        <h3><i className="iStyle fa fa-2x fa-truck"/><br/>Способы доставки:</h3>
+                        <ul className={cls.list}>
+                            <li><span>
+                            Экспресс доставка курьером в течение дня по Минску
+                        </span></li>
+                            <li><span>
+                            Самовывоз со склада в Минске
+                        </span></li>
+                            <li><span>
+                            Наложенный платеж Белпочта (получение и оплата в отделении РУП Белпочта)
+                        </span></li>
+                            <li><span>
+                            Наложенный платеж + доставка курьером до двери
+                        </span></li>
+                            <li><span>
+                            Доставка транспортной компанией по РБ (DPD, АвтолайтЭкспресс, DHL, EMS)
+                        </span></li>
+                        </ul>
+                    </div>
+                </Flip>
+            </div>
         </div>
-    );
-}
+
+    )
+};
 
 export default Delivery;
