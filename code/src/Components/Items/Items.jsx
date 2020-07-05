@@ -12,23 +12,23 @@ const Items = (props) => {
     let WithRouterItemContainer = withRouter(ItemContainer);
     let WithRouterDescriptionContainer = withRouter(DescriptionContainer);
     return (
-            <div className={cls.flexContainer}>
-                <Slide left>
-                    <Sidebar products={props.products}/>
-                </Slide>
-                {props.isFetching ? <Preloader/> : null}
-                <div className={cls.items}>
-                    <Route exact path='/:products?'
-                           render={() =>
-                               <WithRouterItemContainer
-                                   products={props.products}
-                                   unSortedProducts={props.unSortedProducts}/>}/>
-                    <Route path='/:products/:description'
-                           render={() =>
-                               <WithRouterDescriptionContainer
-                                   unSortedProducts={props.unSortedProducts}/>}/>
-                </div>
+        <div className={cls.flexContainer}>
+            <Slide left>
+                <Sidebar products={props.products}/>
+            </Slide>
+            {props.isFetching ? <Preloader/> : null}
+            <div className={cls.items}>
+                <Route exact path='/:products?'
+                       render={() =>
+                           <WithRouterItemContainer
+                               products={props.products}
+                               unSortedProducts={props.unSortedProducts}/>}/>
+                <Route path='/:products/:description'
+                       render={() =>
+                           <WithRouterDescriptionContainer
+                               unSortedProducts={props.unSortedProducts}/>}/>
             </div>
+        </div>
     )
 };
 
