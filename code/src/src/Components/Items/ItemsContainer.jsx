@@ -5,18 +5,15 @@ import {toggleIsFetching} from "../../Redux/items-reducer";
 import * as axios from "axios";
 import {setProducts} from "../../Redux/items-reducer";
 import {compose} from "redux";
-import data from './../../Assets/data';
 
 
 class ItemsContainer extends React.Component {
     componentDidMount() {
-       /* axios.get(`https://alex3007.github.io/Portfolio/data.json`)
+        axios.get(`https://alex3007.github.io/Portfolio/data.json`)
             .then(response => {
                 this.props.setProducts(response.data);
                 this.props.toggleIsFetching(false)
-            });*/
-        this.props.setProducts(data);
-        this.props.toggleIsFetching(false)
+            });
     }
 
     render() {

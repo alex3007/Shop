@@ -16,10 +16,17 @@
 
 }
 
+.actions img:hover {
+    box-shadow: 0 0 7px #ce4720;
+    transition: all 0.3s;
+
+}
+
 .actions img {
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 7px #004992;
+    transition: all 0.3s;
 
 }
 
@@ -106,8 +113,16 @@
     left: 82px;
     position: relative;
     width: 86px;
-    padding: 0px 10px 2px 10px;
+    padding: 0 10px 2px 10px;
 
+}
+
+
+.wrapperOpen{
+    display: block;
+}
+.wrapperClose{
+    display: none;
 }
 
 @media (max-width: 936px) {

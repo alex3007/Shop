@@ -18,7 +18,7 @@ const ItemContainer = (props) => {
             items = 'loading'
         }
     }
-    return  <Item products={items} productsParams={productsParams}  />
+    return  <Item products={items} productsParams={productsParams} />
 };
 
 export default ItemContainer;
