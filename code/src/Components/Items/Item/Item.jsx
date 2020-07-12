@@ -1,11 +1,11 @@
 import React from 'react';
 import cls from './Item.module.css';
 import {NavLink} from "react-router-dom";
-import photo from '../../../Assets/images/photo.jpg';
+import photo from '../../../assets/images/photo.jpg';
 import Bounce from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
-import actionOne from '../../../Assets/images/act1.jpg';
-import actionTwo from '../../../Assets/images/act2.jpg';
+import actionOne from '../../../assets/images/act1.jpg';
+import actionTwo from '../../../assets/images/act2.jpg';
 
 export default class Item extends React.Component {
 
@@ -21,7 +21,7 @@ export default class Item extends React.Component {
                         <div className={cls.item}>
                             <p className={cls.itemNew}>Новинка</p>
                             <div className={cls.imageContainer}>
-                                <img className={cls.imageExample} src={photo}/>
+                                <img className={cls.imageExample} src={e.photo}/>
                             </div>
                             <p className={cls.itemName}>{e.name}</p>
                             <p className={cls.itemDescription}>{e.features}</p>

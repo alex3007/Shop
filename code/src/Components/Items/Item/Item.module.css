@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px auto;
-    background-color: #ffffff;
     border-radius: 10px;
     max-width: 780px;
 }
@@ -11,8 +10,13 @@
 .actionNav {
     margin: 10px 30px;
     text-align: center;
-    background-color: #ffffff;
     padding: 5px;
+
+}
+
+.actions img:hover {
+    box-shadow: 0 0 7px #ce4720;
+    transition: all 0.3s;
 
 }
 
@@ -20,6 +24,7 @@
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 7px #004992;
+    transition: all 0.3s;
 
 }
 
@@ -106,7 +111,7 @@
     left: 82px;
     position: relative;
     width: 86px;
-    padding: 0px 10px 2px 10px;
+    padding: 0 10px 2px 10px;
 
 }
 

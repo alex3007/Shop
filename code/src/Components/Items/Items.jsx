@@ -4,7 +4,7 @@ import {withRouter, Switch, Route} from 'react-router-dom';
 import ItemContainer from './Item/ItemContainer';
 import DescriptionContainer from './Description/DescriptionContainer';
 import Sidebar from "./Sidebar/Sidebar";
-import Preloader from "../../common/Preloader/Preloader";
+import Preloader from "../Preloader/Preloader";
 import Slide from 'react-reveal/Slide';
 
 const Items = (props) => {

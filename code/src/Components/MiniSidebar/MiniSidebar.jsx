@@ -1,7 +1,7 @@
 import React from 'react';
 import cls from './MiniSidebar.module.css'
 import Slide from 'react-reveal/Slide';
-import marker from './../../Assets/images/marker2.png'
+import marker from '../../assets/images/marker2.png'
 
 
 export default class miniSidebar extends React.Component {

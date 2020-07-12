@@ -1,9 +1,9 @@
 import React from 'react';
 import cls from './Description.module.css';
 import {NavLink} from "react-router-dom";
-import Preloader from "../../../common/Preloader/Preloader";
+import Preloader from "../../Preloader/Preloader";
 import Fade from 'react-reveal/Fade';
-import photo from './../../../Assets/images/photo.jpg'
+import photo from '../../../assets/images/photo.jpg'
 import ReactModal from 'react-modal';
 
 export default class Item extends React.Component {
@@ -39,7 +39,7 @@ export default class Item extends React.Component {
                 <Fade>
                     <div className={cls.container}>
                         <h4><b>Название товара: </b>{itemDescription.name}</h4>
-                        <img src={photo}/>
+                        <img src={itemDescription.photo}/>
                         <button className={cls.buyButton} onClick={this.openModal}>Заказать</button>
                         <p><b>Особенности: </b>{itemDescription.description}</p>
                     </div>
@@ -64,7 +64,7 @@ export default class Item extends React.Component {
                             <form>
                                 <input type="text" placeholder="Название товара"
                                        value={this.state.productName.name}/><br/>
-                                <input type="text" placeholder="Введите имя"
+                                <input  type="text" placeholder="Введите имя"
                                        required
                                        onChange={this.onNameChange}/><br/>
                                 <input type="text" placeholder="Введите номер телефона"

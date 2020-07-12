@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import cls from './Carousel.module.css';
-import slide1 from '../../Assets/images/slide1.jpg';
-import slide2 from '../../Assets/images/slide2.jpg';
+import slide1 from '../../assets/images/slide1.jpg';
+import slide2 from '../../assets/images/slide2.jpg';
 
 const CarouselItem = (props) => {
     return (

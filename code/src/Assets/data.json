@@ -1,47 +1,5 @@
 [
   {
-    "name": "Компрессоры",
-    "path": "/compressors",
-    "items": [
-      {
-        "id": 1,
-        "path": "/compressor1",
-        "name": "CompressorName1",
-        "cost": "65",
-        "photo": "http/",
-        "features": "Надежность и качество",
-        "description": "Описание1"
-      },
-      {
-        "id": 2,
-        "cost": "65",
-        "photo": "http/",
-        "features": "Надежность и качество",
-        "description": "Описание2",
-        "path": "/compressor2",
-        "name": "CompressorName2"
-      },
-      {
-        "id": 3,
-        "path": "/compressor3",
-        "name": "CompressorName3",
-        "cost": "65",
-        "photo": "http/",
-        "features": "Надежность и качество",
-        "description": "Описание3"
-      },
-      {
-        "id": 4,
-        "path": "/compressor4",
-        "name": "CompressorName4",
-        "cost": "65",
-        "photo": "http/",
-        "features": "Надежность и качество",
-        "description": "Описание4"
-      }
-    ]
-  },
-  {
     "name": "Датчики",
     "path": "/sencors",
     "items": [
@@ -49,8 +7,8 @@
         "id": 1,
         "path": "/sencor1",
         "name": "SencorName1",
-        "cost": "25",
-        "photo": "http/",
+        "cost": "75",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/9CEB722F49F4489BA3853E1D747BA0DF.jpg",
         "features": "Доступность и надежность",
         "description": "Описание1"
       },
@@ -58,8 +16,8 @@
         "id": 2,
         "path": "/sencor2",
         "name": "SencorName2",
-        "cost": "25",
-        "photo": "http/",
+        "cost": "75",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/9CEB722F49F4489BA3853E1D747BA0DF.jpg",
         "features": "Доступность и надежность",
         "description": "Описание2"
       },
@@ -67,9 +25,117 @@
         "id": 3,
         "path": "/sencor3",
         "name": "SencorName3",
-        "cost": "25",
-        "photo": "http/",
+        "cost": "75",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/9CEB722F49F4489BA3853E1D747BA0DF.jpg",
         "features": "Доступность и надежность",
+        "description": "Описание3"
+      }
+    ]
+  },
+  {
+    "name": "Контроллеры",
+    "path": "/controllers",
+    "items": [
+      {
+        "id": 1,
+        "path": "/controller1",
+        "name": "ControllerName1",
+        "cost": "80",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/C37A58C6812E4429BDDFF722A87140D9.jpg",
+        "features": "Качаственно и доступно",
+        "description": "Описание1"
+      },
+      {
+        "id": 2,
+        "path": "/controller2",
+        "name": "ControllerName2",
+        "cost": "80",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/C37A58C6812E4429BDDFF722A87140D9.jpg",
+        "features": "Качаственно и доступно",
+        "description": "Описание2"
+      },
+      {
+        "id": 3,
+        "path": "/controller3",
+        "name": "ControllerName3",
+        "cost": "80",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/C37A58C6812E4429BDDFF722A87140D9.jpg",
+        "features": "Качаственно и доступно",
+        "description": "Описание3"
+      }
+    ]
+  },
+  {
+    "name": "Пневмоострова",
+    "path": "/valveactuators",
+    "items": [
+      {
+        "id": 1,
+        "path": "/valveactuator1",
+        "name": "ValveactuatorName1",
+        "cost": "65",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/7DADC4DEB1FE41EEAA3D4C575B0A028A.jpg",
+        "features": "Надежность и качество",
+        "description": "Описание1"
+      },
+      {
+        "id": 2,
+        "cost": "65",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/7DADC4DEB1FE41EEAA3D4C575B0A028A.jpg",
+        "features": "Надежность и качество",
+        "description": "Описание2",
+        "path": "/valveactuator2",
+        "name": "ValveactuatorName2"
+      },
+      {
+        "id": 3,
+        "path": "/valveactuator3",
+        "name": "ValveactuatorName3",
+        "cost": "65",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/7DADC4DEB1FE41EEAA3D4C575B0A028A.jpg",
+        "features": "Надежность и качество",
+        "description": "Описание3"
+      },
+      {
+        "id": 4,
+        "path": "/valveactuator4",
+        "name": "ValveactuatorName4",
+        "cost": "65",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/7DADC4DEB1FE41EEAA3D4C575B0A028A.jpg",
+        "features": "Надежность и качество",
+        "description": "Описание4"
+      }
+    ]
+  },
+  {
+    "name": "Пневмоприводы",
+    "path": "/pneumodrives",
+    "items": [
+      {
+        "id": 1,
+        "path": "/pneumodrive1",
+        "name": "PneumadriveName1",
+        "cost": "105",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/56A405B68C794886BD1FE1DFBFD438EB.jpg",
+        "features": "Надежность и качество",
+        "description": "Описание1"
+      },
+      {
+        "id": 2,
+        "cost": "105",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/56A405B68C794886BD1FE1DFBFD438EB.jpg",
+        "features": "Надежность и качество",
+        "description": "Описание2",
+        "path": "/pneumodrive2",
+        "name": "PneumadriveName2"
+      },
+      {
+        "id": 3,
+        "path": "/pneumodrive3",
+        "name": "PneumadriveName3",
+        "cost": "105",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/56A405B68C794886BD1FE1DFBFD438EB.jpg",
+        "features": "Надежность и качество",
         "description": "Описание3"
       }
     ]
@@ -83,7 +149,7 @@
         "path": "/fiting1",
         "name": "FitingName1",
         "cost": "15",
-        "photo": "http/",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/5D2F2D54AFC7409AB0161BB61E9910E8.jpg",
         "features": "Надежность и качество",
         "description": "Описание1"
       },
@@ -92,7 +158,7 @@
         "path": "/fiting2",
         "name": "FitingName2",
         "cost": "15",
-        "photo": "http/",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/5D2F2D54AFC7409AB0161BB61E9910E8.jpg",
         "features": "Надежность и качество",
         "description": "Описание2"
       },
@@ -101,7 +167,7 @@
         "path": "/fiting3",
         "name": "FitingName3",
         "cost": "15",
-        "photo": "http/",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/5D2F2D54AFC7409AB0161BB61E9910E8.jpg",
         "features": "Надежность и качество",
         "description": "Описание3"
       },
@@ -110,42 +176,9 @@
         "path": "/fiting4",
         "name": "FitingName4",
         "cost": "15",
-        "photo": "http/",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/5D2F2D54AFC7409AB0161BB61E9910E8.jpg",
         "features": "Надежность и качество",
         "description": "Описание4"
-      }
-    ]
-  },
-  {
-    "name": "Кабели",
-    "path": "/cables",
-    "items": [
-      {
-        "id": 1,
-        "path": "/cable1",
-        "name": "CableName1",
-        "cost": "25",
-        "photo": "http/",
-        "features": "Качаственно и доступно",
-        "description": "Описание1"
-      },
-      {
-        "id": 2,
-        "path": "/cable2",
-        "name": "CableName2",
-        "cost": "25",
-        "photo": "http/",
-        "features": "Качаственно и доступно",
-        "description": "Описание2"
-      },
-      {
-        "id": 3,
-        "path": "/cable3",
-        "name": "CableName3",
-        "cost": "25",
-        "photo": "http/",
-        "features": "Качаственно и доступно",
-        "description": "Описание3"
       }
     ]
   },
@@ -158,7 +191,7 @@
         "path": "/tube1",
         "name": "TubeName1",
         "cost": "35",
-        "photo": "http/",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/1041C0680E5E4996926D29C8E0961FFE.jpg",
         "features": "Надежно и доступно",
         "description": "Описание1"
       },
@@ -167,7 +200,7 @@
         "path": "/tube2",
         "name": "TubeName2",
         "cost": "35",
-        "photo": "http/",
+        "photo": "https://www.festo.com/cat/be_by/data/TRB/1041C0680E5E4996926D29C8E0961FFE.jpg",
         "features": "Надежно и доступно",
         "description": "Описание2"
       }

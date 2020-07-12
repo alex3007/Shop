@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import MiniSidebar from "../../MiniSidebar/MiniSidebar";
 import Zoom from 'react-reveal/Zoom';
-import exhibition from './../../../Assets/images/exhibition.jpg'
+import exhibition from '../../../assets/images/exhibition.jpg'
 
 const News = () => {
 
