@@ -1,7 +1,7 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @font-face {
   font-family: 'Gabriela';
-  src: local('Gabriela'), url(Assets/fonts/Gabriela-Regular.ttf) format('truetype');
+  src: local('Gabriela'), url(assets/fonts/Gabriela-Regular.ttf) format('truetype');
 }
 
 body {

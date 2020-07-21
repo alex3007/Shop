@@ -1,9 +1,9 @@
 import React from 'react';
 import Items from './Items';
 import {connect} from "react-redux";
-import {toggleIsFetching} from "../../Redux/items-reducer";
+import {toggleIsFetching} from "../../redux/items-reducer";
 import * as axios from "axios";
-import {setProducts} from "../../Redux/items-reducer";
+import {setProducts} from "../../redux/items-reducer";
 import {compose} from "redux";
 
 

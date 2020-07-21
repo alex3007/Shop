@@ -1,9 +1,7 @@
 import React from 'react';
 import cls from './Description.module.css';
-import {NavLink} from "react-router-dom";
-import Preloader from "../../../common/Preloader/Preloader";
+import Preloader from "../../Preloader/Preloader";
 import Fade from 'react-reveal/Fade';
-import photo from './../../../Assets/images/photo.jpg'
 import ReactModal from 'react-modal';
 
 export default class Item extends React.Component {
@@ -48,9 +46,7 @@ export default class Item extends React.Component {
         else {
             itemDescription = <Preloader/>
         }
-
         return (
-
             <div>
                 {itemDescription}
                 <div>
@@ -59,12 +55,12 @@ export default class Item extends React.Component {
                         onRequestClose={this.closeModal}
                         className={cls.modal}
                         overlayClassName={cls.overlay}>
-                        <div className={cls.modalWindow}>
+                        <div>
                             <h3>Заказ товара</h3>
                             <form>
                                 <input type="text" placeholder="Название товара"
                                        value={this.state.productName.name}/><br/>
-                                <input  type="text" placeholder="Введите имя"
+                                <input type="text" placeholder="Введите имя"
                                        required
                                        onChange={this.onNameChange}/><br/>
                                 <input type="text" placeholder="Введите номер телефона"
@@ -76,7 +72,6 @@ export default class Item extends React.Component {
                         </div>
                     </ReactModal>
                 </div>
-
             </div>
         )
     }

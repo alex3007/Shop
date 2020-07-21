@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import cls from './AboutUs.module.css';
-import marker from './../../../Assets/images/marker.png'
+import marker from '../../../assets/images/marker.png'
 import Flip from 'react-reveal/Flip';
 
 const AboutUs = () => {

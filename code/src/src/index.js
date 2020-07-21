@@ -6,8 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import {Provider} from 'react-redux';
-import store from './Redux/redux-store';
-import './Assets/fonts/Gabriela-Regular.ttf';
+import store from './redux/redux-store';
+import './assets/fonts/Gabriela-Regular.ttf';
 
 ReactDOM.render(
     <Provider store={store}>

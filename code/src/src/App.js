@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.css';
 import {HashRouter, Switch, Route} from 'react-router-dom';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
-import Catalog from './Components/Pages/Catalog/Catalog';
-import Delivery from "./Components/Pages/Delivery/Delivery";
-import AboutUs from "./Components/Pages/AboutUs/AboutUs";
-import Contacts from "./Components/Pages/Contacts/Contacts";
-import News from "./Components/Pages/News/News";
-import Actions from "./Components/Pages/Actions/Actions";
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Catalog from './components/Pages/Catalog/Catalog';
+import Delivery from "./components/Pages/Delivery/Delivery";
+import AboutUs from "./components/Pages/AboutUs/AboutUs";
+import Contacts from "./components/Pages/Contacts/Contacts";
+import News from "./components/Pages/News/News";
+import Actions from "./components/Pages/Actions/Actions";
 import Fade from 'react-reveal/Fade';
 import withReveal from 'react-reveal/withReveal';
-import CarouselItem from "./Components/Carousel/CarouselItem";
+import CarouselItem from "./components/Carousel/CarouselItem";
 
 function App(props) {
 
