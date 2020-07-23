@@ -1,0 +1,31 @@
+.confirmButton {
+    background-color: #f25529;
+    color: #ffffff;
+    padding: 3px 10px 5px 10px;
+    margin-top: 10px;
+
+}
+
+.confirmButton:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #bc4d29;
+}
+
+.modal {
+
+    margin: auto;
+    max-width: 300px;
+    padding: 30px;
+    background-color: #3d7298;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(60, 60, 60, 0.7);
+    display: flex;
+}
