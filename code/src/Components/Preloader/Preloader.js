@@ -6,8 +6,7 @@ let Preloader = (props) => {
         {
             width: '100%',
             height: '100px',
-            position: 'absolute',
-            display: 'flex',
+            display: 'flex'
         }}>
         <img style={{margin: 'auto'}} src={preloader}/>
     </div>

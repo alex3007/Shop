@@ -5,7 +5,7 @@ import ItemContainer from './Item/ItemContainer';
 import DescriptionContainer from './Description/DescriptionContainer';
 import Sidebar from "./Sidebar/Sidebar";
 import Preloader from "../Preloader/Preloader";
-import Slide from 'react-reveal/Slide';
+import Slide from "react-reveal/Slide";
 
 const Items = (props) => {
 
@@ -16,8 +16,8 @@ const Items = (props) => {
             <Slide left>
                 <Sidebar products={props.products}/>
             </Slide>
-            {props.isFetching ? <Preloader/> : null}
             <div className={cls.items}>
+                {props.isFetching ? <Preloader/> : null}
                 <Route exact path='/:products?'
                        render={() =>
                            <WithRouterItemContainer
