@@ -1,0 +1,30 @@
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+}
+
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.card {
+    margin: 10px;
+    text-align: center;
+}
+.cardHeader{
+    background: linear-gradient(rgba(79, 97, 119, 0), rgb(82, 113, 128), rgb(82, 113, 128), rgb(82, 113, 128)) !important;
+    color: #ffffff;
+}
+.btnColor{
+    background: linear-gradient(rgba(201, 163, 0, 0), rgba(168, 131, 0, 0.8), rgb(230, 184, 0))!important;
+    border: #917309 1px solid!important ;
+}
+.btnColor:hover{
+    background: linear-gradient(rgba(201, 163, 0, 0), rgba(168, 131, 0, 0.8), rgb(152, 116, 0))!important;
+}

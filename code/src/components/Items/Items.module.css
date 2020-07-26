@@ -1,0 +1,9 @@
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+}
+
+.items{
+    width: 100%;
+}
