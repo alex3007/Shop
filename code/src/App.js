@@ -11,7 +11,7 @@ import News from "./components/Pages/News/News";
 import Actions from "./components/Pages/Actions/Actions";
 import Fade from 'react-reveal/Fade';
 import withReveal from 'react-reveal/withReveal';
-import CarouselItem from "./components/Carousel/CarouselItem";
+import Carousel from "./components/Carousel/CarouselBody";
 
 function App(props) {
 
@@ -23,7 +23,7 @@ function App(props) {
                 </div>
                 <div className={"carousel"}>
                     <Fade delay={200}>
-                        <CarouselItem/>
+                        <Carousel/>
                     </Fade>
                 </div>
                 <div className="mainContainer">

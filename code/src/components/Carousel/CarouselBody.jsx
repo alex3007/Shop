@@ -1,10 +1,10 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import cls from './Carousel.module.css';
+import cls from './CarouselBody.module.css';
 import slide1 from '../../assets/images/slide1.jpg';
 import slide2 from '../../assets/images/slide2.jpg';
 
-const CarouselItem = (props) => {
+const CarouselBody = (props) => {
     return (
         <div className={cls.container}>
             <img className={cls.topImage} src={slide1}/>
@@ -37,4 +37,4 @@ const CarouselItem = (props) => {
     );
 };
 
-export default CarouselItem;
+export default CarouselBody;
