@@ -9,6 +9,11 @@ const Item = (props) => {
     let productsParams = props.productsParams;
     let items = props.products;
     let itemsElements;
+    let actionCards;
+    if (productsParams === 'all_products'|| !productsParams ) {actionCards = <ActionCards/> }
+    else {
+        actionCards = null
+    }
     if (items !== 'loading') {
         itemsElements = items.map(e => (
             <NavLink className={cls.navLink} to={productsParams ? '/' + productsParams + e.path :
@@ -31,7 +36,7 @@ const Item = (props) => {
     }
     return (
         <div>
-            <ActionCards/>
+            {actionCards}
             <div className={cls.flexItemsContainer}>
                 {itemsElements}
             </div>

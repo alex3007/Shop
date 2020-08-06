@@ -23,8 +23,8 @@ const News = () => {
                                 Приглашаем на нашу ежегодную выставку товаров.
                             </Card.Text>
                             <Button variant="primary" className={cls.btnColor}>Подробнее</Button>
-                            <Card.Footer className="text-muted">10.07.2020</Card.Footer>
                         </Card.Body>
+                        <Card.Footer className="text-muted">10.07.2020</Card.Footer>
                     </Card>
                     <Card className={cls.card}>
                         <Card.Header className={cls.cardHeader}>Новости компании</Card.Header>

@@ -20,6 +20,7 @@ export default class miniSidebar extends React.Component {
         const sidebarWrapper = this.wrapperRef.current;
         sidebarWrapper.classList.toggle(`${cls.wrapperClose}`)
         const iWrapper = this.iRef.current;
+        iWrapper.classList.toggle('fa-angle-left')
         iWrapper.classList.toggle('fa-angle-right')
     }
 
@@ -38,7 +39,7 @@ export default class miniSidebar extends React.Component {
                         {sidebarElements}
                     </div>
                     <div className={cls.onClickMoving} onClick={() => this.handleClick()}>
-                        <i ref={this.iRef} className='fa fa-angle-left'/>
+                        <i ref={this.iRef} className='fa fa-angle-right'/>
                     </div>
                 </div>
             </Slide>
