@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Shop/static/css/main.421f49db.chunk.css",
+    "main.css": "/Shop/static/css/main.c884cfb9.chunk.css",
     "main.js": "/Shop/static/js/main.09a3a6d2.chunk.js",
     "main.js.map": "/Shop/static/js/main.09a3a6d2.chunk.js.map",
     "runtime~main.js": "/Shop/static/js/runtime~main.4dadb07a.js",
@@ -9,10 +9,10 @@
     "static/js/2.a93f3563.chunk.js": "/Shop/static/js/2.a93f3563.chunk.js",
     "static/js/2.a93f3563.chunk.js.map": "/Shop/static/js/2.a93f3563.chunk.js.map",
     "index.html": "/Shop/index.html",
-    "precache-manifest.462f3e268cb0284b3941962240d06474.js": "/Shop/precache-manifest.462f3e268cb0284b3941962240d06474.js",
+    "precache-manifest.f1abea7e9cdfd52bd5978572f1aca30a.js": "/Shop/precache-manifest.f1abea7e9cdfd52bd5978572f1aca30a.js",
     "service-worker.js": "/Shop/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/Shop/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.421f49db.chunk.css.map": "/Shop/static/css/main.421f49db.chunk.css.map",
+    "static/css/main.c884cfb9.chunk.css.map": "/Shop/static/css/main.c884cfb9.chunk.css.map",
     "static/media/Gabriela-Regular.ttf": "/Shop/static/media/Gabriela-Regular.b4856923.ttf",
     "static/media/act1.jpg": "/Shop/static/media/act1.4b36928e.jpg",
     "static/media/act2.jpg": "/Shop/static/media/act2.2463d8ee.jpg",
