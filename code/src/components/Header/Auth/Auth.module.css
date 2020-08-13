@@ -1,0 +1,54 @@
+.modal {
+    margin: auto;
+    max-width: 300px;
+    padding: 30px;
+    background: linear-gradient(rgb(22, 71, 97), rgb(98, 134, 154), rgb(10, 62, 92)) !important;
+    color: #f6f6f6;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(60, 60, 60, 0.7);
+    display: flex;
+}
+
+.loginBtn, .modalBtn {
+    margin: 5px;
+    background: linear-gradient(rgb(158, 156, 156), #343a40, #343a40, #343a40, rgb(158, 156, 156));
+    border: #ffffff solid 1px;
+    width: 80px;
+    color: #ffffff;
+    border-radius: 15px;
+    padding-bottom: 3px;
+    transition: all 0.5s;
+}
+
+.loginBtn:hover, .modalBtn:hover {
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+.modalBtn {
+    transition: all 0.5s;
+    background: linear-gradient(rgb(158, 156, 156), #49788b, #49788b, #49788b, rgb(158, 156, 156));
+}
+
+.placeHolder {
+    margin-bottom: 3px;
+}
+
+.checkboxItem {
+    margin-bottom: 20px;
+}
+
+.loginArea {
+    text-align: center;
+}
+
+.login {
+    color: #ffffff;
+}

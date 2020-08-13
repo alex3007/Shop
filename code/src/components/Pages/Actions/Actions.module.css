@@ -14,9 +14,10 @@
     box-shadow: 0 0 7px #cecece;
 }
 .infoTitle{
-    background: linear-gradient(rgba(79, 97, 119, 0), rgb(168, 131, 0), rgb(168, 131, 0), rgb(168, 131, 0))!important;
+    background: linear-gradient(rgba(79, 97, 119, 0), rgb(82, 113, 128), rgb(184, 187, 160), rgb(82, 113, 128))!important;
     border-width: 1px 1px 1px 1px;
 }
+
 .infoContent{
     background-color: #ffffff;
     border-width: 1px 1px 1px 0;

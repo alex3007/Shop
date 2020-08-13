@@ -85,3 +85,12 @@
 .wrapperClose{
     display: none;
 }
+
+@media (max-width: 436px) {
+
+    .item {
+        margin: 10px 5px;
+
+    }
+
+}

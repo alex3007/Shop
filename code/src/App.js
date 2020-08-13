@@ -12,6 +12,7 @@ import Actions from "./components/Pages/Actions/Actions";
 import Fade from 'react-reveal/Fade';
 import withReveal from 'react-reveal/withReveal';
 import Carousel from "./components/Carousel/CarouselBody";
+import {Redirect} from "react-router-dom";
 
 function App(props) {
 

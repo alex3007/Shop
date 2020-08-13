@@ -7,7 +7,9 @@ import slide2 from '../../assets/images/slide2.jpg';
 const CarouselBody = (props) => {
     return (
         <div className={cls.container}>
-            <img className={cls.topImage} src={slide2}/>
+            <div className={cls.topBlock}>
+                <h3>Качественная пневматика</h3>
+            </div>
             <Carousel className={cls.carousel}>
                 <Carousel.Item>
                     <img

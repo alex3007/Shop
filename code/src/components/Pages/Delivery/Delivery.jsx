@@ -10,7 +10,9 @@ const Delivery = () => {
             <div className={cls.infoContainer}>
                 <Flip right>
                     <div className={cls.infoArea}>
-                        <h3><i className="iStyle fa fa-2x fa-shopping-bag"/><br/>Как оформить заказ:</h3>
+                        <div className={cls.infoTitle}>
+                            <h3><i className="iStyle fa fa-2x fa-shopping-bag"/><br/>Как оформить заказ:</h3>
+                        </div>
                         <ul className={cls.list}>
                             <li><span> Вы можете выбрать любой товар на витрине сайта (регион - Минск) и
                             заказать его онлайн
@@ -25,7 +27,9 @@ const Delivery = () => {
                         </ul>
                     </div>
                     <div className={cls.infoArea}>
-                        <h3><i className="iStyle fa fa-2x fa-truck"/><br/>Способы доставки:</h3>
+                        <div className={cls.infoTitle}>
+                            <h3><i className="iStyle fa fa-2x fa-truck"/><br/>Способы доставки:</h3>
+                        </div>
                         <ul className={cls.list}>
                             <li><span>
                             Экспресс доставка курьером в течение дня по Минску

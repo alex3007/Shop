@@ -50,8 +50,10 @@
 @media (max-width: 436px) {
 
     .actions img {
-        max-width: 190px;
+        max-width: 175px;
 
     }
-
+    .actionNav {
+        margin: 5px;
+    }
 }

@@ -3,17 +3,25 @@
     max-width: 320px;
     margin: 10px;
     box-shadow: 0 0 7px #cecece;
-    background: linear-gradient(rgba(79, 97, 119, 0), rgb(168, 131, 0), rgb(168, 131, 0), rgb(168, 131, 0))!important;
-
 }
+
 .infoArea ul{
-    margin: 0;
+    margin: 0!important;
     background-color: #ffffff;
     border: #cecece solid;
     border-width: 1px 0 0 0;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 5px;
 }
+h3 {
+    margin: 0!important;
+}
+.infoTitle{
+    background: linear-gradient(rgba(79, 97, 119, 0), rgb(82, 113, 128),rgb(82, 113, 128), rgb(184, 187, 160), rgb(82, 113, 128))!important;
+    border-width: 1px 1px 1px 1px;
+}
+
 .infoContainer{
     margin: auto;
     display: flex;
