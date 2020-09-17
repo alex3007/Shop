@@ -7,7 +7,7 @@ let initialState = {
 export const setProducts = (products) => ({type: 'SET_PRODUCTS', products});
 export const toggleIsFetching = (isFetching) => ({type: 'TOGGLE_IS_FETCHING', isFetching });
 
-const itemsReducer = (state = initialState, action) => {
+const appReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case 'NEW_SOUL_PATH':
@@ -22,4 +22,4 @@ const itemsReducer = (state = initialState, action) => {
     }
 };
 
-export default itemsReducer;
+export default appReducer;

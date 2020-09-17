@@ -6,14 +6,22 @@
     border: 1px #616161 solid;
     box-shadow: 0 0 7px #004992;
     margin: 10px;
-    padding: 0 10px 10px 10px;
+    padding: 30px 10px 10px 10px;
     background-color: #ffffff;
 }
 
 .item:hover {
     transition-duration: .3s;
     border: 1px #ce4720 solid;
-    box-shadow: 0 0 0px;
+    box-shadow: 0 0 0;
+}
+.item:hover .imageExample {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.actions{
+    margin: 0 30px;
 }
 
 .flexItemsContainer {
@@ -31,7 +39,8 @@
 
 .imageExample {
     width: 100px;
-    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.5s;
 }
 
 .itemName {
@@ -59,8 +68,9 @@
 
 .buyButton {
     background-color: #f25529;
-    color: #ffffff;
+    color: #ffffff!important;
     padding: 3px 10px 5px 10px;
+    cursor: pointer;
 
 }
 
@@ -84,6 +94,32 @@
 }
 .wrapperClose{
     display: none;
+}
+
+.itemFooter{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.productQuantity{
+    width: 40px;
+}
+.controlsArea{
+    display: flex;
+    flex-flow: column;
+    margin: 0 20px 0 3px;
+}
+.quantityControls{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(141, 155, 164, 0.62) !important;
+    padding: 0;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 436px) {

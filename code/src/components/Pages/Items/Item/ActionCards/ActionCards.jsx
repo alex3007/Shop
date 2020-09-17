@@ -2,8 +2,8 @@ import React from 'react';
 import cls from './ActionCards.module.css';
 import {NavLink} from "react-router-dom";
 import Bounce from 'react-reveal/Bounce';
-import actionOne from '../../../../assets/images/act1.jpg';
-import actionTwo from '../../../../assets/images/act2.jpg';
+import actionOne from '../../../../../assets/images/act1.jpg';
+import actionTwo from '../../../../../assets/images/act2.jpg';
 
 const ActionCards = (props) => {
 

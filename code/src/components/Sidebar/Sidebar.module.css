@@ -1,20 +1,27 @@
 .sidebarContainer {
     display: flex;
-    background-color: #343a40 !important;
     height: 100%;
+
 }
 
 .sidebar {
-    width: 120px;
+    width: 130px;
     display: flex;
     flex-direction: column;
-    padding-left: 5px;
-    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
     transition: all 0.5s;
     overflow: hidden;
+    background-color: #343a40 !important;
+
+}
+.topLinksArea{
+    display: flex;
+    flex-flow: column;
+    margin: 10px 0;
 }
 
-.link {
+.link, .topLink, .secondLink {
     transition-duration: .3s;
     border: dimgray solid 1px;
     margin: 2px 3px 2px 0;
@@ -27,21 +34,35 @@
 
 }
 
-.link:hover {
+.link:hover, .topLink:hover, .secondLink:hover {
     transition-duration: .3s;
-    background-color: rgba(114, 113, 143, 0.87);
+    border-color: rgba(255, 158, 34, 0.4);
+    color: #ff9e22;
     text-decoration: none;
+}
+
+.topLink, .topLink:hover{
     color: #ffffff;
+    background-color: #52c292;
+    border-color: #bab7b7;
+}
+.secondLink, .secondLink:hover{
+    color: #ffffff;
+    background-color: #c15913;
+    border-color: #bab7b7;
 }
 
 .active {
-    background-color: rgba(121, 118, 145, 0.87);
     text-decoration: none;
-    color: #ffffff;
+    border-color: rgba(255, 158, 34, 0.4);
+    color: #ff9e22;
+}
+
+.topActive,.topLink:hover,.secondLink:hover{
+    opacity: 0.8;
 }
 
 .onClickMoving{
-    margin: 2px;
     border: solid #b1b1b1;
     border-width: 0 0 0 1px;
     color: #ffffff;

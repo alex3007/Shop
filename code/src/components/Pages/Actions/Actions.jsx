@@ -1,13 +1,10 @@
 import React from 'react';
 import cls from './Actions.module.css'
-import MiniSidebar from "../../MiniSidebar/MiniSidebar";
 import Zoom from 'react-reveal/Zoom';
 
 const Actions = () => {
-
     return (
         <section className={cls.flexContainer}>
-            <MiniSidebar/>
             <div className={cls.infoContainer}>
                 <Zoom bottom>
                     <div className={cls.infoArea}>

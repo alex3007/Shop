@@ -4,36 +4,50 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import cls from './AboutUs.module.css';
 import marker from '../../../assets/images/marker.png'
-import Flip from 'react-reveal/Flip';
+import Zoom from "react-reveal/Zoom";
+import Card from "react-bootstrap/Card";
+import exhibition from "../../../assets/images/exhibition.jpg";
+
 
 const AboutUs = () => {
 
     return (
-        <Flip left>
-            <Container>
-                <Row>
-                    <Col className={cls.colomnStyle}>
+        <Container>
+            <Row>
+                <Col className={cls.colomnStyle}>
+                    <Zoom clear>
                         <div className={cls.infoArea}>
                             <h3 className={cls.titleArea}>Наши компетенции:</h3>
                             <ul className={cls.list}>
-                                <li><img src={marker}/><span> Продажа качественного оборудования;
+                                <li><img src={marker}/>
+                                    <span> Продажа качественного оборудования;
                         </span></li>
-                                <li><img src={marker}/><span> Проектирование и прототипирование любых деталей, корпусов, механизмов;
+                                <li><img src={marker}/>
+                                    <span> Проектирование и прототипирование любых деталей, корпусов, механизмов;
                         </span></li>
-                                <li><img src={marker}/><span> Сервисное обслуживание;
+                                <li><img src={marker}/>
+                                    <span> Сервисное обслуживание;
                         </span></li>
-                                <li><img src={marker}/><span> Ремонт и модернизация устройств;
+                                <li><img src={marker}/>
+                                    <span> Ремонт и модернизация устройств;
                         </span></li>
-                                <li><img src={marker}/><span> Технические консультации;
+                                <li><img src={marker}/>
+                                    <span> Технические консультации;
                         </span></li>
-                                <li><img src={marker}/><span> Подбор и поставка комплектующих;
+                                <li><img src={marker}/>
+                                    <span> Подбор и поставка комплектующих;
                         </span></li>
                             </ul>
+                            <Card className={cls.card}>
+                                <Card.Body>
+                                    <Card.Img variant="top" src={exhibition}/>
+                                </Card.Body>
+                            </Card>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
-        </Flip>
+                    </Zoom>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 

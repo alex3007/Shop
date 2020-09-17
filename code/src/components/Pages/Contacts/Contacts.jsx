@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import cls from './Contacts.module.css';
-import Flip from 'react-reveal/Flip';
+import Zoom from "react-reveal/Zoom";
 
 const Contacts = () => {
 
@@ -12,7 +12,7 @@ const Contacts = () => {
         <Container>
             <Row>
                 <Col className={cls.colomnStyle}>
-                    <Flip left>
+                    <Zoom clear>
                         <div className={cls.infoArea}>
                             <h3 className={cls.titleArea}>Наши контакты:</h3>
                             <div className={cls.listContainer}>
@@ -34,7 +34,7 @@ const Contacts = () => {
                                 </ul>
                             </div>
                         </div>
-                    </Flip>
+                    </Zoom>
                 </Col>
             </Row>
         </Container>

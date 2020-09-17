@@ -19,9 +19,9 @@
 .loginBtn, .modalBtn {
     margin: 5px;
     background: linear-gradient(rgb(158, 156, 156), #343a40, #343a40, #343a40, rgb(158, 156, 156));
-    border: #ffffff solid 1px;
+    border: #ff943d solid 1px;
     width: 80px;
-    color: #ffffff;
+    color: #ff943d;
     border-radius: 15px;
     padding-bottom: 3px;
     transition: all 0.5s;
@@ -50,5 +50,5 @@
 }
 
 .login {
-    color: #ffffff;
+    color: #333333;
 }

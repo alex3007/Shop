@@ -23,16 +23,22 @@ export default class Sidebar extends React.Component {
                 {e.name}
             </NavLink>));
         return (
-                <div className={cls.sidebarContainer}>
-                    <div ref={this.wrapperRef} className={cls.sidebar}>
-                        <NavLink className={cls.link} to={'/all_products'}
+            <div className={cls.sidebarContainer}>
+                <div ref={this.wrapperRef} className={cls.sidebar}>
+                    <div className={cls.topLinksArea}>
+                        <NavLink className={cls.topLink} to='/'
+                                 activeClassName={cls.topActive}>Каталог</NavLink>
+                        <NavLink className={cls.secondLink} to='/actions'
+                                 activeClassName={cls.topActive}>Акции</NavLink>
+                        <NavLink className={cls.link} to='/all_products'
                                  activeClassName={cls.active}>Все товары</NavLink>
-                        {sidebarElements}
                     </div>
-                    <div className={cls.onClickMoving} onClick={() => this.handleClick()}>
-                        <i ref={this.iRef} className='fa fa-angle-left'/>
-                    </div>
+                    {sidebarElements}
                 </div>
+                <div className={cls.onClickMoving} onClick={() => this.handleClick()}>
+                    <i ref={this.iRef} className='fa fa-angle-left'/>
+                </div>
+            </div>
         );
     }
 }

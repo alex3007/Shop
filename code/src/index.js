@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import AppJS from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import {Provider} from 'react-redux';
-import store from './redux/redux-store';
 import './assets/fonts/Gabriela-Regular.ttf';
+import store from "./redux/redux-store";
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App/>
-    </Provider>,
+        <AppJS/>,
     document.getElementById('root')
 );
 

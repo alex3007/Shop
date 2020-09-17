@@ -2,6 +2,12 @@
 background-color: #f2f2f2
 }
 
-.carousel{
-    background-color:#f2f2f2;
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+}
+
+.pagesContainer{
+    margin: 0 auto;
 }

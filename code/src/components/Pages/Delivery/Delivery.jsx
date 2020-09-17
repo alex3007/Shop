@@ -1,12 +1,10 @@
 import React from 'react';
 import cls from './Delivery.module.css'
-import MiniSidebar from "../../MiniSidebar/MiniSidebar";
 import Flip from 'react-reveal/Flip';
 
 const Delivery = () => {
     return (
         <div className={cls.flexContainer}>
-            <MiniSidebar/>
             <div className={cls.infoContainer}>
                 <Flip right>
                     <div className={cls.infoArea}>
