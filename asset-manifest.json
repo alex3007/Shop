@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Shop/static/css/main.fdc7d9e4.chunk.css",
-    "main.js": "/Shop/static/js/main.4a7de339.chunk.js",
-    "main.js.map": "/Shop/static/js/main.4a7de339.chunk.js.map",
+    "main.css": "/Shop/static/css/main.917e155e.chunk.css",
+    "main.js": "/Shop/static/js/main.9c5c9f91.chunk.js",
+    "main.js.map": "/Shop/static/js/main.9c5c9f91.chunk.js.map",
     "runtime~main.js": "/Shop/static/js/runtime~main.4dadb07a.js",
     "runtime~main.js.map": "/Shop/static/js/runtime~main.4dadb07a.js.map",
     "static/css/2.af3c1da9.chunk.css": "/Shop/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.66eceb6f.chunk.js": "/Shop/static/js/2.66eceb6f.chunk.js",
-    "static/js/2.66eceb6f.chunk.js.map": "/Shop/static/js/2.66eceb6f.chunk.js.map",
+    "static/js/2.1e78f788.chunk.js": "/Shop/static/js/2.1e78f788.chunk.js",
+    "static/js/2.1e78f788.chunk.js.map": "/Shop/static/js/2.1e78f788.chunk.js.map",
     "index.html": "/Shop/index.html",
-    "precache-manifest.328ea35ccd1c444606fc43598f354d30.js": "/Shop/precache-manifest.328ea35ccd1c444606fc43598f354d30.js",
+    "precache-manifest.c4471a1b965aac2b7b391c31e63b5826.js": "/Shop/precache-manifest.c4471a1b965aac2b7b391c31e63b5826.js",
     "service-worker.js": "/Shop/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/Shop/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.fdc7d9e4.chunk.css.map": "/Shop/static/css/main.fdc7d9e4.chunk.css.map",
+    "static/css/main.917e155e.chunk.css.map": "/Shop/static/css/main.917e155e.chunk.css.map",
     "static/media/Gabriela-Regular.ttf": "/Shop/static/media/Gabriela-Regular.b4856923.ttf",
-    "static/media/act1.jpg": "/Shop/static/media/act1.b2b3477c.jpg",
-    "static/media/act2.jpg": "/Shop/static/media/act2.2463d8ee.jpg",
+    "static/media/act1.jpg": "/Shop/static/media/act1.5f7fe677.jpg",
+    "static/media/act2.jpg": "/Shop/static/media/act2.4409f933.jpg",
     "static/media/exhibition.jpg": "/Shop/static/media/exhibition.e24e95f1.jpg",
     "static/media/marker.png": "/Shop/static/media/marker.b82b58fa.png",
     "static/media/oval.svg": "/Shop/static/media/oval.e69d9632.svg",
-    "static/media/slide1.jpg": "/Shop/static/media/slide1.facd1dd7.jpg",
-    "static/media/slide2.jpg": "/Shop/static/media/slide2.1fdbe1a9.jpg"
+    "static/media/slide1.jpg": "/Shop/static/media/slide1.7f44f375.jpg",
+    "static/media/slide2.jpg": "/Shop/static/media/slide2.32f3a7cf.jpg"
   }
 }

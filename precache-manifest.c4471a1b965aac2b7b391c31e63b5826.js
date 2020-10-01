@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1b40dc05cbfb8e7c2a7c1e56d135ec5",
+    "revision": "9fab18ca2780210be818982f0fcd4791",
     "url": "/Shop/index.html"
   },
   {
-    "revision": "13225149f3b4d23c060a",
+    "revision": "b304375f9ea520dc70e1",
     "url": "/Shop/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "b6f443f84f5922557aac",
-    "url": "/Shop/static/css/main.fdc7d9e4.chunk.css"
+    "revision": "57e27bc10a0fb4f69a85",
+    "url": "/Shop/static/css/main.917e155e.chunk.css"
   },
   {
-    "revision": "13225149f3b4d23c060a",
-    "url": "/Shop/static/js/2.66eceb6f.chunk.js"
+    "revision": "b304375f9ea520dc70e1",
+    "url": "/Shop/static/js/2.1e78f788.chunk.js"
   },
   {
-    "revision": "b6f443f84f5922557aac",
-    "url": "/Shop/static/js/main.4a7de339.chunk.js"
+    "revision": "57e27bc10a0fb4f69a85",
+    "url": "/Shop/static/js/main.9c5c9f91.chunk.js"
   },
   {
     "revision": "0f3f8b8b632a703cb135",
@@ -28,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Shop/static/media/Gabriela-Regular.b4856923.ttf"
   },
   {
-    "revision": "b2b3477c056af988735163c0cdf60332",
-    "url": "/Shop/static/media/act1.b2b3477c.jpg"
+    "revision": "5f7fe6771d695ee053aa51f644621375",
+    "url": "/Shop/static/media/act1.5f7fe677.jpg"
   },
   {
-    "revision": "2463d8ee89e1d1bd0cb818f13b2cc402",
-    "url": "/Shop/static/media/act2.2463d8ee.jpg"
+    "revision": "4409f9331e0a24b433c2b9bede01397e",
+    "url": "/Shop/static/media/act2.4409f933.jpg"
   },
   {
     "revision": "e24e95f19e46a3c8b362d9e29af3e99e",
@@ -48,11 +48,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Shop/static/media/oval.e69d9632.svg"
   },
   {
-    "revision": "facd1dd75829b7d7eb29b5507791c5dc",
-    "url": "/Shop/static/media/slide1.facd1dd7.jpg"
+    "revision": "7f44f3755a5d9ea5e8fa0fff112b6768",
+    "url": "/Shop/static/media/slide1.7f44f375.jpg"
   },
   {
-    "revision": "1fdbe1a96523ee5950f07df734f7328b",
-    "url": "/Shop/static/media/slide2.1fdbe1a9.jpg"
+    "revision": "32f3a7cf70254fc86de6cd98cb2dcaae",
+    "url": "/Shop/static/media/slide2.32f3a7cf.jpg"
   }
 ]);
