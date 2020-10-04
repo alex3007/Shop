@@ -11,9 +11,9 @@ const Description = (props) => {
         itemDescription =
             <Fade>
                 <div className={cls.container}>
-                    <h4><b>Название товара: </b>{itemDescription.name}</h4>
+                    <h4><b>{itemDescription.name}</b></h4>
                     <img src={itemDescription.photo}/>
-                    <p><b>Особенности: </b>{itemDescription.description}</p>
+                    <p><b>{itemDescription.description}</b></p>
                     <OrderForm productName={itemDescription.name} />
                 </div>
             </Fade>

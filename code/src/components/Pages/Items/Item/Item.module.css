@@ -3,8 +3,7 @@
     width: 180px;
     height: 290px;
     border-radius: 3px;
-    border: 1px #616161 solid;
-    box-shadow: 0 0 7px #004992;
+    border: 2px #ffffff solid;
     margin: 10px;
     padding: 30px 10px 10px 10px;
     background-color: #ffffff;
@@ -12,7 +11,7 @@
 
 .item:hover {
     transition-duration: .3s;
-    border: 1px #ce4720 solid;
+    border: 2px #3a8cd7 solid;
     box-shadow: 0 0 0;
 }
 .item:hover .imageExample {
@@ -28,7 +27,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 800px;
     margin: auto;
     justify-content: center;
 }
@@ -60,14 +58,14 @@
 }
 
 .itemCost {
-    color: #f25529;
+    color: #3a8cd7;
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .buyButton {
-    background-color: #f25529;
+    background-color: #9099a0;
     color: #ffffff!important;
     padding: 3px 10px 5px 10px;
     cursor: pointer;
@@ -77,7 +75,7 @@
 .buyButton:hover {
     text-decoration: none;
     color: #ffffff;
-    background-color: #bc4d29;
+    background-color: #3a8cd7;
 }
 
 .itemNew {

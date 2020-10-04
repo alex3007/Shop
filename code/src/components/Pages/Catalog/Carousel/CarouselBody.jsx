@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import cls from './CarouselBody.module.css';
-import slide1 from '../../../../../assets/images/slide1.jpg';
-import slide2 from '../../../../../assets/images/slide2.jpg';
+import slide1 from '../../../../assets/images/slide1.jpg';
+import slide2 from '../../../../assets/images/slide2.jpg';
 
 const CarouselBody = (props) => {
     return (
@@ -18,7 +18,7 @@ const CarouselBody = (props) => {
                             src={slide1}
                             alt="First slide"
                         />
-                        <h3>Качественная пневматика</h3>
+                        <h3>Качественная пневматика<br/> FESTO</h3>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -28,7 +28,7 @@ const CarouselBody = (props) => {
                             src={slide2}
                             alt="Third slide"
                         />
-                        <h3>Товары из Европы, СНГ и Китая</h3>
+                        <h3>Качественная пневматика<br/> FESTO</h3>
                     </div>
                 </Carousel.Item>
             </Carousel>

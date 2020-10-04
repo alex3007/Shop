@@ -8,59 +8,62 @@
     width: 130px;
     display: flex;
     flex-direction: column;
-    padding-top: 5px;
-    padding-left: 10px;
     transition: all 0.5s;
     overflow: hidden;
-    background-color: #343a40 !important;
+    background-color: #3a8cd7 !important;
 
 }
-.topLinksArea{
-    display: flex;
-    flex-flow: column;
-    margin: 10px 0;
-}
 
-.link, .topLink, .secondLink {
+.topLink i {
+    margin: 0 15px 0 0;
+    padding: 0;
+    width: 10px;
+    text-align: center;
+    color: #ffffff;
     transition-duration: .3s;
-    border: dimgray solid 1px;
-    margin: 2px 3px 2px 0;
-    box-shadow: 0 0 5px rgba(4, 41, 247, 0.36);
-    border-radius: 7px;
-    padding: 5px 5px 8px 5px;
-    font-size: 12px;
-    color: #ffffff;
-    width: 110px;
-
 }
 
-.link:hover, .topLink:hover, .secondLink:hover {
+.link, .topLink, .bottomLink {
     transition-duration: .3s;
-    border-color: rgba(255, 158, 34, 0.4);
-    color: #ff9e22;
-    text-decoration: none;
+    border-bottom: #a7a4a4 solid 2px;
+    padding: 10px 5px 10px 5px;
+    font-size: 14px;
+    color: #575656;
+    width: 130px;
+    font-weight: bold;
 }
 
-.topLink, .topLink:hover{
-    color: #ffffff;
-    background-color: #52c292;
-    border-color: #bab7b7;
-}
-.secondLink, .secondLink:hover{
-    color: #ffffff;
-    background-color: #c15913;
-    border-color: #bab7b7;
+.link:hover, .active {
+    transition-duration: .3s;
+    border-bottom: #3a8cd7 solid 2px;
+    color: #3a8cd7!important;
+    text-decoration: none!important;
 }
 
-.active {
-    text-decoration: none;
-    border-color: rgba(255, 158, 34, 0.4);
-    color: #ff9e22;
+
+
+.topLink {
+    transition-duration: .3s;
+    border-bottom: #ffffff solid 2px;
+    color: #ffffff!important;
+    text-decoration: none!important;
+    background-color: #3a8cd7 ;
+}
+.topLink:hover{
+    background-color: rgb(52, 125, 186)
 }
 
-.topActive,.topLink:hover,.secondLink:hover{
+.topActive{
     opacity: 0.8;
+    background: linear-gradient(rgba(124, 137, 142, 0.4), rgba(98, 108, 113, 0.6), rgba(87, 95, 99, 0.8), rgba(95, 105, 109, 0.8))
 }
+
+.topLink:hover i, .active i{
+    text-decoration: none!important;
+    color: #ffffff!important;
+    transition-duration: .3s;
+}
+
 
 .onClickMoving{
     border: solid #b1b1b1;
@@ -68,11 +71,11 @@
     color: #ffffff;
     height: auto;
     cursor: pointer;
-    background-color: #707070;
+    background-color: #9099a0;
 }
 
 .onClickMoving:hover {
-    background-color: #5b5b5b;
+    background-color: rgba(144, 153, 160, 0.84);
 }
 
 .onClickMoving i{

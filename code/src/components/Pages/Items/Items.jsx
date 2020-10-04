@@ -1,7 +1,8 @@
 import React from 'react';
-import {withRouter, Route} from 'react-router-dom';
+import {withRouter,Redirect, Route} from 'react-router-dom';
 import ItemContainer from './Item/ItemContainer';
 import DescriptionContainer from './Description/DescriptionContainer';
+import Catalog from "../Catalog/Catalog";
 
 const Items = (props) => {
 
@@ -9,6 +10,12 @@ const Items = (props) => {
     let WithRouterDescriptionContainer = withRouter(DescriptionContainer);
     return (
         <div>
+
+            <Route exact path='/'
+                   render={() => <Redirect to={"/Catalog"}/>}/>
+            <Route path="/Catalog" render={() =>
+                <Catalog
+                    products={props.products}/>}/>
             <Route exact path='/:products?'
                    render={() =>
                        <WithRouterItemContainer

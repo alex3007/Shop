@@ -2,8 +2,6 @@ import React from 'react';
 import cls from './Item.module.css';
 import {NavLink} from "react-router-dom";
 import Zoom from 'react-reveal/Zoom';
-import ActionCards from './ActionCards/ActionCards';
-import Carousel from "./Carousel/CarouselBody";
 
 const Item = (props) => {
 
@@ -17,13 +15,7 @@ const Item = (props) => {
             alert('Товар добавлен в корзину!')
         )
     }
-    if (productsParams === 'all_products' || !productsParams) {
-        actionCards = <ActionCards/>
-        carousel = <Carousel/>
-    } else {
-        actionCards = null
-        carousel = null
-    }
+
     if (items !== 'loading') {
         itemsElements = items.map(e => (
 

@@ -9,7 +9,7 @@ const Header = (props) => {
     return (
         <header>
             <HeaderTop/>
-            <Navbar className={cls.navBar} collapseOnSelect expand="md" variant="light">
+            <Navbar className={cls.navBar} collapseOnSelect expand="md" variant="dark">
                 <Navbar.Toggle className={cls.toggler} aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="nav mr-auto navArea">
@@ -21,8 +21,8 @@ const Header = (props) => {
                                  to={"/contacts"}>Контакты</NavLink>
                     </Nav>
                     <Nav className="navArea">
-                        <NavLink className={cls.navLinkBasket} to={"/box"}>
-                            <i className='fa fa-shopping-basket'/>
+                        <NavLink className={cls.navLink} activeClassName={cls.navActivLink} to={"/box"}>
+                            <i className='fa fa-shopping-cart'/>
                              0.00 руб
                         </NavLink>
                     </Nav>

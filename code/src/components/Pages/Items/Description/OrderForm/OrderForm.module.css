@@ -1,15 +1,16 @@
 .confirmButton {
-    background-color: #f25529;
+    background-color: #9099a0;
     color: #ffffff;
     padding: 3px 10px 5px 10px;
     margin-top: 10px;
+    width: 150px;
 
 }
 
 .confirmButton:hover {
     text-decoration: none;
     color: #ffffff;
-    background-color: #bc4d29;
+    background-color: #81ba9e;
 }
 
 .modal {
@@ -17,6 +18,7 @@
     max-width: 300px;
     padding: 30px;
     background-color: #3d7298;
+    text-align: center;
 }
 
 .overlay {

@@ -9,6 +9,7 @@ import Delivery from "./components/Pages/Delivery/Delivery";
 import AboutUs from "./components/Pages/AboutUs/AboutUs";
 import Contacts from "./components/Pages/Contacts/Contacts";
 import Actions from "./components/Pages/Actions/Actions";
+import Catalog from "./components/Pages/Catalog/Catalog";
 import ItemsContainer from "./components/Pages/Items/ItemsContainer";
 import Fade from 'react-reveal/Fade';
 import Slide from "react-reveal/Slide";

@@ -50,7 +50,7 @@ export default class OrderForm extends React.Component {
                                        required
                                        onChange={this.onPhoneChange}/><br/>
                                 <br/>
-                                <button onClick={this.closeModal}>Подтвердить заказ</button>
+                                <button className={cls.confirmButton} onClick={this.closeModal}>Подтвердить</button>
                             </form>
                         </div>
                 </ReactModal>
