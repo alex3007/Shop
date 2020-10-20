@@ -6,7 +6,7 @@
 }
 
 .titleArea {
-    background: linear-gradient(rgba(79, 97, 119, 0), rgb(82, 113, 128), rgb(82, 113, 128), rgb(82, 113, 128)) !important;
+    background: linear-gradient(rgba(79, 97, 119, 0), #a1b9d1, #748595,#748595)!important;
     margin: 0!important;
 }
 

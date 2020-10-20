@@ -18,7 +18,7 @@ h3 {
     margin: 0!important;
 }
 .infoTitle{
-    background: linear-gradient(rgba(79, 97, 119, 0), rgb(82, 113, 128),rgb(82, 113, 128), rgb(184, 187, 160), rgb(82, 113, 128))!important;
+    background: linear-gradient(rgba(79, 97, 119, 0), #a1b9d1, #748595,#748595)!important;
     border-width: 1px 1px 1px 1px;
 }
 

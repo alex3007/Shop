@@ -18,21 +18,21 @@ export default class Sidebar extends React.Component {
 
     render() {
         let sidebarElements = this.props.products
-            .map(e => (<NavLink className={cls.topLink} to={e.path}
-                                activeClassName={cls.topActive}>
+            .map(e => (<NavLink className={cls.link} to={e.path}
+                                activeClassName={cls.active}>
                 {e.name}
             </NavLink>));
         return (
             <div className={cls.sidebarContainer}>
                 <div ref={this.wrapperRef} className={cls.sidebar}>
-                    <NavLink className={cls.topLink} to='/catalog'
-                             activeClassName={cls.topActive}><i className="fa fa-shopping-bag" />Каталог</NavLink>
-                    <NavLink className={cls.topLink} to='/actions'
-                             activeClassName={cls.topActive}><i className="fa fa-dollar" />Акции</NavLink>
-                    <NavLink className={cls.topLink} to='/all_products'
-                             activeClassName={cls.topActive}><i className="fa fa-shopping-basket" />Все товары</NavLink>
-                    {sidebarElements}
-
+                        <NavLink className={cls.topLink} to='/catalog'
+                                 activeClassName={cls.topActive}><i className="fa fa-shopping-bag"/>Каталог</NavLink>
+                        <NavLink className={cls.topLink} to='/actions'
+                                 activeClassName={cls.topActive}><i className="fa fa-dollar"/>Акции</NavLink>
+                        <NavLink className={cls.topLink} to='/all_products'
+                                 activeClassName={cls.topActive}><i className="fa fa-shopping-basket"/>Все
+                            товары</NavLink>
+                        {sidebarElements}
                 </div>
                 <div className={cls.onClickMoving} onClick={() => this.handleClick()}>
                     <i ref={this.iRef} className='fa fa-angle-left'/>

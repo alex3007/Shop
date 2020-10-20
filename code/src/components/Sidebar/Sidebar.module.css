@@ -10,7 +10,7 @@
     flex-direction: column;
     transition: all 0.5s;
     overflow: hidden;
-    background-color: #3a8cd7 !important;
+    background: #6391bf;
 
 }
 
@@ -19,75 +19,59 @@
     padding: 0;
     width: 10px;
     text-align: center;
-    color: #ffffff;
+    color: #e0ffeb;
     transition-duration: .3s;
 }
 
-.link, .topLink, .bottomLink {
-    transition-duration: .3s;
-    border-bottom: #a7a4a4 solid 2px;
-    padding: 10px 5px 10px 5px;
+.link, .topLink {
+    transition: .3s;
+    padding: 15px 0 15px 7px;
     font-size: 14px;
-    color: #575656;
     width: 130px;
     font-weight: bold;
+    border-bottom: #ffffff solid 1px;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    text-shadow: #333333 0 0 2px;
+    background: linear-gradient(#90bae1,#6391bf,#5988b8);
+
 }
 
-.link:hover, .active {
-    transition-duration: .3s;
-    border-bottom: #3a8cd7 solid 2px;
-    color: #3a8cd7!important;
-    text-decoration: none!important;
-}
-
-
-
-.topLink {
-    transition-duration: .3s;
-    border-bottom: #ffffff solid 2px;
-    color: #ffffff!important;
-    text-decoration: none!important;
-    background-color: #3a8cd7 ;
-}
-.topLink:hover{
-    background-color: rgb(52, 125, 186)
-}
-
-.topActive{
-    opacity: 0.8;
+.link:hover, .topLink:hover, .active, .topActive {
     background: linear-gradient(rgba(124, 137, 142, 0.4), rgba(98, 108, 113, 0.6), rgba(87, 95, 99, 0.8), rgba(95, 105, 109, 0.8))
 }
 
-.topLink:hover i, .active i{
-    text-decoration: none!important;
-    color: #ffffff!important;
+
+.topLink:hover i, .topActive i, .topLink, .topLink:hover, .topActive  {
+    text-decoration: none !important;
+    color: #e0ffeb !important;
     transition-duration: .3s;
 }
 
 
-.onClickMoving{
+.onClickMoving {
     border: solid #b1b1b1;
     border-width: 0 0 0 1px;
     color: #ffffff;
     height: auto;
     cursor: pointer;
-    background-color: #9099a0;
+    background-color: #51697b;
 }
 
 .onClickMoving:hover {
-    background-color: rgba(144, 153, 160, 0.84);
+    background-color: rgba(81, 105, 123, 0.8);
 }
 
-.onClickMoving i{
+.onClickMoving i {
     padding: 2px 8px 5px 8px;
     margin: 2px;
-    border:1px solid #b1b1b1;
+    border: 1px solid #b1b1b1;
     border-radius: 5px;
     color: #ffffff;
     height: auto;
 }
 
-.wrapperClose{
+.wrapperClose {
     transition: all 0.5s;
     width: 0;
 }

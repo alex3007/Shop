@@ -13,11 +13,11 @@ const ActionCards = (props) => {
         <div className={cls.actions}>
             <NavLink className={cls.actionNav} to={"/actions"}>
                     <img src={actionOne}/>
-                    <p className={cls.actionTitle}>Лучшие цены</p>
+                    <p className={cls.actionTitle}>Интересные предложения</p>
             </NavLink>
             <NavLink className={cls.actionNav} to={"/actions"}>
                     <img src={actionTwo}/>
-                    <p className={cls.actionTitle}>Достойное качество</p>
+                    <p className={cls.actionTitle}>Хорошие скидки</p>
             </NavLink>
         </div>
     )

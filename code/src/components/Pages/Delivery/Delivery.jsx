@@ -1,12 +1,12 @@
 import React from 'react';
 import cls from './Delivery.module.css'
-import Flip from 'react-reveal/Flip';
+import Zoom from 'react-reveal/Zoom';
 
 const Delivery = () => {
     return (
         <div className={cls.flexContainer}>
             <div className={cls.infoContainer}>
-                <Flip right>
+                <Zoom right>
                     <div className={cls.infoArea}>
                         <div className={cls.infoTitle}>
                             <h3><i className="iStyle fa fa-2x fa-shopping-bag"/><br/>Как оформить заказ:</h3>
@@ -46,7 +46,7 @@ const Delivery = () => {
                         </span></li>
                         </ul>
                     </div>
-                </Flip>
+                </Zoom>
             </div>
         </div>
 

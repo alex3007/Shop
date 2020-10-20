@@ -1,10 +1,12 @@
 import {combineReducers, createStore} from "redux";
 import appReducer from "./app-reducer";
+import buyItemReducer from "./buyItem-reducer";
 
 
 let reducers = combineReducers({
 
-    items:appReducer
+    items:appReducer,
+    buyItem:buyItemReducer
 
 });
 

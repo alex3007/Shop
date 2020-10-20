@@ -10,8 +10,6 @@ export const toggleIsFetching = (isFetching) => ({type: 'TOGGLE_IS_FETCHING', is
 const appReducer = (state = initialState, action) => {
 
     switch (action.type) {
-        case 'NEW_SOUL_PATH':
-            return {...state, currentSoulPath: action.newSoulPath};
         case 'SET_PRODUCTS':
             return {...state, products: action.products};
         case 'TOGGLE_IS_FETCHING': {

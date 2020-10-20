@@ -9,7 +9,6 @@ import Delivery from "./components/Pages/Delivery/Delivery";
 import AboutUs from "./components/Pages/AboutUs/AboutUs";
 import Contacts from "./components/Pages/Contacts/Contacts";
 import Actions from "./components/Pages/Actions/Actions";
-import Catalog from "./components/Pages/Catalog/Catalog";
 import ItemsContainer from "./components/Pages/Items/ItemsContainer";
 import Fade from 'react-reveal/Fade';
 import Slide from "react-reveal/Slide";
@@ -19,49 +18,53 @@ import {compose} from "redux";
 import {Provider, connect} from "react-redux";
 import {setProducts, toggleIsFetching} from "./redux/app-reducer";
 import Preloader from "./components/Preloader/Preloader";
-
+import BasketContainer from "./components/Pages/Basket/BasketContainer";
+import data from '../src/assets/data.json'
 
 class App extends React.Component {
 
     componentDidMount() {
-        getItems().then(data => {
-            this.props.setProducts(data);
-            this.props.toggleIsFetching(false)
-        });
+        // getItems().then(data => {
+        this.props.setProducts(data);
+        // this.props.toggleIsFetching(false)
+        // });
     }
 
     render() {
+
         let products = this.props.products;
         return (
-                <div className="App">
+            <div className="App">
+                <Slide top>
                     <div className={"header"}>
                         <Header/>
                     </div>
-                    <div className='flexContainer'>
-                        <Slide left>
-                            <Sidebar products={products}/>
-                        </Slide>
-                        <div className='pagesContainer'>
-                            <Switch>
-                                <Route path="/contacts" component={withReveal(Contacts, <Fade in unmountOnExit/>)}/>
-                                <Route path="/about_us" component={AboutUs}/>
-                                <Route path="/actions" component={Actions}/>
-                                <Route path="/delivery" component={Delivery}/>
-                                <Route path="/" render={() =>
-                                           <ItemsContainer
-                                               products={products}
-                                               isFetching={this.props.isFetching}/>}/>
-                            </Switch>
-                        </div>
+                </Slide>
+                <div className='flexContainer'>
+                    <Slide left>
+                        <Sidebar products={products}/>
+                    </Slide>
+                    <div className='pagesContainer'>
+                        <Switch>
+                            <Route path="/contacts" component={withReveal(Contacts, <Fade in unmountOnExit/>)}/>
+                            <Route path="/about_us" component={AboutUs}/>
+                            <Route path="/actions" component={Actions}/>
+                            <Route path="/delivery" component={Delivery}/>
+                            <Route path="/basket" component={BasketContainer}/>
+                            <Route path="/" render={() =>
+                                <ItemsContainer
+                                    products={products}
+                                    isFetching={this.props.isFetching}/>}/>
+                        </Switch>
                     </div>
-                    <Footer/>
                 </div>
+                <Footer/>
+            </div>
         )
     }
 }
 
 let mapStateToProps = (state) => {
-
     return {
         products: state.items.products,
         isFetching: state.items.isFetching

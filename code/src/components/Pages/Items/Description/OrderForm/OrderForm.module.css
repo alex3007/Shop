@@ -1,9 +1,11 @@
 .confirmButton {
     background-color: #9099a0;
     color: #ffffff;
+    font-size: 20px;
     padding: 3px 10px 5px 10px;
     margin-top: 10px;
-    width: 150px;
+    width: 220px;
+    transition: 0.3s;
 
 }
 
@@ -11,6 +13,7 @@
     text-decoration: none;
     color: #ffffff;
     background-color: #81ba9e;
+    transition: 0.3s;
 }
 
 .modal {

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     margin: 0 auto 10px auto;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
     background: linear-gradient( to bottom , rgba(15, 122, 208, 0.3), rgba(15, 122, 208, 0.6), #0a5fa3);
 
 }
@@ -48,7 +48,7 @@
     text-decoration: none !important;
 }
 
-@media (max-width: 762px) {
+@media (max-width: 982px) {
 
     .actions {
         flex-wrap: wrap;
