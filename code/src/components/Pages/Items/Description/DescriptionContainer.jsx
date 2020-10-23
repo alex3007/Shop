@@ -1,5 +1,8 @@
 import React from 'react';
 import Description from './Description';
+import {compose} from "redux";
+import {connect} from "react-redux";
+import {addBuingProduct} from "../../../../redux/buyItem-reducer";
 
 const DescriptionContainer = (props) => {
 
@@ -16,7 +19,16 @@ const DescriptionContainer = (props) => {
     } else {
         itemDescription = 'loading'
     }
-    return <Description itemDescription={itemDescription}/>
+    return <Description itemDescription={itemDescription}
+                        addBuingProduct={props.addBuingProduct}
+                        buingProducts={props.buingProducts}/>
 };
-export default DescriptionContainer;
+
+let mapStateToProps = (state) => {
+    return {
+        buingProducts: state.buyItem.buingProducts
+    }
+};
+
+export default compose(connect(mapStateToProps, {addBuingProduct}))(DescriptionContainer);
 

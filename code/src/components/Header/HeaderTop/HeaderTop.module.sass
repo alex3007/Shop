@@ -1,19 +1,22 @@
 .headerTop
-  min-height: 100px
+  height: 170px
   display: flex
   flex-flow: row
   justify-content: space-around
   background: linear-gradient(#5685b6, rgba(58, 140, 215, 0.6), #5685b6)
 
+.infoArea
+  display: flex
+  flex-flow: column
+  justify-content:  center
+
 .infoBlock
-  font-size: 14px
   display: flex
   flex-flow: column
   align-items: center
   flex-wrap: wrap
-  margin: auto
   max-width: 600px
-  flex-grow: 5
+  margin-bottom: 10px
 
 .line
   background-color: #ffffff
@@ -30,13 +33,19 @@
   flex-wrap: wrap
   justify-content: space-around
 
-.headerTitle
-  color: #ffffff
-  margin: 5px
+.headerTitle, .headerContact p
+  margin: 5px 10px 0 10px
   text-align: center
   font-weight: bold
-  text-shadow: #333333 0 0 2px;
+  text-shadow: #333333 0 0 2px
+  font-size: 18px
+  color: #e7f0ff
 
+.headerContact p
+  color: #d5efeb
+
+.headerEmail
+  color: #e7f0ff!important
 
 .brandArea, .authArea
   display: flex
@@ -47,7 +56,7 @@
   margin: auto
 
 .navBrand
-  color: #ffffff
+  color: #e7f0ff
   font-weight: bold
   font-size: 25px
   margin: auto
@@ -56,9 +65,48 @@
   text-shadow: #333333 0 0 2px
 
 .navBrand:hover
-  color: #b1c6e0
+  color: #e8fffc
   text-decoration: none
 
 
 .authBlock
   margin: auto
+
+
+
+@media (max-width: 667px)
+ .headerTitle, .headerContact p
+   font-size: 15px
+
+
+
+@media (max-width: 535px)
+  .headerTop
+    margin-top: 40px
+    width: 100%
+    height: 130px
+
+  .infoBlock
+    display: none
+
+  .brandArea
+    flex-wrap: wrap
+
+  .brandArea img
+    width: 60px
+    height: 50px
+    margin: auto
+    margin-bottom: 10px
+
+  .navBrand
+    color: #e7f0ff
+    font-weight: bold
+    font-size: 20px
+    margin: auto
+    margin-top: 0
+    transition: all 0.5s
+    padding: 0 5px 0 10px
+    text-shadow: #333333 0 0 2px
+
+  .line
+    display: none

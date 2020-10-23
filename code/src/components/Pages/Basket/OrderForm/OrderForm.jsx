@@ -38,11 +38,17 @@ export default class OrderForm extends React.Component {
                     onRequestClose={this.closeModal}
                     className={cls.modal}
                     overlayClassName={cls.overlay}>
-                        <div>
-                            <h3>Заказ товара</h3>
+                        <div className={cls.form}>
+                            <h3>Форма заказа</h3>
+                            <hr/>
+                            <div className={cls.notesArea}>
+                                <p>Количество наименований: {this.props.allProductsQuantity}</p>
+
+                                <p>Общая стоимость: {this.props.sumCost} BYN</p>
+                            </div>
+                            <hr/>
+                            <p><b>Личные данные</b></p>
                             <form>
-                                <input type="text" placeholder="Название товара"
-                                       value={this.state.productName}/><br/>
                                 <input type="text" placeholder="Введите имя"
                                        required
                                        onChange={this.onNameChange}/><br/>
@@ -50,7 +56,8 @@ export default class OrderForm extends React.Component {
                                        required
                                        onChange={this.onPhoneChange}/><br/>
                                 <br/>
-                                <button className={cls.confirmButton} onClick={this.closeModal}>Подтвердить</button>
+                                <button className={cls.confirmButton} onClick={this.closeModal}>Подтвердить заказ
+                                </button>
                             </form>
                         </div>
                 </ReactModal>

@@ -22,6 +22,7 @@
     border: #ffffff solid 1px;
     width: 80px;
     color: #ffffff;
+    border-radius: 15px;
     padding-bottom: 3px;
     transition: all 0.5s;
 }
@@ -30,7 +31,6 @@
     opacity: 0.8;
     transition: all 0.5s;
 }
-
 
 .modalBtn {
     transition: all 0.5s;
@@ -52,11 +52,4 @@
 .login {
     color: #ffffff;
     text-shadow: #333333 0 0 2px;
-}
-
-
-@media (max-width: 535px){
-    .modal {
-        margin-top: 230px ;
-    }
 }

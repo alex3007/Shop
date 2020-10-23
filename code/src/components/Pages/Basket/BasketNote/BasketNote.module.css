@@ -3,7 +3,7 @@
     padding: 0 10px;
 }
 
-.itemBody {
+.itemBody{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -24,12 +24,12 @@
     box-shadow: 0 0 0;
 }
 
-.title {
+.title{
     text-align: center;
     font-family: Arial;
     background-color: rgba(128, 161, 193, 0.7);
-    color: #ffffff !important;
-    margin: 0 0 5px 0;
+    color: #ffffff!important;
+    margin: 0 0 5px 0 ;
     border-radius: 0 10px 0 10px;
 }
 
@@ -68,7 +68,7 @@
 
 .buyButton {
     background-color: #9099a0;
-    color: #ffffff !important;
+    color: #ffffff!important;
     padding: 3px 10px 5px 10px;
     cursor: pointer;
     float: right;
@@ -89,50 +89,37 @@
     padding: 0 10px 2px 10px;
 
 }
-
-.wrapperOpen {
+.wrapperOpen{
     display: block;
 }
-
-.wrapperClose {
+.wrapperClose{
     display: none;
 }
-
-.itemQuantityArea {
-
+.itemQuantity{
     margin: 0 5px;
 }
-
-.itemQuantityArea h3 {
+.itemQuantity h3{
     color: #6c757d;
-    font-size: 20px !important;
+    font-size: 20px!important;
 }
 
-.itemQuantityArea p {
-    border: 1px solid #3d7298;
-    color: #6c757d;
-    font-size: 20px !important;
-}
-
-.itemFooter {
+.itemFooter{
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: center;
-    color: #6c757d !important;
+    color: #6c757d!important;
 }
 
-.productQuantity {
+.productQuantity{
     width: 40px;
 }
-
-.controlsArea {
+.controlsArea{
     display: flex;
     flex-flow: column;
     margin: 0 20px 0 3px;
 }
-
-.quantityControls {
+.quantityControls{
     width: 15px;
     height: 15px;
     background-color: rgba(141, 155, 164, 0.62) !important;
@@ -143,29 +130,29 @@
     justify-content: center;
 }
 
-.addOrder {
+.addOrder{
     text-align: center;
     background-color: #a1b9d1;
     padding-bottom: 10px;
     border-radius: 10px 0 10px 0;
     margin-top: 5px;
-    margin-bottom: 5px;
-}
-.note{
-   text-align: center;
-    width: 100%;
-    color: #3d7298;
-    font-size: 20px;
 }
 
-@media (max-width: 535px) {
-    .title{
-        font-size: 30px;
-        margin-top: 50px;
-        margin-bottom: 15px;
-    }
+
+@media (max-width: 436px) {
+
     .item {
         margin: 10px 5px;
 
     }
+
+}
+
+@media (max-width: 436px) {
+
+    .item {
+        margin: 10px 5px;
+
+    }
+
 }

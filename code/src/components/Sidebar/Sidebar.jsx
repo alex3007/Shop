@@ -7,13 +7,15 @@ export default class Sidebar extends React.Component {
         super(props);
         this.wrapperRef = React.createRef();
         this.iRef = React.createRef();
+        this.wrapperAreaRef = React.createRef();
+        this.wrapContainerRef = React.createRef();
     }
 
     handleClick() {
-        const sidebarWrapper = this.wrapperRef.current;
-        sidebarWrapper.classList.toggle(`${cls.wrapperClose}`)
-        const iWrapper = this.iRef.current;
-        iWrapper.classList.toggle('fa-angle-right')
+        this.wrapperRef.current.classList.toggle(`${cls.wrapperClose}`)
+        this.iRef.current.classList.toggle('fa-angle-right')
+        this.wrapperAreaRef.current.classList.toggle(`${cls.wrapperArea}`)
+        this.wrapContainerRef.current.classList.toggle(`${cls.wrapperContainer}`)
     }
 
     render() {
@@ -23,19 +25,19 @@ export default class Sidebar extends React.Component {
                 {e.name}
             </NavLink>));
         return (
-            <div className={cls.sidebarContainer}>
-                <div ref={this.wrapperRef} className={cls.sidebar}>
-                        <NavLink className={cls.topLink} to='/catalog'
-                                 activeClassName={cls.topActive}><i className="fa fa-shopping-bag"/>Каталог</NavLink>
-                        <NavLink className={cls.topLink} to='/actions'
-                                 activeClassName={cls.topActive}><i className="fa fa-dollar"/>Акции</NavLink>
-                        <NavLink className={cls.topLink} to='/all_products'
-                                 activeClassName={cls.topActive}><i className="fa fa-shopping-basket"/>Все
-                            товары</NavLink>
-                        {sidebarElements}
+            <div ref={this.wrapContainerRef} className={cls.sidebarContainer}>
+                <div  ref={this.wrapperRef} className={cls.sidebar}>
+                    <NavLink className={cls.topLink} to='/catalog'
+                             activeClassName={cls.topActive}><i className="fa fa-shopping-bag"/>Каталог</NavLink>
+                    <NavLink className={cls.topLink} to='/actions'
+                             activeClassName={cls.topActive}><i className="fa fa-dollar"/>Акции</NavLink>
+                    <NavLink className={cls.topLink} to='/all_products'
+                             activeClassName={cls.topActive}><i className="fa fa-shopping-basket"/>Все
+                        товары</NavLink>
+                    {sidebarElements}
                 </div>
-                <div className={cls.onClickMoving} onClick={() => this.handleClick()}>
-                    <i ref={this.iRef} className='fa fa-angle-left'/>
+                <div ref={this.wrapperAreaRef} className={cls.onClickMoving} onClick={() => this.handleClick()}>
+                    <i ref={this.iRef} className='fa fa-2x fa-angle-left '/>
                 </div>
             </div>
         );

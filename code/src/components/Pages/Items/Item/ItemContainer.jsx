@@ -1,5 +1,7 @@
 import React from 'react';
 import Item from './Item';
+import {compose} from "redux";
+import {connect} from "react-redux";
 
 const ItemContainer = (props) => {
 
@@ -15,7 +17,6 @@ const ItemContainer = (props) => {
             return ('/' + productsParams === e.path)
         });
         if (items) {
-
             itemsName = items.name;
             items = items.items;
 
@@ -23,8 +24,19 @@ const ItemContainer = (props) => {
             items = 'loading'
         }
     }
-    return  <Item products={items} itemsName={itemsName} productsParams={productsParams} />
+
+    return <Item products={items}
+                 itemsName={itemsName}
+                 productsParams={productsParams}/>
+}
+
+let mapStateToProps = (state) => {
+    return {
+        products: state.items.products,
+    }
 };
 
-export default ItemContainer;
+export default compose(connect(mapStateToProps))(ItemContainer);
+
+
 

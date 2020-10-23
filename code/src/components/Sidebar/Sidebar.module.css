@@ -1,6 +1,6 @@
 .sidebarContainer {
     display: flex;
-    height: 100%;
+    height: auto;
 
 }
 
@@ -33,7 +33,7 @@
     color: #ffffff !important;
     text-decoration: none !important;
     text-shadow: #333333 0 0 2px;
-    background: linear-gradient(#90bae1,#6391bf,#5988b8);
+    background: linear-gradient(#90bae1, #6391bf, #5988b8);
 
 }
 
@@ -42,7 +42,7 @@
 }
 
 
-.topLink:hover i, .topActive i, .topLink, .topLink:hover, .topActive  {
+.topLink:hover i, .topActive i, .topLink, .topLink:hover, .topActive {
     text-decoration: none !important;
     color: #e0ffeb !important;
     transition-duration: .3s;
@@ -74,4 +74,79 @@
 .wrapperClose {
     transition: all 0.5s;
     width: 0;
+}
+
+.wrapperBlack {
+    background-color: #171d23;
+}
+
+
+@media (max-width: 535px) {
+    .sidebarContainer {
+        background-color: transparent !important;
+        position: fixed;
+        z-index: 1;
+        height:100%;
+        width: auto;
+    }
+
+    .sidebar {
+        width: 0;
+    }
+    .topLink, .link{
+        border: 1px solid rgba(255, 255, 255, 0.71);
+     }
+    .onClickMoving {
+        color: #ffffff;
+        height: 100%;
+        width: 40px;
+        cursor: pointer;
+        border: solid transparent;
+        background-color: transparent;
+    }
+
+    .onClickMoving:hover {
+        background-color: transparent;
+    }
+
+    .onClickMoving:hover i {
+        background-color: rgba(118, 154, 180, 0.8);
+    }
+
+    .onClickMoving i {
+        padding-right: 8px ;
+        margin: 2px 0 0 2px;
+        color: #ffffff;
+        width: 40px;
+        background-color: rgba(118, 154, 180, 1);
+        border-radius: 5px;
+    }
+
+    .wrapperClose {
+        transition: all 0.5s;
+        width: 130px;
+        height:100%;
+        position: absolute;
+    }
+
+    .wrapperArea {
+         background-color: rgba(108, 117, 125, 0.56);
+         height: 100%;
+         width: 100%;
+         display: block;
+
+     }
+    .wrapperArea i {
+     margin: 2px 0 0 130px;
+        transition: 0.5s;
+        width: 40px;
+    }
+    .wrapperArea:hover {
+        background-color: rgba(108, 117, 125, 0.56);
+    }
+    .wrapperContainer{
+        width: 100%;
+
+    }
+
 }

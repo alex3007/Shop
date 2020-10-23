@@ -1,7 +1,7 @@
 .infoArea {
     border: #cecece 1px solid;
     max-width: 600px;
-    margin: 10px;
+    margin: 10px 5px;
     box-shadow: 0 0 7px #cecece;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .colomnStyle {
-    margin: 20px;
+    margin: 20px 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

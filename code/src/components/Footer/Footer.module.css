@@ -2,6 +2,6 @@
     background: linear-gradient( to top, rgba(82, 105, 123, 0.76), #52697b, #415463);
     color: #ffffff;
     padding: 3px 0;
-    width:100%;
+    min-width: 340px!important;
     text-align: center;
     }

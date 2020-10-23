@@ -24,7 +24,6 @@ export default class Catalog extends React.Component {
                 <div ref={this.wrapperRef} className={cls.catalogContainer}>
                     {sidebarElements}
                 </div>
-
             </div>
         );
     }

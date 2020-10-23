@@ -9,17 +9,19 @@ const Header = (props) => {
         <div className={cls.headerTop}>
             <div className={cls.brandArea}>
                 <img src={brand}/>
-                <NavLink className={cls.navBrand} to={"/"}>Pneum</NavLink>
+                <NavLink className={cls.navBrand} to={"/"}>PNEUM</NavLink>
             </div>
             <div className={cls.infoArea}>
                 <div className={cls.infoBlock}>
                     <p className={cls.headerTitle}>Фирменный интеренет-магазин</p>
                 </div>
-                <hr className={cls.line}/>
+                <div>
+                    <hr className={cls.line}/>
+                </div>
                 <div className={cls.headerContact}>
-                    <p className={cls.headerTitle}>+375-33-333-22-11</p>
-                    <p className={cls.headerTitle}>+375-44-333-22-11</p>
-                    <p className={cls.headerTitle}>pneum@info.by</p>
+                    <p >+375-33-333-22-11</p>
+                    <p >+375-44-333-22-11</p>
+                    <p className={cls.headerEmail}>pneum@info.by</p>
                 </div>
             </div>
             <div className={cls.authArea}>

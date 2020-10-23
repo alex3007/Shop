@@ -1,7 +1,8 @@
 import React from 'react';
 import cls from './Item.module.css';
-import ItemCardContainer from './ItemCard/ItemCardContainer';
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+import ItemCardContainer from "./ItemCard/ItemCardContainer";
 
 const Item = (props) => {
 
@@ -24,9 +25,11 @@ const Item = (props) => {
             <Fade top>
                 <h1 className={cls.title}>{props.itemsName}</h1>
             </Fade>
-            <div className={cls.flexItemsContainer}>
-                {itemsElements}
-            </div>
+            <Zoom>
+                <div className={cls.flexItemsContainer}>
+                    {itemsElements}
+                </div>
+            </Zoom>
         </div>
     )
 };

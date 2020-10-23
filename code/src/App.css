@@ -1,13 +1,28 @@
-
 .flexContainer {
     display: flex;
     flex-direction: row;
     padding: 0;
-    min-width: 450px!important;
+    min-width: 340px !important;
     background-color: #eff2f6;
 }
 
-.pagesContainer{
+.pagesContainer {
     margin: 0 auto;
     width: 100%;
+}
+
+@media (max-width: 535px) {
+    .header {
+        position: fixed;
+        z-index: 1;
+        background-color: #eff2f6;
+    }
+
+    .flexContainer {
+        padding-top: 177px;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
 }

@@ -1,35 +1,29 @@
 import React from 'react';
 import ItemCard from './ItemCard';
-import {addBuingProductAC} from "../../../../../redux/buyItem-reducer";
-import {connect} from "react-redux";
 import {compose} from "redux";
-
+import {connect} from "react-redux";
+import {addBuingProduct} from "../../../../../redux/buyItem-reducer";
 
 const ItemCardContainer = (props) => {
 
-    return <ItemCard path={props.path}
+
+    return <ItemCard
+                     path={props.path}
                      photo={props.photo}
-                     quantity={props.quantity}
+                     features={props.features}
                      name={props.name}
                      cost={props.cost}
+                     productsParams={props.productsParams}
                      addBuingProduct={props.addBuingProduct}
-                     buingProducts={props.buingProducts}
-    />
+                     buingProducts={props.buingProducts}/>
 };
 
-const mapStateToProps = (state) => {
+
+let mapStateToProps = (state) => {
     return {
         buingProducts: state.buyItem.buingProducts
     }
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        addBuingProduct: (newItem) => {
-            dispatch(addBuingProductAC(newItem));
-        }
-    }
-};
+export default compose(connect(mapStateToProps, {addBuingProduct}))(ItemCardContainer);
 
-export default compose(
-    connect(mapStateToProps, mapDispatchToProps))(ItemCardContainer);
