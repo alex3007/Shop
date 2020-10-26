@@ -1,9 +1,17 @@
+.header{
+    background-color: #eff2f6;
+}
+
 .flexContainer {
     display: flex;
     flex-direction: row;
     padding: 0;
     min-width: 340px !important;
     background-color: #eff2f6;
+    padding-top: 7px;
+}
+.sidebar{
+    height: 100%;
 }
 
 .pagesContainer {
@@ -15,11 +23,11 @@
     .header {
         position: fixed;
         z-index: 1;
-        background-color: #eff2f6;
+        width: 100%;
     }
 
     .flexContainer {
-        padding-top: 177px;
+        padding-top: 122px;
     }
 
     .sidebar{

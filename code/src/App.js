@@ -18,8 +18,8 @@ import {setProducts, toggleIsFetching} from "./redux/app-reducer";
 import Preloader from "./components/Preloader/Preloader";
 import BasketContainer from "./components/Pages/Basket/BasketContainer";
 import data from '../src/assets/data.json';
-import ItemContainer from "./components/Pages/Items/Item/ItemContainer";
-import DescriptionContainer from "./components/Pages/Items/Description/DescriptionContainer";
+import ItemContainer from "./components/Pages/Items/ItemsContainer";
+import DescriptionContainer from "./components/Pages/Description/DescriptionContainer";
 import Catalog from "./components/Pages/Catalog/Catalog";
 import HeaderContainer from "./components/Header/HeaderContainer";
 
@@ -44,15 +44,14 @@ class App extends React.Component {
         let WithRouterDescriptionContainer = withRouter(DescriptionContainer);
         return (
             <div className="App">
-                <Slide top>
-                    <div className={"header"}>
+                <div className={"header"}>
+                    <Slide top>
                         <HeaderContainer/>
-                    </div>
-                </Slide>
+                    </Slide>
+                </div>
+
                 <div className='flexContainer'>
-
                     <Sidebar className={"sidebar"} products={products}/>
-
                     <div className='pagesContainer'>
                         <Switch>
                             <Route exact path='/'

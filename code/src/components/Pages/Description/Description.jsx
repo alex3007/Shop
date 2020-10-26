@@ -29,9 +29,11 @@ export default class Description extends React.Component {
             itemDescription =
                 <Fade>
                     <div className={cls.container}>
-                        <h4><b>{itemDescription.name}</b></h4>
+                        <h4>{itemDescription.name}</h4>
                         <img src={itemDescription.photo}/>
-                        <p><b>{itemDescription.description}</b></p>
+                        <p><b>Цена: </b>{itemDescription.cost} BYN</p>
+                        <p><b>Описание: </b>{itemDescription.description}</p>
+                        <p><b>Характеристики: </b>{itemDescription.description}</p>
                         <NavLink to='/basket' onClick={this.onBuyProduct} className={cls.confirmButton}>Добавить в
                             корзину</NavLink>
                     </div>

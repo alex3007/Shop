@@ -55,11 +55,13 @@ export default class Basket extends React.Component {
                 <Fade top><h1 className={cls.title}>Корзина товаров</h1></Fade>
                 {itemsElements}
                 {note}
-                <div className={cls.addOrder}>
+                <Fade bottom>
+                    <div className={cls.addOrder}>
                     <h3>Общая стоимость товаров: {this.state.summaryCost} BYN</h3>
                     <OrderForm sumCost={this.state.summaryCost}
                                allProductsQuantity={this.props.items.length}/>
                 </div>
+                </Fade>
             </div>
 
         )

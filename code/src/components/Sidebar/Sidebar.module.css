@@ -5,12 +5,14 @@
 }
 
 .sidebar {
-    width: 130px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     transition: all 0.5s;
     overflow: hidden;
     background: #6391bf;
+    border: 1px solid #ffffff;
+    box-shadow: #3d5d78 0 0 10px;
 
 }
 
@@ -27,7 +29,7 @@
     transition: .3s;
     padding: 15px 0 15px 7px;
     font-size: 14px;
-    width: 130px;
+    width: 150px;
     font-weight: bold;
     border-bottom: #ffffff solid 1px;
     color: #ffffff !important;
@@ -41,47 +43,19 @@
     background: linear-gradient(rgba(124, 137, 142, 0.4), rgba(98, 108, 113, 0.6), rgba(87, 95, 99, 0.8), rgba(95, 105, 109, 0.8))
 }
 
-
 .topLink:hover i, .topActive i, .topLink, .topLink:hover, .topActive {
     text-decoration: none !important;
     color: #e0ffeb !important;
     transition-duration: .3s;
 }
 
-
-.onClickMoving {
-    border: solid #b1b1b1;
-    border-width: 0 0 0 1px;
-    color: #ffffff;
-    height: auto;
-    cursor: pointer;
-    background-color: #51697b;
-}
-
-.onClickMoving:hover {
-    background-color: rgba(81, 105, 123, 0.8);
-}
-
-.onClickMoving i {
-    padding: 2px 8px 5px 8px;
-    margin: 2px;
-    border: 1px solid #b1b1b1;
-    border-radius: 5px;
-    color: #ffffff;
-    height: auto;
-}
-
-.wrapperClose {
-    transition: all 0.5s;
-    width: 0;
-}
-
-.wrapperBlack {
-    background-color: #171d23;
+.movingIconArea {
+       display: none;
 }
 
 
 @media (max-width: 535px) {
+
     .sidebarContainer {
         background-color: transparent !important;
         position: fixed;
@@ -90,63 +64,81 @@
         width: auto;
     }
 
-    .sidebar {
-        width: 0;
-    }
-    .topLink, .link{
-        border: 1px solid rgba(255, 255, 255, 0.71);
-     }
-    .onClickMoving {
-        color: #ffffff;
-        height: 100%;
-        width: 40px;
-        cursor: pointer;
-        border: solid transparent;
-        background-color: transparent;
-    }
-
-    .onClickMoving:hover {
-        background-color: transparent;
-    }
-
-    .onClickMoving:hover i {
-        background-color: rgba(118, 154, 180, 0.8);
-    }
-
-    .onClickMoving i {
-        padding-right: 8px ;
-        margin: 2px 0 0 2px;
-        color: #ffffff;
-        width: 40px;
-        background-color: rgba(118, 154, 180, 1);
-        border-radius: 5px;
-    }
-
-    .wrapperClose {
-        transition: all 0.5s;
-        width: 130px;
-        height:100%;
-        position: absolute;
-    }
-
-    .wrapperArea {
-         background-color: rgba(108, 117, 125, 0.56);
-         height: 100%;
-         width: 100%;
-         display: block;
-
-     }
-    .wrapperArea i {
-     margin: 2px 0 0 130px;
-        transition: 0.5s;
-        width: 40px;
-    }
-    .wrapperArea:hover {
-        background-color: rgba(108, 117, 125, 0.56);
-    }
-    .wrapperContainer{
+    .wrapContainer{
         width: 100%;
 
     }
+    .sidebar {
+        width: 0;
+        border: 0;
+        margin-top: 5px;
+        position: absolute;
+        z-index: 2;
+        transition: all 0.5s;
+    }
 
+    .wrapSidebar {
+        width: 150px;
+        height:100%;
+
+    }
+
+    .topLink, .link{
+        border: 1px solid rgba(255, 255, 255, 0.71);
+     }
+
+    .movingIconArea {
+        cursor: pointer;
+        border: solid transparent;
+        background-color: transparent;
+        position: absolute;
+        top: -51px;
+        display: block;
+    }
+
+    .movingIconArea:hover {
+        background-color: transparent;
+    }
+
+    .movingIconArea i {
+        color: #c1f3d1;
+        width: 40px;
+        height: 42px;
+        background-color: #617687;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.52);
+        margin-top: 2px;
+        position: absolute;
+        text-align: center;
+        transition: 0.5s;
+        padding-top: 5px;
+    }
+
+    .movingIconArea:hover i {
+        background-color: rgba(93, 122, 142, 0.8);
+    }
+
+    .wrapIconArea, .wrapIconArea:hover {
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(19, 19, 21, 0.54);
+    }
+
+    .wrapIconArea i{
+        transition: 0.5s;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .wrapSidebar {
+        overflow: scroll;
+        height: 480px;
+        width: 155px;
+    }
+    .sidebarFooter{
+        padding: 100px 0;
+    }
 }

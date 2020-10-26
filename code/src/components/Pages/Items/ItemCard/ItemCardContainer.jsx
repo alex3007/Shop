@@ -2,7 +2,7 @@ import React from 'react';
 import ItemCard from './ItemCard';
 import {compose} from "redux";
 import {connect} from "react-redux";
-import {addBuingProduct} from "../../../../../redux/buyItem-reducer";
+import {addBuingProduct} from "../../../../redux/buyItem-reducer";
 
 const ItemCardContainer = (props) => {
 

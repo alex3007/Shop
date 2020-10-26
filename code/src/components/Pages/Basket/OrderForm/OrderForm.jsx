@@ -31,7 +31,7 @@ export default class OrderForm extends React.Component {
     render() {
         return (
             <div>
-                <button className={cls.confirmButton} onClick={this.openModal}>Заказать</button>
+                <button className={cls.orderButton} onClick={this.openModal}>Заказать</button>
 
                 <ReactModal
                     isOpen={this.state.modalIsOpen}
@@ -39,6 +39,7 @@ export default class OrderForm extends React.Component {
                     className={cls.modal}
                     overlayClassName={cls.overlay}>
                         <div className={cls.form}>
+                            <i onClick={this.closeModal} className='fa fa-2x fa-close'/>
                             <h3>Форма заказа</h3>
                             <hr/>
                             <div className={cls.notesArea}>

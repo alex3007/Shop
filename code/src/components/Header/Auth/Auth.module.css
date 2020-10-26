@@ -1,7 +1,7 @@
 .modal {
     margin: auto;
     max-width: 300px;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     background: linear-gradient(rgb(22, 71, 97), rgb(98, 134, 154), rgb(10, 62, 92)) !important;
     color: #f6f6f6;
 }
@@ -54,9 +54,38 @@
     text-shadow: #333333 0 0 2px;
 }
 
+.modalWindow i {
+    color: rgba(255, 255, 255, 0.25);
+    position: relative;
+    left: 185px;
+    margin-top: 20px;
+    padding-bottom:0;
+    cursor: pointer;
+}
+.modalWindow i:hover {
+    color: rgba(255, 255, 255, 0.7);
 
-@media (max-width: 535px){
+}
+.modalWindow h2{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 535px) {
+
     .modal {
-        margin-top: 230px ;
+        margin-top: 130px;
+        height: 270px;
+        overflow: scroll;
+
+    }
+
+    .modalWindow {
+        margin-bottom: 150px;
+    }
+
+    .loginArea p {
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }

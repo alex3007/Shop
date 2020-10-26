@@ -1,5 +1,5 @@
 import React from 'react';
-import cls from '../ItemCard/ItemCard.module.css';
+import cls from './ItemCard.module.css';
 import {NavLink} from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 

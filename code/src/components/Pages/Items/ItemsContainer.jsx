@@ -1,9 +1,9 @@
 import React from 'react';
-import Item from './Item';
+import Items from './Items';
 import {compose} from "redux";
 import {connect} from "react-redux";
 
-const ItemContainer = (props) => {
+const ItemsContainer = (props) => {
 
     let items;
     let itemsName;
@@ -25,9 +25,9 @@ const ItemContainer = (props) => {
         }
     }
 
-    return <Item products={items}
-                 itemsName={itemsName}
-                 productsParams={productsParams}/>
+    return <Items products={items}
+                  itemsName={itemsName}
+                  productsParams={productsParams}/>
 }
 
 let mapStateToProps = (state) => {
@@ -36,7 +36,7 @@ let mapStateToProps = (state) => {
     }
 };
 
-export default compose(connect(mapStateToProps))(ItemContainer);
+export default compose(connect(mapStateToProps))(ItemsContainer);
 
 
 

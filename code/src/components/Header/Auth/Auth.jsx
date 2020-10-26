@@ -50,6 +50,7 @@ export default class Auth extends React.Component {
                         overlayClassName={cls.overlay}
                         contentLabel="Login Modal">
                         <div className={cls.modalWindow}>
+                            <i onClick={this.closeModal} className='fa fa-2x fa-close'/>
                             <h2>Вход</h2>
                             <form onSubmit={this.login}>
                                 <input type="text" placeholder="Логин"
@@ -59,7 +60,6 @@ export default class Auth extends React.Component {
                                 <input type="password" placeholder="Пароль" required
                                        className={cls.placeHolder}/><br/><br/>
                                 <button className={cls.modalBtn} type="submit">Войти</button>
-                                <button onClick={this.closeModal} className={cls.modalBtn}>Закрыть</button>
                             </form>
                         </div>
                     </Modal>

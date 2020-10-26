@@ -1,10 +1,10 @@
 import React from 'react';
-import cls from './Item.module.css';
+import cls from './Items.module.css';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import ItemCardContainer from "./ItemCard/ItemCardContainer";
 
-const Item = (props) => {
+const Items = (props) => {
 
     let productsParams = props.productsParams;
     let items = props.products;
@@ -34,4 +34,4 @@ const Item = (props) => {
     )
 };
 
-export default Item;
+export default Items;

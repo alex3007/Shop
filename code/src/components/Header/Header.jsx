@@ -13,22 +13,24 @@ export default class Header extends React.Component {
             <header>
                 <HeaderTop/>
                 <div className={cls.navBarArea}>
-                    <Navbar className={cls.navBar} collapseOnSelect expand="md" variant="dark">
-                        <Navbar.Toggle className={cls.toggler} aria-controls="responsive-navbar-nav"/>
-                        <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="nav mr-auto navArea">
-                                <NavLink activeClassName={cls.navActivLink} className={cls.navLink} to={"/delivery"}>Оплата
-                                    и
-                                    доставка</NavLink>
-                                <NavLink activeClassName={cls.navActivLink} className={cls.navLink} to={"/about_us"}>О
-                                    нас</NavLink>
-                                <NavLink activeClassName={cls.navActivLink} className={cls.navLink}
-                                         to={"/contacts"}>Контакты</NavLink>
-                            </Nav>
-
-                        </Navbar.Collapse>
+                    <Navbar className={cls.navBar}  variant="dark">
+                        <NavLink activeClassName={cls.navActivLink}
+                                 className={`${cls.navLink} ${cls.linkHidden}`}
+                                 to={"/delivery"}>Оплата и доставка</NavLink>
+                        <NavLink activeClassName={cls.navActivLink}
+                                 className={`${cls.navLink} ${cls.linkHidden}`}
+                                 to={"/about_us"}>О нас</NavLink>
+                        <NavLink activeClassName={cls.navActivLink}
+                                 className={`${cls.navLink} ${cls.linkHidden}`}
+                                 to={"/contacts"}>Контакты</NavLink>
                     </Navbar>
-                    <Nav className={cls.basketNavLinkArea}>
+                    <Nav className={cls.responsiveNavLinkArea}>
+                        <NavLink className={cls.contactNavLink} activeClassName={cls.contactNavActiveLink}
+                                 to={"/delivery"}><i className='fa fa-truck'/></NavLink>
+                        <NavLink className={cls.contactNavLink} activeClassName={cls.contactNavActiveLink}
+                                 to={"/about_us"}><i className='fa fa-address-book'/></NavLink>
+                        <NavLink className={cls.contactNavLink} activeClassName={cls.contactNavActiveLink}
+                                 to={"/contacts"}><i className='fa fa-phone'/></NavLink>
                         <NavLink className={cls.basketNavLink} activeClassName={cls.basketNavActiveLink} to={"/basket"}>
                             <i className='fa fa-shopping-cart'/>
                             <p>{this.props.buingProducts.length}</p>
