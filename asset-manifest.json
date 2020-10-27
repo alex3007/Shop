@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Shop/static/css/main.941f33f4.chunk.css",
-    "main.js": "/Shop/static/js/main.a1013d23.chunk.js",
-    "main.js.map": "/Shop/static/js/main.a1013d23.chunk.js.map",
+    "main.css": "/Shop/static/css/main.28f9c0c2.chunk.css",
+    "main.js": "/Shop/static/js/main.ae3646c8.chunk.js",
+    "main.js.map": "/Shop/static/js/main.ae3646c8.chunk.js.map",
     "runtime~main.js": "/Shop/static/js/runtime~main.4dadb07a.js",
     "runtime~main.js.map": "/Shop/static/js/runtime~main.4dadb07a.js.map",
     "static/css/2.af3c1da9.chunk.css": "/Shop/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.7eb4b6ed.chunk.js": "/Shop/static/js/2.7eb4b6ed.chunk.js",
-    "static/js/2.7eb4b6ed.chunk.js.map": "/Shop/static/js/2.7eb4b6ed.chunk.js.map",
+    "static/js/2.f74c5d09.chunk.js": "/Shop/static/js/2.f74c5d09.chunk.js",
+    "static/js/2.f74c5d09.chunk.js.map": "/Shop/static/js/2.f74c5d09.chunk.js.map",
     "index.html": "/Shop/index.html",
-    "precache-manifest.941ab6b565234e846a71dd9609a99f66.js": "/Shop/precache-manifest.941ab6b565234e846a71dd9609a99f66.js",
+    "precache-manifest.e564733bffd47bb2fad9e2b558cb9057.js": "/Shop/precache-manifest.e564733bffd47bb2fad9e2b558cb9057.js",
     "service-worker.js": "/Shop/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/Shop/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.941f33f4.chunk.css.map": "/Shop/static/css/main.941f33f4.chunk.css.map",
+    "static/css/main.28f9c0c2.chunk.css.map": "/Shop/static/css/main.28f9c0c2.chunk.css.map",
     "static/media/Gabriela-Regular.ttf": "/Shop/static/media/Gabriela-Regular.b4856923.ttf",
-    "static/media/act1.jpg": "/Shop/static/media/act1.e1af23db.jpg",
-    "static/media/act2.jpg": "/Shop/static/media/act2.34323f3a.jpg",
+    "static/media/act1.jpg": "/Shop/static/media/act1.1d4c69ab.jpg",
+    "static/media/act2.jpg": "/Shop/static/media/act2.eee67bee.jpg",
     "static/media/brand.png": "/Shop/static/media/brand.8e235ef3.png",
-    "static/media/exhibition.jpg": "/Shop/static/media/exhibition.e24e95f1.jpg",
+    "static/media/exhibition.jpg": "/Shop/static/media/exhibition.543a02f7.jpg",
     "static/media/marker.png": "/Shop/static/media/marker.b82b58fa.png",
     "static/media/oval.svg": "/Shop/static/media/oval.e69d9632.svg",
-    "static/media/slide1.jpg": "/Shop/static/media/slide1.bbf2d051.jpg",
-    "static/media/slide2.jpg": "/Shop/static/media/slide2.fb0415a0.jpg"
+    "static/media/slide1.jpg": "/Shop/static/media/slide1.514fc3ac.jpg",
+    "static/media/slide2.jpg": "/Shop/static/media/slide2.0ed49f84.jpg"
   }
 }
