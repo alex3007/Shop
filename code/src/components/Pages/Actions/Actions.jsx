@@ -9,7 +9,7 @@ const Actions = () => {
                 <Zoom bottom>
                     <div className={cls.infoArea}>
                         <div className={cls.infoTitle}>
-                            <h3><i className="iStyle fa fa-2x fa-gift"/><br/>Система скидок при разовом заказе:
+                            <h3><i className="iStyle fa fa-2x fa-gift"/><br/>Система скидок при разовом заказе
                             </h3>
                         </div>
                         <div className={cls.infoContent}>
@@ -26,7 +26,7 @@ const Actions = () => {
                     <div className={cls.infoArea}>
                         <div className={cls.infoTitle}>
                             <h3><i className="iStyle fa fa-2x fa-percent"/><br/>Накопительная скидка на общую сумму
-                                покупок:</h3>
+                                покупок</h3>
                         </div>
                         <div className={cls.infoContent}>
                             <ul>

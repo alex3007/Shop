@@ -1,7 +1,7 @@
 import React from 'react';
 import cls from './ItemCard.module.css';
 import {NavLink} from "react-router-dom";
-import { v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4} from 'uuid';
 
 export default class ItemCard extends React.Component {
     constructor(props) {
@@ -21,7 +21,7 @@ export default class ItemCard extends React.Component {
             path: this.props.path,
             id: uuidv4()
         };
-        let cost = this.props.cost*this.state.quantity;
+        let cost = this.props.cost * this.state.quantity;
 
         this.props.addBuingProduct(item);
 
@@ -65,31 +65,33 @@ export default class ItemCard extends React.Component {
 
         let productsParams = this.props.productsParams;
         return (
-                <div className={cls.item}>
-                    <NavLink className={cls.navLink} to={productsParams ? '/' + productsParams + this.props.path :
-                        '/all_products' + this.props.path}>
-                        <div className={cls.imageContainer}>
-                            <img className={cls.imageExample} src={this.props.photo}/>
-                        </div>
+            <div className={cls.item}>
+                <NavLink className={cls.navLink} to={productsParams ? '/' + productsParams + this.props.path :
+                    '/all_products' + this.props.path}>
+                    <div className={cls.imageContainer}>
+                        <img className={cls.imageExample} src={this.props.photo}/>
+                    </div>
+                    <div className={cls.itemInfoArea}>
                         <p className={cls.itemName}>{this.props.name}</p>
                         <p className={cls.itemDescription}>{this.props.features}</p>
                         <p className={cls.itemCost}>{this.props.cost} BYN</p>
-                    </NavLink>
-                    <div className={cls.itemFooter}>
-                        <div ref={this.wrapperNote} className={cls.wrapperHidden}>
-                            <p>Товар в корзине!</p>
-                        </div>
-                        <input className={cls.productQuantity}
-                               type="text"
-                               onChange={this.onQuantityChange}
-                               value={this.state.quantity}/>
-                        <div className={cls.controlsArea}>
-                            <button onClick={this.onQuantityPlus} className={cls.quantityControls}>+</button>
-                            <button onClick={this.onQuantityMinus} className={cls.quantityControls}>-</button>
-                        </div>
-                        <a onClick={() => this.onBuyProduct()} className={cls.buyButton}>Купить</a>
                     </div>
+                </NavLink>
+                <div className={cls.itemFooter}>
+                    <div ref={this.wrapperNote} className={cls.wrapperHidden}>
+                        <p>Товар в корзине!</p>
+                    </div>
+                    <input className={cls.productQuantity}
+                           type="text"
+                           onChange={this.onQuantityChange}
+                           value={this.state.quantity}/>
+                    <div className={cls.controlsArea}>
+                        <button onClick={this.onQuantityPlus} className={cls.quantityControls}><p>+</p></button>
+                        <button onClick={this.onQuantityMinus} className={cls.quantityControls}><p>-</p></button>
+                    </div>
+                    <a onClick={() => this.onBuyProduct()} className={cls.buyButton}>Купить</a>
                 </div>
+            </div>
         )
     }
 }

@@ -9,7 +9,7 @@ const Delivery = () => {
                 <Zoom right>
                     <div className={cls.infoArea}>
                         <div className={cls.infoTitle}>
-                            <h3><i className="iStyle fa fa-2x fa-shopping-bag"/><br/>Как оформить заказ:</h3>
+                            <h3><i className="iStyle fa fa-2x fa-shopping-bag"/><br/>Как оформить заказ</h3>
                         </div>
                         <ul className={cls.list}>
                             <li><span> Вы можете выбрать любой товар на витрине сайта (регион - Минск) и
@@ -26,7 +26,7 @@ const Delivery = () => {
                     </div>
                     <div className={cls.infoArea}>
                         <div className={cls.infoTitle}>
-                            <h3><i className="iStyle fa fa-2x fa-truck"/><br/>Способы доставки:</h3>
+                            <h3><i className="iStyle fa fa-2x fa-truck"/><br/>Способы доставки</h3>
                         </div>
                         <ul className={cls.list}>
                             <li><span>

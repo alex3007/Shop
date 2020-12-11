@@ -17,26 +17,28 @@ const AboutUs = () => {
                 <Col className={cls.colomnStyle}>
                     <Zoom clear>
                         <div className={cls.infoArea}>
-                            <h3 className={cls.titleArea}>Наши компетенции:</h3>
+                            <h3 className={cls.titleArea}>Наши компетенции</h3>
                             <ul className={cls.list}>
                                 <li><img src={marker}/>
-                                    <span> Продажа качественного оборудования;
+                                    <span> Продажа качественного пневмо-оборудования;
                         </span></li>
                                 <li><img src={marker}/>
-                                    <span> Проектирование и прототипирование любых деталей, корпусов, механизмов;
+                                <span> Подбор и поставка комплектующих;
                         </span></li>
                                 <li><img src={marker}/>
                                     <span> Сервисное обслуживание;
                         </span></li>
                                 <li><img src={marker}/>
-                                    <span> Ремонт и модернизация устройств;
+                                <span> Технические консультации;
                         </span></li>
                                 <li><img src={marker}/>
-                                    <span> Технические консультации;
+                                    <span> Проектирование и внедрение устройств;
                         </span></li>
                                 <li><img src={marker}/>
-                                    <span> Подбор и поставка комплектующих;
+                                    <span> Ремонт и модернизация оборудования;
                         </span></li>
+
+
                             </ul>
                             <Card className={cls.card}>
                                 <Card.Body>

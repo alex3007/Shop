@@ -108,12 +108,6 @@
     font-size: 20px !important;
 }
 
-.itemQuantityArea p {
-    border: 1px solid #3d7298;
-    color: #6c757d;
-    font-size: 20px !important;
-}
-
 .itemFooter {
     display: flex;
     flex-flow: row;
@@ -124,6 +118,9 @@
 
 .productQuantity {
     width: 40px;
+   height: 34px;
+    margin-bottom: 3px;
+    padding-left: 5px;
 }
 
 .controlsArea {
@@ -131,16 +128,25 @@
     flex-flow: column;
     margin: 0 20px 0 3px;
 }
-
 .quantityControls {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     background-color: rgba(141, 155, 164, 0.62) !important;
     padding: 0;
-    margin-bottom: 2px;
-    display: flex;
-    align-items: center;
+    margin-bottom:3px;
+    display: flex!important;
     justify-content: center;
+    align-items: center;
+}
+
+.quantityControls p{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.quantityControls:focus,.quantityControls:active{
+    outline: none!important;
 }
 
 .addOrder {

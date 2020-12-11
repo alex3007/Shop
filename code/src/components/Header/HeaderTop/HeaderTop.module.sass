@@ -10,7 +10,7 @@
   flex-flow: column
   justify-content:  center
 
-.infoBlock
+.titleBlock
   display: flex
   flex-flow: column
   align-items: center
@@ -27,13 +27,14 @@
   margin-left: auto
   margin-right: auto
 
-.headerContact
+.headerContactArea
   display: flex
   flex-flow: row
-  flex-wrap: wrap
+  flex-wrap: nowrap
   justify-content: space-around
 
-.headerTitle, .headerContact p
+
+.headerTitle, .headerContactArea p
   margin: 5px 10px 0 10px
   text-align: center
   font-weight: bold
@@ -41,10 +42,10 @@
   font-size: 18px
   color: #e7f0ff
 
-.headerContact p
+.headerContactArea p
   color: #d5efeb
 
-.headerEmail
+.headerEmail, .headerTitle
   color: #e7f0ff!important
 
 .brandArea, .authArea
@@ -72,11 +73,29 @@
 .authBlock
   margin: auto
 
+.workInfoBlock, .contactsBlock
+  margin: 0 40px
+
+.workInfoBlock p, .contactsBlock p
+  font-size: 16px
 
 
-@media (max-width: 667px)
- .headerTitle, .headerContact p
+@media (max-width: 890px)
+  .workInfoBlock, .contactsBlock
+    margin: 0 20px
+
+
+@media (max-width: 790px)
+ .workInfoBlock, .contactsBlock
+   margin: 0 10px
+
+
+@media (max-width: 690px)
+ .headerTitle, .headerContactArea p
    font-size: 15px
+
+ .workInfoBlock
+   display: none
 
 
 
@@ -84,10 +103,10 @@
   .headerTop
     height: 70px
 
-  .infoBlock p
+  .titleBlock p
     font-size: 13px
 
-  .line,.headerContact
+  .line,.headerContactArea
     display: none
 
   .brandArea img
@@ -97,5 +116,5 @@
   .navBrand
     font-size: 20px
 
-  .infoBlock
+  .titleBlock
     max-width: 200px

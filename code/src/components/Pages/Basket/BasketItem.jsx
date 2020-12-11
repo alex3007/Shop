@@ -80,9 +80,11 @@ export default class BasketItem extends React.Component {
                                        value={this.state.quantity}
                                 />
                                 <div className={cls.controlsArea}>
-                                    <button onClick={this.onQuantityPlus} className={cls.quantityControls}>+
+                                    <button onClick={this.onQuantityPlus} className={cls.quantityControls}>
+                                        <p>+</p>
                                     </button>
-                                    <button onClick={this.onQuantityMinus} className={cls.quantityControls}>-
+                                    <button onClick={this.onQuantityMinus} className={cls.quantityControls}>
+                                        <p>-</p>
                                     </button>
                                 </div>
                             </div>

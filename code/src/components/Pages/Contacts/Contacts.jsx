@@ -14,7 +14,7 @@ const Contacts = () => {
                 <Col className={cls.colomnStyle}>
                     <Zoom clear>
                         <div className={cls.infoArea}>
-                            <h3 className={cls.titleArea}>Наши контакты:</h3>
+                            <h3 className={cls.titleArea}>Kонтакты</h3>
                             <div className={cls.listContainer}>
                                 <ul className={cls.list}>
                                     <li><i className="fa fa-2x fa-mobile-phone"/><span> +375-33-333-22-11;

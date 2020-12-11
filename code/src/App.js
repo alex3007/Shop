@@ -56,7 +56,7 @@ class App extends React.Component {
                         <Switch>
                             <Route exact path='/'
                                    render={() => <Redirect to={"/Catalog"}/>}/>
-                            <Route path="/contacts" component={withReveal(Contacts, <Fade in unmountOnExit/>)}/>
+                            <Route path="/contacts" component={withReveal(Contacts, <Fade/>)}/>
                             <Route path="/about_us" component={AboutUs}/>
                             <Route path="/actions" component={Actions}/>
                             <Route path="/delivery" component={Delivery}/>
