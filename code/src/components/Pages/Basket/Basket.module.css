@@ -47,7 +47,7 @@
     margin: 0 auto 2px auto;
     font-size: 20px;
     font-weight: bold;
-    color: #5c686e;
+    color: #86979c;
 }
 
 .itemDescription {
@@ -66,18 +66,17 @@
     margin-bottom: 10px;
 }
 
-.buyButton {
-    background-color: #9099a0;
-    color: #ffffff !important;
+.buyButton i {
+    color: #9099a0;
     padding: 3px 10px 5px 10px;
     cursor: pointer;
     float: right;
+    font-size: 30px;
 }
 
-.buyButton:hover {
+.buyButton:hover i {
     text-decoration: none;
-    color: #ffffff;
-    background-color: #3a8cd7;
+    color: #839bdb;
 }
 
 .itemNew {

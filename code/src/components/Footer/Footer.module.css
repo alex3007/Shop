@@ -5,3 +5,11 @@
     min-width: 340px!important;
     text-align: center;
     }
+hr{
+    background-color: #ffffff;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

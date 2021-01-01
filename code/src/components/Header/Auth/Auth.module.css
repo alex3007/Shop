@@ -49,6 +49,19 @@
     text-align: center;
 }
 
+.loginArea p {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.loginNav:hover {
+    text-decoration: none;
+}
+
+.loginNav:hover p{
+    color: #aaf3e8;
+}
+
 .login {
     color: #ffffff;
     text-shadow: #333333 0 0 2px;
@@ -91,5 +104,9 @@
         font-size: 13px;
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    .loginBtn{
+        font-size: 13px;
     }
 }

@@ -37,7 +37,7 @@ export default class Sidebar extends React.Component {
                                  activeClassName={cls.topActive}><i className="fa fa-shopping-basket"/>Все
                             товары</NavLink>
                         {sidebarElements}
-                        <div className={cls.sidebarFooter}></div>
+                        <div className={cls.sidebarFooter}/>
                     </div>
                 </Slide>
                 <div ref={this.wrapperIconAreaRef} className={cls.movingIconArea} onClick={() => this.handleClick()}>

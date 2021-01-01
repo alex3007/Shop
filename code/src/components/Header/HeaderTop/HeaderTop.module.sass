@@ -1,120 +1,97 @@
 .headerTop
-  height: 170px
+  height: 100px
   display: flex
   flex-flow: row
   justify-content: space-around
   background: linear-gradient(#5685b6, rgba(58, 140, 215, 0.6), #5685b6)
 
-.infoArea
-  display: flex
-  flex-flow: column
-  justify-content:  center
-
-.titleBlock
-  display: flex
-  flex-flow: column
-  align-items: center
-  flex-wrap: wrap
-  max-width: 600px
-  margin-bottom: 10px
-
-.line
-  background-color: #ffffff
-  opacity: 0.5
-  margin: 0
-  padding: 0
-  text-align: center
-  margin-left: auto
-  margin-right: auto
-
-.headerContactArea
-  display: flex
-  flex-flow: row
-  flex-wrap: nowrap
-  justify-content: space-around
-
-
-.headerTitle, .headerContactArea p
-  margin: 5px 10px 0 10px
-  text-align: center
-  font-weight: bold
-  text-shadow: #333333 0 0 2px
-  font-size: 18px
-  color: #e7f0ff
-
-.headerContactArea p
-  color: #d5efeb
-
-.headerEmail, .headerTitle
-  color: #e7f0ff!important
-
 .brandArea, .authArea
   display: flex
+  align-items: center
 
-.brandArea img
-  width: 80px
-  height: 70px
-  margin: auto
+.brandArea
+  img
+   width: 90px
+   height: 80px
+   margin: auto
+  .navBrand
+   display: flex
+   flex-flow: column
+   transition: all 0.5s
+   text-shadow: #333333 0 0 2px
+   padding-left: 15px
+   &:hover
+    color: #ffffff
+    text-decoration: none
+   p
+    color: #e7f0ff
+    font-weight: bold
+    font-size: 25px
+    margin-bottom: 3px
+   hr
+    background-color: #ffffff
+    opacity: 0.5
+    margin: 0
+    padding: 0
+   p.title
+    font-weight: bold
+    text-shadow: #333333 0 0 2px
+    font-size: 18px
+    color: #e7f0ff
 
-.navBrand
-  color: #e7f0ff
-  font-weight: bold
-  font-size: 25px
-  margin: auto
-  transition: all 0.5s
-  padding: 0 5px 0 10px
-  text-shadow: #333333 0 0 2px
-
-.navBrand:hover
-  color: #e8fffc
-  text-decoration: none
-
-
-.authBlock
-  margin: auto
-
-.workInfoBlock, .contactsBlock
-  margin: 0 40px
-
-.workInfoBlock p, .contactsBlock p
-  font-size: 16px
-
-
-@media (max-width: 890px)
-  .workInfoBlock, .contactsBlock
-    margin: 0 20px
-
-
-@media (max-width: 790px)
- .workInfoBlock, .contactsBlock
-   margin: 0 10px
-
-
-@media (max-width: 690px)
- .headerTitle, .headerContactArea p
+.workInfoBlock, .contactsBlock, .socialBlock
+  p
+   margin: 5px 10px 0 10px
+   text-shadow: #a1a1a1 0 0 2px
+   color: #ffffff
+   font-size: 16px
+   text-align: left
+   i, a i
+    font-size: 23px
+    color: #d5fae5
+    padding: 0
+    margin-right: 10px
+  .headerEmail i
    font-size: 15px
 
- .workInfoBlock
+@media (max-width: 900px)
+  .social
    display: none
 
+@media (max-width: 820px)
+ .workInfo
+  display: none
 
+@media (max-width: 690px)
+  .brandArea
+    .navBrand
+      p
+        font-size: 20px
+      p.title, .line
+        font-size: 15px
+        width: 135px
 
 @media (max-width: 535px)
+  .contacts
+   display: none
+
   .headerTop
-    height: 70px
+   height: 70px
 
-  .titleBlock p
-    font-size: 13px
-
-  .line,.headerContactArea
-    display: none
-
-  .brandArea img
+  .brandArea
+   img
     width: 60px
     height: 50px
+   .navBrand
+     p
+       font-size: 15px
+     p.title, .line
+         font-size: 13px
+         width: auto
 
-  .navBrand
-    font-size: 20px
-
-  .titleBlock
-    max-width: 200px
+@media (max-width: 362px)
+  .brandArea
+    .navBrand
+      p.title, .line
+        font-size: 13px
+        width: 117px

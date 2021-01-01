@@ -10,7 +10,6 @@ export default class Basket extends React.Component {
         this.state = {
             summaryCost: 0
         };
-        this.onChangeCost = this.onChangeCost.bind(this)
     }
 
     componentDidMount() {
@@ -23,7 +22,7 @@ export default class Basket extends React.Component {
         this.setState({summaryCost: sumCost})
     }
 
-    onChangeCost=(newNum)=>{
+    onChangeCost= (newNum) => {
         let cost = this.state.summaryCost+newNum
         this.setState({summaryCost: cost})
     }

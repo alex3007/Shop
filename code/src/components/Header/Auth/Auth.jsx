@@ -1,6 +1,7 @@
 import React from 'react';
 import cls from './Auth.module.css'
 import Modal from 'react-modal';
+import {NavLink} from "react-router-dom";
 
 export default class Auth extends React.Component {
     constructor(props) {
@@ -31,18 +32,20 @@ export default class Auth extends React.Component {
     render() {
         if (this.state.isAuth) {
             return (
-                    <div className={cls.loginArea}>
-                        <p className={cls.login}>{this.state.userName}</p>
-                        <button className={cls.loginBtn} onClick={this.logOut}>Выйти</button>
-                    </div>
-               )
+                <div className={cls.loginArea}>
+                    <p className={cls.login}>{this.state.userName}</p>
+                    <button className={cls.loginBtn} onClick={this.logOut}>Выйти</button>
+                </div>
+            )
         } else
             return (
                 <div>
-                        <div className={cls.loginArea}>
-                            <p className={cls.login}>Login</p>
-                            <button className={cls.loginBtn} onClick={this.openModal} type="submit">Войти</button>
-                        </div>
+                    <div className={cls.loginArea}>
+                        <NavLink className={cls.loginNav} to={"/"}>
+                            <p className={cls.login}>Регистрация</p>
+                        </NavLink>
+                        <button className={cls.loginBtn} onClick={this.openModal} type="submit">Войти</button>
+                    </div>
                     <Modal
                         isOpen={this.state.modalIsOpen}
                         onRequestClose={this.closeModal}

@@ -62,7 +62,9 @@ export default class BasketItem extends React.Component {
         return (
             <Zoom>
                 <div className={cls.item}>
-                    <a onClick={this.onDeleteProduct} className={cls.buyButton}>Удалить</a>
+                    <a onClick={this.onDeleteProduct} className={cls.buyButton}>
+                        <i className="fa fa-trash"/>
+                    </a>
                     <h3 className={cls.itemName}>{this.props.name}</h3>
                     <div className={cls.itemBody}>
                         <div className={cls.imageContainer}>
