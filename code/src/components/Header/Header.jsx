@@ -11,7 +11,9 @@ export default class Header extends React.Component {
     render() {
         return (
             <header>
-                <HeaderTop/>
+                <HeaderTop
+                    {...this.props}
+                />
                 <div className={cls.navBarArea}>
                     <Navbar className={cls.navBar}  variant="dark">
                         <NavLink activeClassName={cls.navActivLink}
@@ -33,7 +35,7 @@ export default class Header extends React.Component {
                                  to={"/contacts"}><i className='fa fa-phone'/></NavLink>
                         <NavLink className={cls.basketNavLink} activeClassName={cls.basketNavActiveLink} to={"/basket"}>
                             <i className='fa fa-shopping-cart'/>
-                            <p>{this.props.buingProducts.length}</p>
+                            <p>{this.props.buingItems.length}</p>
                         </NavLink>
                     </Nav>
                 </div>

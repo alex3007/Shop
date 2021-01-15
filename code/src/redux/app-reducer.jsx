@@ -1,3 +1,5 @@
+import {api} from "../components/api/api";
+import {isError, isFetching, setItems} from "./buyItem-reducer";
 
 let initialState = {
     products: [],
@@ -17,6 +19,18 @@ const appReducer = (state = initialState, action) => {
         }
         default:
             return state
+    }
+};
+
+
+export const getProducts = () => async (dispatch) => {
+    try {
+        dispatch(isFetching(true));
+        const res = await api.getItems();
+        dispatch(setProducts(res.data));
+        dispatch(isFetching(false));
+    } catch (e) {
+        dispatch(isError(true));
     }
 };
 

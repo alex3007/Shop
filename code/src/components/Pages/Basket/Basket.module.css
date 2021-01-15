@@ -89,33 +89,50 @@
 
 }
 
-.wrapperOpen {
-    display: block;
+.wrapperUnvisible {
+    visibility: hidden;
+    height: 22px;
+    width: 140px;
+    font-size: 13px;
+    margin-top: 3px;
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    color: #ffffff;
+    background-color: #86979c;
+    text-align: center;
+    cursor: pointer;
+}
+.wrapperUnvisible:hover{
+    opacity: 0.8;
 }
 
-.wrapperClose {
-    display: none;
+.wrapperNote {
+    visibility: visible;
 }
 
 .itemQuantityArea {
-
+    position: relative;
     margin: 0 5px;
 }
 
 .itemQuantityArea h3 {
     color: #6c757d;
     font-size: 20px !important;
+    padding-bottom: 10px;
+
 }
 
-.itemFooter {
+.itemQuantity {
     display: flex;
     flex-flow: row;
-    align-items: center;
     justify-content: center;
     color: #6c757d !important;
+    margin-bottom: 30px;
+    margin-left: 10px;
 }
 
-.productQuantity {
+.inputQuantity {
     width: 40px;
    height: 34px;
     margin-bottom: 3px;

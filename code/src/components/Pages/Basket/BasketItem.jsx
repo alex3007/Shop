@@ -1,7 +1,5 @@
 import React from 'react';
 import cls from './Basket.module.css';
-import Zoom from "react-reveal/Zoom";
-
 
 export default class BasketItem extends React.Component {
     constructor(props) {
@@ -9,17 +7,13 @@ export default class BasketItem extends React.Component {
         this.state = {
             quantity: this.props.quantity
         };
-        this.onQuantityChange = this.onQuantityChange.bind(this);
-        this.onQuantityPlus = this.onQuantityPlus.bind(this);
-        this.onQuantityMinus = this.onQuantityMinus.bind(this);
-        this.onDeleteProduct = this.onDeleteProduct.bind(this)
+        this.wrapperNote = React.createRef();
     }
 
     onQuantityChange = (text) => {
-
         let lastNum = this.state.quantity;
         let newNum = text.target.value;
-
+        this.wrapperNote.current.classList.add(`${cls.wrapperNote}`);
         if (isNaN(newNum)) {
             newNum = lastNum
         } else if (newNum > 999) {
@@ -27,40 +21,39 @@ export default class BasketItem extends React.Component {
         } else if (newNum < 1) {
             newNum = 1
         }
-        this.props.onChangeCost((newNum - lastNum) * this.props.cost);
         this.setState({quantity: newNum})
     }
 
     onQuantityPlus = () => {
+        this.wrapperNote.current.classList.add(`${cls.wrapperNote}`);
         if (this.state.quantity - 1 + 2 > 999) {
             this.setState({quantity: 999})
         } else {
             this.setState({quantity: this.state.quantity - 1 + 2})
-            this.props.onChangeCost(this.props.cost * 1)
         }
     }
 
     onQuantityMinus = () => {
+        this.wrapperNote.current.classList.add(`${cls.wrapperNote}`);
         if (this.state.quantity - 1 < 1) {
             this.setState({quantity: 1})
         } else {
             this.setState({quantity: this.state.quantity - 1})
-            this.props.onChangeCost(0 - this.props.cost * 1)
         }
     }
 
-    onDeleteProduct = () => {
-        let lastNum = this.props.quantity
-        let newNum = this.state.quantity;
-        this.props.onChangeCost((0 - Math.abs(lastNum - newNum) - lastNum) * this.props.cost);
-        this.props.addDeleteProduct(this.props.id)
+    onQuantitySave = () => {
+        this.props.updateItem(this.props.id, this.state.quantity);
+        this.wrapperNote.current.classList.remove(`${cls.wrapperNote}`);
+    }
 
+    onDeleteProduct = () => {
+        this.props.deleteItem(this.props.id)
     }
 
     render() {
 
         return (
-            <Zoom>
                 <div className={cls.item}>
                     <a onClick={this.onDeleteProduct} className={cls.buyButton}>
                         <i className="fa fa-trash"/>
@@ -75,8 +68,8 @@ export default class BasketItem extends React.Component {
                         </div>
                         <div className={cls.itemQuantityArea}>
                             <h3>Количество:</h3>
-                            <div className={cls.itemFooter}>
-                                <input className={cls.productQuantity}
+                            <div className={cls.itemQuantity}>
+                                <input className={cls.inputQuantity}
                                        type="text"
                                        onChange={this.onQuantityChange}
                                        value={this.state.quantity}
@@ -89,11 +82,16 @@ export default class BasketItem extends React.Component {
                                         <p>-</p>
                                     </button>
                                 </div>
+
+                            </div>
+                            <div className={cls.wrapperUnvisible} ref={this.wrapperNote}>
+                                <p onClick={this.onQuantitySave} className={cls.quantitySaveButton}>
+                                   Обновить стоимость
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </Zoom>
         )
     }
 }

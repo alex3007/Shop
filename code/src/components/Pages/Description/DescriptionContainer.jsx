@@ -2,7 +2,8 @@ import React from 'react';
 import Description from './Description';
 import {compose} from "redux";
 import {connect} from "react-redux";
-import {addBuingProduct} from "../../../redux/buyItem-reducer";
+import {addBuingItem} from "../../../redux/buyItem-reducer";
+import {toggleIsOpen} from "../../../redux/auth-reducer";
 
 const DescriptionContainer = (props) => {
 
@@ -20,15 +21,15 @@ const DescriptionContainer = (props) => {
         itemDescription = 'loading'
     }
     return <Description itemDescription={itemDescription}
-                        addBuingProduct={props.addBuingProduct}
-                        buingProducts={props.buingProducts}/>
+                        {...props}/>
 };
 
 let mapStateToProps = (state) => {
     return {
-        buingProducts: state.buyItem.buingProducts
+        buingItems: state.buyItem.buingItems,
+        isAuth: state.auth.isAuth
     }
 };
 
-export default compose(connect(mapStateToProps, {addBuingProduct}))(DescriptionContainer);
+export default compose(connect(mapStateToProps, {addBuingItem,toggleIsOpen}))(DescriptionContainer);
 

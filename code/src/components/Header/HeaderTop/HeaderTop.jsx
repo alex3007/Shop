@@ -1,11 +1,11 @@
 import React from 'react';
 import cls from './HeaderTop.module.sass';
 import {NavLink} from "react-router-dom";
-import Auth from "../Auth/Auth";
 import brand from '../../../assets/images/brand.png'
 import Contacts from "./Contacts/Contacts";
 import WorkInfo from "./WorkInfo/WorkInfo";
 import Social from "./Social/Social";
+import AuthButtons from "./Auth/AuthButtons";
 
 const HeaderTop = (props) => {
     return (
@@ -28,9 +28,8 @@ const HeaderTop = (props) => {
                 <Social/>
             </div>
             <div className={cls.authArea}>
-                <div className={cls.authBlock}>
-                    <Auth/>
-                </div>
+                <AuthButtons
+                    {...props}/>
             </div>
         </div>
     );

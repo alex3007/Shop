@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 10px;
-    text-align: center;
+    align-items: center;
 }
 .container h4{
     font-family: Arial;
@@ -11,11 +11,14 @@
     margin: 0 0 10px 0 ;
     border-radius: 0 10px 0 10px;
     font-size: 35px;
+    width: 100%;
+    text-align: center;
 }
 
-.container p{
+.container p, .container li {
     color: #546e87;
 }
+
 
 .container img{
     width: 220px;
@@ -24,14 +27,17 @@
 
 .confirmButton {
     background: linear-gradient(#8eacbd, #627882, #627882, #8eacbd);
-    color: #ffffff;
+    color: #ffffff!important;
     font-size: 20px;
     padding: 3px 10px 5px 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
     width: 220px;
     transition: 0.3s;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    text-align: center;
 
 }
 

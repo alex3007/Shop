@@ -113,21 +113,21 @@
     {
         "name": "Пневмоприводы",
         "path": "/pneumodrives",
-        "photo": "https://www.festo.com/cat/be_by/data/TRB/56A405B68C794886BD1FE1DFBFD438EB.jpg",
+        "photo": "https://alex3007.github.io/Shop/images/pneumodrives/drd.jpg",
         "items": [
             {
                 "id": 1,
                 "path": "/pneumodrive1",
-                "name": "PneumadriveName1",
+                "name": "Поворотный привод",
                 "cost": "105",
-                "photo": "https://www.festo.com/cat/be_by/data/TRB/56A405B68C794886BD1FE1DFBFD438EB.jpg",
-                "features": "Надежность и качество",
+                "photo": "https://alex3007.github.io/Shop/images/pneumodrives/drd.jpg",
+                "features": "Высокая стабильность",
                 "description": "Описание1"
       },
             {
                 "id": 2,
-                "cost": "105",
-                "photo": "https://www.festo.com/cat/be_by/data/TRB/56A405B68C794886BD1FE1DFBFD438EB.jpg",
+                "cost": "123",
+                "photo": "https://alex3007.github.io/Shop/images/pneumodrives/drv.jpg",
                 "features": "Надежность и качество",
                 "description": "Описание2",
                 "path": "/pneumodrive2",

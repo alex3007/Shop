@@ -2,34 +2,34 @@ import React from 'react';
 import './App.css';
 import store from "./redux/redux-store";
 import {HashRouter, withRouter, Switch, Route, Redirect} from 'react-router-dom';
-import Footer from './components/Footer/Footer';
+import HeaderContainer from "./components/Header/HeaderContainer";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Delivery from "./components/Pages/Delivery/Delivery";
 import AboutUs from "./components/Pages/AboutUs/AboutUs";
 import Contacts from "./components/Pages/Contacts/Contacts";
 import Actions from "./components/Pages/Actions/Actions";
-import Fade from 'react-reveal/Fade';
-import Slide from "react-reveal/Slide";
-import withReveal from 'react-reveal/withReveal';
-import {getItems} from "./components/api/api";
-import {compose} from "redux";
-import {Provider, connect} from "react-redux";
-import {setProducts, toggleIsFetching} from "./redux/app-reducer";
-import Preloader from "./components/Preloader/Preloader";
-import BasketContainer from "./components/Pages/Basket/BasketContainer";
-import data from '../src/assets/data.json';
+import BasketContainer from "./components/Pages/Basket/BasketContainer"
 import ItemContainer from "./components/Pages/Items/ItemsContainer";
 import DescriptionContainer from "./components/Pages/Description/DescriptionContainer";
 import Catalog from "./components/Pages/Catalog/Catalog";
-import HeaderContainer from "./components/Header/HeaderContainer";
+import Footer from './components/Footer/Footer';
+import Fade from 'react-reveal/Fade';
+import Slide from "react-reveal/Slide";
+import withReveal from 'react-reveal/withReveal';
+import {compose} from "redux";
+import {Provider, connect} from "react-redux";
+import {getProducts, toggleIsFetching} from "./redux/app-reducer";
+import {getLogin} from "./redux/auth-reducer";
+import Preloader from "./components/Preloader/Preloader";
+import Registration from "./components/Pages/Login/Registration/Registration";
+
 
 class App extends React.Component {
 
     componentDidMount() {
-        getItems().then(data => {
-            this.props.setProducts(data);
-            this.props.toggleIsFetching(false)
-        });
+            this.props.getProducts();
+            this.props.toggleIsFetching(false);
+            this.props.getLogin()
     }
 
     render() {
@@ -61,7 +61,8 @@ class App extends React.Component {
                             <Route path="/actions" component={Actions}/>
                             <Route path="/delivery" component={Delivery}/>
                             <Route path="/basket" component={BasketContainer}/>
-                            <Route path="/Catalog" render={() =>
+                            <Route path="/registration" component={Registration}/>
+                            <Route path="/catalog" render={() =>
                                 <Catalog
                                     products={products}/>}/>
                             <Route path='/:products/:description'
@@ -88,7 +89,8 @@ let mapStateToProps = (state) => {
     }
 };
 
-let AppContainer = compose(connect(mapStateToProps, {setProducts, toggleIsFetching}))(App);
+let AppContainer = compose(connect(mapStateToProps,
+    {getProducts, toggleIsFetching, getLogin}))(App);
 
 const AppJs = (props) => {
     return <HashRouter>

@@ -41,25 +41,25 @@ export default class OrderForm extends React.Component {
                         <div className={cls.form}>
                             <i onClick={this.closeModal} className='fa fa-2x fa-close'/>
                             <h3>Форма заказа</h3>
-                            <hr/>
-                            <div className={cls.notesArea}>
-                                <p>Количество наименований: {this.props.allProductsQuantity}</p>
-
-                                <p>Общая стоимость: {this.props.sumCost} BYN</p>
-                            </div>
-                            <hr/>
-                            <p><b>Личные данные</b></p>
                             <form>
-                                <input type="text" placeholder="Введите имя"
+                                <input type="text" placeholder="Введите email"
                                        required
+                                       value={this.props.userEmail}
                                        onChange={this.onNameChange}/><br/>
                                 <input type="text" placeholder="Введите номер телефона"
                                        required
-                                       onChange={this.onPhoneChange}/><br/>
-                                <br/>
-                                <button className={cls.confirmButton} onClick={this.closeModal}>Подтвердить заказ
-                                </button>
-                            </form>
+                                       onChange={this.onPhoneChange}/>
+                            </form><br/>
+                            <hr/>
+                            <div className={cls.notesArea}>
+                                <p>Количество наименований: {this.props.items.length}</p>
+
+                                <p>Общая стоимость: {this.props.summaryCost} BYN</p>
+                            </div>
+                            <hr/>
+
+                            <button className={cls.confirmButton} onClick={this.closeModal}>Подтвердить заказ
+                            </button>
                         </div>
                 </ReactModal>
             </div>

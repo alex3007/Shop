@@ -13,25 +13,25 @@ export default class ItemCard extends React.Component {
     }
 
     onBuyProduct = () => {
-        let item = {
-            name: this.props.name,
-            photo: this.props.photo,
-            cost: this.props.cost,
-            quantity: this.state.quantity,
-            path: this.props.path,
-            id: uuidv4()
-        };
-        let cost = this.props.cost * this.state.quantity;
+        if (this.props.isAuth) {
+            let item = {
+                name: this.props.name,
+                photo: this.props.photo,
+                cost: this.props.cost,
+                quantity: this.state.quantity,
+                path: this.props.path,
+                id: uuidv4()
+            };
+            let cost = this.props.cost * this.state.quantity;
 
-        this.props.addBuingProduct(item);
+            this.props.addBuingItem(item);
 
-        const wrap = this.wrapperNote.current;
-        wrap.classList.add(`${cls.wrapperNote}`);
-        setTimeout(() => {
-            wrap.classList.remove(`${cls.wrapperNote}`);
-        }, 1500);
+            const wrap = this.wrapperNote.current;
+            wrap.classList.add(`${cls.wrapperNote}`);
+        } else {
+            this.props.toggleIsOpen(true)
+        }
     }
-
     onQuantityChange = (text) => {
 
         if (isNaN(text.target.value)) {
@@ -78,9 +78,6 @@ export default class ItemCard extends React.Component {
                     </div>
                 </NavLink>
                 <div className={cls.itemFooter}>
-                    <div ref={this.wrapperNote} className={cls.wrapperHidden}>
-                        <p>Товар в корзине!</p>
-                    </div>
                     <input className={cls.productQuantity}
                            type="text"
                            onChange={this.onQuantityChange}
@@ -89,7 +86,11 @@ export default class ItemCard extends React.Component {
                         <button onClick={this.onQuantityPlus} className={cls.quantityControls}><p>+</p></button>
                         <button onClick={this.onQuantityMinus} className={cls.quantityControls}><p>-</p></button>
                     </div>
-                    <a onClick={() => this.onBuyProduct()} className={cls.buyButton}>Купить</a>
+                    <div className={cls.buyButton}>
+                        <p onClick={() => this.onBuyProduct()}>Купить</p>
+                        <NavLink className={cls.wrapperHidden} to='basket'
+                                 ref={this.wrapperNote}>Товар в корзине</NavLink>
+                    </div>
                 </div>
             </div>
         )
