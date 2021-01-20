@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Shop/static/css/main.598ae027.chunk.css",
-    "main.js": "/Shop/static/js/main.10a07b74.chunk.js",
-    "main.js.map": "/Shop/static/js/main.10a07b74.chunk.js.map",
+    "main.css": "/Shop/static/css/main.a0d9efb3.chunk.css",
+    "main.js": "/Shop/static/js/main.199f4f5c.chunk.js",
+    "main.js.map": "/Shop/static/js/main.199f4f5c.chunk.js.map",
     "runtime~main.js": "/Shop/static/js/runtime~main.4dadb07a.js",
     "runtime~main.js.map": "/Shop/static/js/runtime~main.4dadb07a.js.map",
     "static/css/2.af3c1da9.chunk.css": "/Shop/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.2bc66b48.chunk.js": "/Shop/static/js/2.2bc66b48.chunk.js",
-    "static/js/2.2bc66b48.chunk.js.map": "/Shop/static/js/2.2bc66b48.chunk.js.map",
+    "static/js/2.c253ffa7.chunk.js": "/Shop/static/js/2.c253ffa7.chunk.js",
+    "static/js/2.c253ffa7.chunk.js.map": "/Shop/static/js/2.c253ffa7.chunk.js.map",
     "index.html": "/Shop/index.html",
-    "precache-manifest.14a76f3432513f5b2241e605aa87962f.js": "/Shop/precache-manifest.14a76f3432513f5b2241e605aa87962f.js",
+    "precache-manifest.d93b4592fe973459dad337ba88ab9f16.js": "/Shop/precache-manifest.d93b4592fe973459dad337ba88ab9f16.js",
     "service-worker.js": "/Shop/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/Shop/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.598ae027.chunk.css.map": "/Shop/static/css/main.598ae027.chunk.css.map",
+    "static/css/main.a0d9efb3.chunk.css.map": "/Shop/static/css/main.a0d9efb3.chunk.css.map",
     "static/media/Gabriela-Regular.ttf": "/Shop/static/media/Gabriela-Regular.b4856923.ttf",
     "static/media/act1.jpg": "/Shop/static/media/act1.1d4c69ab.jpg",
     "static/media/act2.jpg": "/Shop/static/media/act2.eee67bee.jpg",
@@ -21,6 +21,7 @@
     "static/media/marker.png": "/Shop/static/media/marker.b82b58fa.png",
     "static/media/oval.svg": "/Shop/static/media/oval.e69d9632.svg",
     "static/media/slide1.jpg": "/Shop/static/media/slide1.514fc3ac.jpg",
-    "static/media/slide2.jpg": "/Shop/static/media/slide2.0ed49f84.jpg"
+    "static/media/slide2.jpg": "/Shop/static/media/slide2.0ed49f84.jpg",
+    "static/media/user.png": "/Shop/static/media/user.4fb5378a.png"
   }
 }
