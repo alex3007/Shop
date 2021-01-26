@@ -1,0 +1,265 @@
+[
+  {
+    "name": "Датчики",
+    "path": "/sencors",
+    "photo": "https://alex3007.github.io/Shop/images/sencors/senc-p.jpg",
+    "items": [
+      {
+        "id": 1,
+        "path": "/senc-i",
+        "name": "Индуктивный датчик",
+        "cost": "25",
+        "photo": "https://alex3007.github.io/Shop/images/sencors/senc-i.jpg",
+        "features": "Высокая точность",
+        "description": [
+          "Датчики типоразмера SIE",
+          "Надежно работают с металлическими деталями",
+          "Обнаружения металлических предметов",
+          "Измерение расстояния до металла"
+        ]
+      },
+      {
+        "id": 2,
+        "path": "/senc-p",
+        "name": "Датчик давления",
+        "cost": "75",
+        "photo": "https://alex3007.github.io/Shop/images/sencors/senc-p.jpg",
+        "features": "Высокая надежность",
+        "description": [
+          "Контроль всех значений давления",
+          "Программируемые",
+          "Модульныe"
+        ]
+      },
+      {
+        "id": 3,
+        "path": "/sencor3",
+        "name": "Датчик расхода",
+        "cost": "85",
+        "photo": "https://alex3007.github.io/Shop/images/sencors/senc-r.jpg",
+        "features": "Доступно и надежно",
+        "description": [
+          "Упрощает диагностику параметров",
+          "Следит за значением расхода"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Контроллеры",
+    "path": "/controllers",
+    "photo": "https://alex3007.github.io/Shop/images/controllers/contr-m.jpg",
+    "items": [
+      {
+        "id": 1,
+        "path": "/contr-sd",
+        "name": "Контроллер для СД",
+        "cost": "120",
+        "photo": "https://alex3007.github.io/Shop/images/controllers/contr-sd.jpg",
+        "features": "Надежность",
+        "description": [
+          "Номинальное напряжение 24, 48 V DC, или 230, 400 V AC",
+          "Номинальный ток 2 … 11 А",
+          "Расчетный выход 75 … 5000 VA"
+        ]
+      },
+      {
+        "id": 2,
+        "path": "/contr-shd",
+        "name": "Контроллер для ШД",
+        "cost": "124",
+        "photo": "https://alex3007.github.io/Shop/images/controllers/contr-shd.jpg",
+        "features": "Качаство",
+        "description": [
+          "Напряжение 24, 48 V DC",
+          "Номинальный ток 1.25 ... 8 A",
+          "Макс. частота шага 4,40 кГц"
+        ]
+      },
+      {
+        "id": 3,
+        "path": "/contr-m",
+        "name": "Многоосевой контроллер",
+        "cost": "112",
+        "photo": "https://alex3007.github.io/Shop/images/controllers/contr-m.jpg",
+        "features": "Доступность",
+        "description": [
+          "Тип CMXH",
+          "Слежение за движением CPX"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Пневмоострова",
+    "path": "/valveactuators",
+    "photo": "https://alex3007.github.io/Shop/images/valveactuators/valve-u.jpg",
+    "items": [
+      {
+        "id": 1,
+        "path": "/valve-u",
+        "name": "Универсальный пневмоостров",
+        "cost": "65",
+        "photo": "https://alex3007.github.io/Shop/images/valveactuators/valve-u.jpg",
+        "features": "Универсальность",
+        "description": [
+          "Прочные и модульные модули распределителей",
+          "Модульные блоки для всех стандартных применений"
+        ]
+      },
+      {
+        "id": 2,
+        "cost": "62",
+        "path": "/valve-s",
+        "name": "Стандартный пневмоостров",
+        "photo": "https://alex3007.github.io/Shop/images/valveactuators/valve-s.jpg",
+        "features": "Многофункциональность",
+        "description": [
+          "Модули распределителей по ISO 15407-1",
+          "Разнообразные функции",
+          "Индивидуальное или многополюсное подключение"
+        ]
+
+      },
+      {
+        "id": 3,
+        "path": "/valve-sp",
+        "name": "Специальный пневмоостров",
+        "cost": "64",
+        "photo": "https://alex3007.github.io/Shop/images/valveactuators/valve-sp.jpg",
+        "features": "Компактность",
+        "description": [
+          "Экономиz пространствf",
+          "Компактность",
+          "Для специальных условий"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Пневмоприводы",
+    "path": "/pneumodrives",
+    "photo": "https://alex3007.github.io/Shop/images/pneumodrives/drd.jpg",
+    "items": [
+      {
+        "id": 1,
+        "path": "/drd",
+        "name": "Поворотный привод",
+        "cost": "105",
+        "photo": "https://alex3007.github.io/Shop/images/pneumodrives/drd.jpg",
+        "features": "Высокая стабильность",
+        "description": [
+          "Размер: 8, 10, 12, 16, 20, 25, 32, 35, 40, 50, 63 мм",
+          "Момент: 0.2 ... 112 Нм",
+          "Угол поворота 0 ... 180°",
+          "Опрос положения",
+          "Демпфирование: эластичное (Р), гидроамортизаторы",
+          "Вал с фланцем"
+        ]
+      },
+      {
+        "id": 2,
+        "path": "/drv",
+        "name": "Привод с кареткой",
+        "cost": "123",
+        "photo": "https://alex3007.github.io/Shop/images/pneumodrives/drv.jpg",
+        "features": "Высокое качество",
+        "description": [
+          "Диаметр 6, 8, 10, 12, 16, 20, 25, 32 мм",
+          "Длина хода 5 … 200 мм",
+          "Усилие 17 … 724 Н",
+          "Направляющая с рециркулирующими шарикоподшипниками",
+          "Направляющая с кассетными шарикоподшипниками"
+        ]
+      },
+      {
+        "id": 3,
+        "path": "/sdr",
+        "name": "Сервопривод",
+        "cost": "115",
+        "photo": "https://alex3007.github.io/Shop/images/pneumodrives/sdr.jpg",
+        "features": "Надежность",
+        "description": [
+          "Неполноповоротные приводы",
+          "Линейные приводы с датчиком перемещения или без него",
+          "Измерительные устройства для линейных приводов"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Фитинги",
+    "path": "/fitings",
+    "photo": "https://alex3007.github.io/Shop/images/fitings/fit-c.jpg",
+    "items": [
+      {
+        "id": 1,
+        "path": "/fit-c",
+        "name": "Цанговые фитинги",
+        "cost": "10",
+        "photo": "https://alex3007.github.io/Shop/images/fitings/fit-c.jpg",
+        "features": "Качество",
+        "description": [
+          "Надежное решение для любого подключения",
+          "Удобная система штуцеров"
+        ]
+      },
+      {
+        "id": 2,
+        "path": "/fit-n",
+        "name": "Ниппельные фитинги",
+        "cost": "15",
+        "photo": "https://alex3007.github.io/Shop/images/fitings/fit-n.jpg",
+        "features": "Надежность",
+        "description": [
+          "Быстроразъемные фитинги",
+          "Дополнительные механические фиксаторы (накидная гайка)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Трубки",
+    "path": "/tubes",
+    "photo": "https://alex3007.github.io/Shop/images/tubes/tube-al.jpg",
+    "items": [
+      {
+        "id": 1,
+        "path": "/tube-al",
+        "name": "Трубка типа AL",
+        "cost": "15",
+        "photo": "https://alex3007.github.io/Shop/images/tubes/tube-al.jpg",
+        "features": "Прочность",
+        "description": [
+          "Алюминиевая отливка",
+          "Наружный диаметр 12 … 28 мм",
+          "Рабочее давление -0.95 … 7 бар",
+          "Окружающая температура -30 … 75 °C",
+          "Рабочая среда:",
+          "Сжатый воздух",
+          "Вакуум",
+          "Жидкости"
+
+        ]
+      },
+      {
+        "id": 2,
+        "path": "/tube-pm",
+        "name": "Трубка типа PM",
+        "cost": "12",
+        "photo": "https://alex3007.github.io/Shop/images/tubes/tube-pm.jpg",
+        "features": "Долговечность",
+        "description": [
+          "Полиэтилен, алюминиевая отливка",
+          "Наружный диаметр 6 … 8 мм",
+          "Рабочее давление -0.95 … 30 бар",
+          "Окружающая температура -29 … 65 °C",
+          "Рабочая среда:",
+          "Сжатый воздух",
+          "Вакуум"
+
+        ]
+      }
+    ]
+  }
+]

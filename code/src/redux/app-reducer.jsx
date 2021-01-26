@@ -1,13 +1,16 @@
 import {api} from "../components/api/api";
-import {isError, isFetching, setItems} from "./buyItem-reducer";
 
 let initialState = {
     products: [],
-    isFetching: true
+    isFetching: true,
+    isError: false
 };
+
 
 export const setProducts = (products) => ({type: 'SET_PRODUCTS', products});
 export const toggleIsFetching = (isFetching) => ({type: 'TOGGLE_IS_FETCHING', isFetching });
+export const toggleIsError = (isError) => ({type: 'TOGGLE_IS_ERROR', isError });
+
 
 const appReducer = (state = initialState, action) => {
 
@@ -17,6 +20,9 @@ const appReducer = (state = initialState, action) => {
         case 'TOGGLE_IS_FETCHING': {
             return { ...state, isFetching: action.isFetching}
         }
+        case 'TOGGLE_IS_ERROR': {
+            return { ...state, isError: action.isError}
+        }
         default:
             return state
     }
@@ -25,12 +31,14 @@ const appReducer = (state = initialState, action) => {
 
 export const getProducts = () => async (dispatch) => {
     try {
-        dispatch(isFetching(true));
+        dispatch(toggleIsFetching(true));
         const res = await api.getItems();
         dispatch(setProducts(res.data));
-        dispatch(isFetching(false));
+
+        setTimeout(()=>dispatch(toggleIsFetching(false)), 1000);
+
     } catch (e) {
-        dispatch(isError(true));
+        dispatch(toggleIsError(true));
     }
 };
 

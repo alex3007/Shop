@@ -1,12 +1,12 @@
 import * as axios from "axios";
-export const serverUrl = `http://localhost:80/`;
+export const serverUrl = `https://todoalexserver.herokuapp.com/`;
 export const api = {
 
     getItems() {
         return axios.get(serverUrl)
     },
     getBuingItems() {
-        return axios.get(`http://localhost:80/basket`)
+        return axios.get(serverUrl+`basket`)
     },
     addBuingItem(item){
         return axios.post(serverUrl, {item: item}
@@ -22,6 +22,6 @@ export const api = {
     },
 
     login(email) {
-        return axios.post(`http://localhost:80/auth`, { email:email});
+        return axios.post(serverUrl+`auth`, { email:email});
     }
 }

@@ -5,10 +5,16 @@ let Preloader = (props) => {
     return <div style={
         {
             width: '100%',
-            height: '100px',
-            display: 'flex'
+            height: '100%',
+            position: 'absolute',
+            display: 'flex',
+            alignItems: 'center',
+            zIndex: '10',
         }}>
-        <img style={{margin: 'auto'}} src={preloader}/>
+        <img style={{
+            margin: 'auto',
+            transform: 'scale(1.5)',
+        }} src={preloader}/>
     </div>
 };
 

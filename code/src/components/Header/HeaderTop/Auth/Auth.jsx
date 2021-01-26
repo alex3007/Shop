@@ -32,7 +32,7 @@ export default class Auth extends React.Component {
                 <div className={cls.modalWindow}>
                     <i onClick={this.closeModal} className='fa fa-2x fa-close'/>
                     <h2>Пожалуйста, введите адрес электронной почты</h2>
-                    <form onSubmit={this.sendData}>
+                    <form>
                         <input type="email" placeholder="user@gmail.com" required
                                minLength={5}
                                value={this.props.userEmail}

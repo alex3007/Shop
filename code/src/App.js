@@ -18,7 +18,7 @@ import Slide from "react-reveal/Slide";
 import withReveal from 'react-reveal/withReveal';
 import {compose} from "redux";
 import {Provider, connect} from "react-redux";
-import {getProducts, toggleIsFetching} from "./redux/app-reducer";
+import {getProducts} from "./redux/app-reducer";
 import {getLogin} from "./redux/auth-reducer";
 import Preloader from "./components/Preloader/Preloader";
 import Registration from "./components/Pages/Login/Registration/Registration";
@@ -27,9 +27,8 @@ import Registration from "./components/Pages/Login/Registration/Registration";
 class App extends React.Component {
 
     componentDidMount() {
-            this.props.getProducts();
-            this.props.toggleIsFetching(false);
-            this.props.getLogin()
+        this.props.getProducts();
+        this.props.getLogin()
     }
 
     render() {
@@ -44,12 +43,12 @@ class App extends React.Component {
         let WithRouterDescriptionContainer = withRouter(DescriptionContainer);
         return (
             <div className="App">
+                {this.props.isFetching && <Preloader/>}
                 <div className={"header"}>
                     <Slide top>
                         <HeaderContainer/>
                     </Slide>
                 </div>
-
                 <div className='flexContainer'>
                     <Sidebar className={"sidebar"} products={products}/>
                     <div className='pagesContainer'>
@@ -90,12 +89,11 @@ let mapStateToProps = (state) => {
 };
 
 let AppContainer = compose(connect(mapStateToProps,
-    {getProducts, toggleIsFetching, getLogin}))(App);
+    {getProducts, getLogin}))(App);
 
 const AppJs = (props) => {
     return <HashRouter>
         <Provider store={store}>
-            {store.isFetching ? <Preloader/> : null}
             <AppContainer/>
         </Provider>
     </HashRouter>

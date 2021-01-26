@@ -72,8 +72,10 @@ export default class ItemCard extends React.Component {
                         <img className={cls.imageExample} src={this.props.photo}/>
                     </div>
                     <div className={cls.itemInfoArea}>
-                        <p className={cls.itemName}>{this.props.name}</p>
-                        <p className={cls.itemDescription}>{this.props.features}</p>
+                        <div className={cls.itemInfo}>
+                            <p className={cls.itemName}>{this.props.name}</p>
+                            <p className={cls.itemDescription}>{this.props.features}</p>
+                        </div>
                         <p className={cls.itemCost}>{this.props.cost} BYN</p>
                     </div>
                 </NavLink>
